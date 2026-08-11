@@ -63,13 +63,13 @@ const cache = {
     { id: 2, name: 'Tennis' }
   ],
   eventsMap: new Map(),
-  marketsMap: new Map(),
   missingScanCountMap: new Map()
 };
 
 let sseClients = [];
-let activeFocusedEventId = '35913231';
+let activeFocusedEventId = '35920148';
 let activeFocusedEventType = '4';
+let hasPendingBroadcast = false;
 
 function broadcastSSE(data) {
   const payload = `data: ${JSON.stringify(data)}\n\n`;
@@ -77,6 +77,18 @@ function broadcastSSE(data) {
     try { client.res.write(payload); } catch (e) {}
   });
 }
+
+// Throttle SSE broadcasts to smooth 250ms interval (Eliminates price flickering)
+setInterval(() => {
+  if (hasPendingBroadcast) {
+    hasPendingBroadcast = false;
+    broadcastSSE({
+      type: 'LIVE_UPDATE',
+      eventId: activeFocusedEventId,
+      timestamp: cache.lastUpdated
+    });
+  }
+}, 250);
 
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
 const HTTP_HEADERS = {
@@ -116,11 +128,10 @@ app.post('/api/ingest/match_odds', (req, res) => {
   const eventIdStr = String(eventId);
   const existing = cache.eventsMap.get(eventIdStr) || {};
 
-  // Preserve non-MatchOdds markets from existing cache
   const nonMoMarkets = (existing.markets || []).filter(m => m.category !== 'MATCH_ODDS');
   const mergedMarkets = [...(markets || []), ...nonMoMarkets];
 
-  const updatedEvent = {
+  cache.eventsMap.set(eventIdStr, {
     ...existing,
     eventId: eventIdStr,
     sportName: existing.sportName || (String(eventType) === '1' ? 'Soccer' : String(eventType) === '2' ? 'Tennis' : 'Cricket'),
@@ -131,17 +142,9 @@ app.post('/api/ingest/match_odds', (req, res) => {
     isInPlay: isInPlay !== undefined ? isInPlay : existing.isInPlay,
     scores: scores !== undefined ? scores : existing.scores,
     markets: mergedMarkets
-  };
-
-  cache.eventsMap.set(eventIdStr, updatedEvent);
-  cache.lastUpdated = new Date().toISOString();
-
-  broadcastSSE({
-    type: 'LIVE_UPDATE',
-    eventId: eventIdStr,
-    timestamp: cache.lastUpdated,
-    source: 'WORKER_MATCH_ODDS'
   });
+  cache.lastUpdated = new Date().toISOString();
+  hasPendingBroadcast = true;
 
   res.json({ ok: true });
 });
@@ -162,13 +165,7 @@ app.post('/api/ingest/fancy_bm', (req, res) => {
     markets: mergedMarkets
   });
   cache.lastUpdated = new Date().toISOString();
-
-  broadcastSSE({
-    type: 'LIVE_UPDATE',
-    eventId: eventIdStr,
-    timestamp: cache.lastUpdated,
-    source: 'WORKER_FANCY_BM'
-  });
+  hasPendingBroadcast = true;
 
   res.json({ ok: true });
 });
@@ -189,13 +186,7 @@ app.post('/api/ingest/sportsbook', (req, res) => {
     markets: mergedMarkets
   });
   cache.lastUpdated = new Date().toISOString();
-
-  broadcastSSE({
-    type: 'LIVE_UPDATE',
-    eventId: eventIdStr,
-    timestamp: cache.lastUpdated,
-    source: 'WORKER_SPORTSBOOK'
-  });
+  hasPendingBroadcast = true;
 
   res.json({ ok: true });
 });
@@ -371,7 +362,7 @@ app.get('/api/stream', (req, res) => {
 // START SERVER AND LAUNCH DECOUPLED INDEPENDENT WORKER MICRO-SERVICES
 app.listen(PORT, () => {
   console.log(`\n======================================================`);
-  console.log(`⚡ SkyExchange Decoupled 3-Worker Master Architecture running at http://localhost:${PORT}`);
+  console.log(`⚡ AllPanel777 Master Server Engine running at http://localhost:${PORT}`);
   console.log(`======================================================\n`);
 
   // Launch Worker 1: Match Odds

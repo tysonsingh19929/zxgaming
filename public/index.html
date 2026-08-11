@@ -3,108 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkyExchange Real-Time Sportsbook, Bookmaker & Fancy Bet Dashboard</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
+  <title>AllPanel777 Sportsbook Exchange & Real-Time Live Odds</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-container">
-    <!-- Navigation Header -->
-    <header class="navbar">
-      <div class="brand">
-        <div class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
-        <div class="brand-text">
-          <h1>SKYEXCHANGE <span>PRO</span></h1>
-          <span class="sub">MATCH ODDS • BOOKMAKER • FANCY • SPORTSBOOK PREMIUM</span>
+  <div class="ap-app">
+    <!-- 1. Header Bar -->
+    <header class="ap-header">
+      <div class="ap-brand">
+        <i class="fa-solid fa-trophy" style="color:var(--ap-gold); font-size:1.2rem;"></i>
+        <div class="ap-logo">ALLPANEL<span>777</span></div>
+      </div>
+
+      <div class="ap-header-right">
+        <div class="ap-stream-status" id="stream-status">
+          <span class="ap-dot"></span> REAL-TIME LIVE STREAM (0.2s)
         </div>
-      </div>
-
-      <div class="live-stream-badge">
-        <span class="pulse-dot"></span>
-        <span id="sse-status">CONNECTING STREAM...</span>
-      </div>
-
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="global-search" placeholder="Search by Event ID, Match Name, or Market ID...">
+        <div class="ap-balance-badge">
+          <span>Pts: <strong>0.00</strong></span>
+          <span>Exp: <strong>0.00</strong></span>
+        </div>
       </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="main-layout">
-      <!-- Left Sidebar: Sports & Events Explorer -->
-      <aside class="sidebar">
-        <!-- Sports Filter Tabs -->
-        <div class="sports-tabs">
-          <button class="sport-tab active" data-sport="all">
-            <i class="fa-solid fa-trophy"></i> All
-          </button>
-          <button class="sport-tab" data-sport="Cricket">
-            <i class="fa-solid fa-cricket-bat-ball"></i> Cricket
-          </button>
-          <button class="sport-tab" data-sport="Soccer">
-            <i class="fa-solid fa-futbol"></i> Soccer
-          </button>
-          <button class="sport-tab" data-sport="Tennis">
-            <i class="fa-solid fa-table-tennis-paddle-ball"></i> Tennis
-          </button>
-        </div>
+    <!-- 2. Top Sports Navigation Bar -->
+    <nav class="ap-nav-bar">
+      <button class="ap-nav-item active" data-sport="all"><i class="fa-solid fa-fire"></i> In-Play / All</button>
+      <button class="ap-nav-item" data-sport="cricket"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</button>
+      <button class="ap-nav-item" data-sport="soccer"><i class="fa-solid fa-futbol"></i> Soccer</button>
+      <button class="ap-nav-item" data-sport="tennis"><i class="fa-solid fa-baseball"></i> Tennis</button>
+    </nav>
 
-        <!-- Sidebar Controls -->
-        <div class="sidebar-controls">
-          <div class="input-group">
-            <input type="text" id="event-id-input" placeholder="Enter Event ID (e.g. 35916421)">
-            <button id="go-event-btn"><i class="fa-solid fa-arrow-right"></i></button>
+    <!-- 3. Main Grid Layout -->
+    <div class="ap-main-grid">
+      <!-- Left Sidebar -->
+      <aside class="ap-sidebar">
+        <div class="ap-sidebar-header">
+          <span><i class="fa-solid fa-list"></i> Live Matches</span>
+          <span id="events-count" style="color:#fff;">0 Active</span>
+        </div>
+        <div class="ap-events-list" id="events-list">
+          <div style="text-align:center; padding:2rem; color:var(--ap-text-muted);">
+            <i class="fa-solid fa-circle-notch fa-spin"></i> Loading matches...
           </div>
-
-          <div class="filter-toggle">
-            <label class="switch">
-              <input type="checkbox" id="inplay-only-checkbox">
-              <span class="slider round"></span>
-            </label>
-            <span>In-Play Matches Only</span>
-          </div>
-        </div>
-
-        <div class="events-summary-bar">
-          <span id="events-count-label"><i class="fa-solid fa-list-check"></i> Loading active events...</span>
-        </div>
-
-        <!-- Events List Accordion -->
-        <div id="events-list-container" class="events-list">
-          <div class="loading-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Loading live matches...</div>
         </div>
       </aside>
 
-      <!-- Main Stage: Selected Event Markets & Live Odds View -->
-      <section class="stage">
-        <!-- Event Detail Header Card -->
-        <div id="event-header-card" class="event-header-card">
-          <div class="empty-state">
-            <i class="fa-solid fa-hand-pointer"></i>
-            <h2>Select an Event from the Left Sidebar</h2>
-            <p>Or enter an <strong>Event ID</strong> (e.g. <code>35916421</code>) above to view <strong>Match Odds</strong>, <strong>Bookmaker</strong>, <strong>Fancy Bets</strong>, and <strong>Sportsbook / Premium Fancy</strong> markets.</p>
+      <!-- Center Stage View -->
+      <main class="ap-stage">
+        <!-- Match Banner -->
+        <div class="ap-event-banner" id="event-banner">
+          <div class="ap-banner-title">Select a Match from the Left</div>
+          <div class="ap-banner-info">Choose Cricket, Soccer, or Tennis from the left sidebar to view live odds.</div>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="ap-category-filters" id="category-filters" style="display:none;">
+          <button class="ap-cat-btn active" data-category="ALL">All Markets</button>
+          <button class="ap-cat-btn" data-category="MATCH_ODDS">Match Odds</button>
+          <button class="ap-cat-btn" data-category="BOOKMAKER">Bookmaker</button>
+          <button class="ap-cat-btn" data-category="FANCY">Fancy Bet</button>
+          <button class="ap-cat-btn" data-category="PREMIUM_SPORTSBOOK">Sportsbook</button>
+        </div>
+
+        <!-- Markets Container -->
+        <div id="markets-container">
+          <div class="ap-empty-state">
+            <i class="fa-solid fa-chart-line" style="font-size:2.5rem; margin-bottom:0.75rem; color:var(--ap-gold);"></i>
+            <h3>Select a Live Match to View Odds</h3>
+            <p>Match Odds, Bookmaker rates, Fancy Bets, and Sportsbook lines will render here.</p>
           </div>
         </div>
-
-        <!-- Category Filter Pills Bar (Match Odds | Bookmaker | Fancy | Premium Sportsbook) -->
-        <div id="category-filter-bar" class="category-filter-bar" style="display:none;">
-          <button class="cat-pill active" data-category="ALL"><i class="fa-solid fa-border-all"></i> All Markets</button>
-          <button class="cat-pill" data-category="MATCH_ODDS"><i class="fa-solid fa-chart-simple"></i> Match Odds / Exchange</button>
-          <button class="cat-pill" data-category="BOOKMAKER"><i class="fa-solid fa-book"></i> Bookmaker Markets</button>
-          <button class="cat-pill" data-category="FANCY"><i class="fa-solid fa-star"></i> Fancy Bet Markets</button>
-          <button class="cat-pill" data-category="PREMIUM_SPORTSBOOK"><i class="fa-solid fa-fire"></i> Sportsbook / Premium Fancy</button>
-        </div>
-
-        <!-- Real-Time Markets Display Grid -->
-        <div id="markets-container" class="markets-container"></div>
-      </section>
-    </main>
+      </main>
+    </div>
   </div>
 
   <script src="app.js"></script>
