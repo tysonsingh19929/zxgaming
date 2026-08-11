@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+skyexch_ticks.json
+comparison_log.json
+allpanel777_dashboard.png

@@ -1,0 +1,87 @@
+[
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryInitInfo",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryEventLabel",
+    "method": "POST",
+    "postData": "isMobile=0"
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryGameHall",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bvincap.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/searchEvents",
+    "method": "POST",
+    "postData": "keyword=tsingh99"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=1"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=1786312401192&marketTs=1786312418986&selectionTs=1786312423638&viewType=openDateTime&competitionId=-1&collectEventIds=35897346%2C35917181%2C35917228%2C35902674%2C35898884%2C35881456%2C35885547%2C35910595%2C35880201%2C35896886%2C35908826%2C35897208%2C35910754%2C35904663%2C35916414%2C35910643%2C35910645%2C35904681%2C35902282%2C35872878%2C35872885%2C35896944%2C35872873%2C35916806%2C35897421%2C35908824%2C35908304%2C35881490%2C35911265%2C35911244"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786305495221&marketTs=1786305494292&selectionTs=1786312425468&viewType=openDateTime&competitionId=-1&collectEventIds=35897346%2C35917181%2C35917228%2C35902674%2C35898884%2C35881456%2C35885547%2C35910595%2C35880201%2C35896886%2C35908826%2C35897208%2C35910754%2C35904663%2C35916414%2C35910643%2C35910645%2C35904681%2C35902282%2C35872878%2C35872885%2C35896944%2C35872873%2C35916806%2C35897421%2C35908824%2C35908304%2C35881490%2C35911265%2C35911244"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786311801403&marketTs=1786311801402&selectionTs=1786312425468&viewType=openDateTime&competitionId=-1&collectEventIds=35897346%2C35917181%2C35917228%2C35902674%2C35898884%2C35881456%2C35885547%2C35910595%2C35880201%2C35896886%2C35908826%2C35897208%2C35910754%2C35904663%2C35916414%2C35910643%2C35910645%2C35904681%2C35902282%2C35872878%2C35872885%2C35896944%2C35872873%2C35916806%2C35897421%2C35908824%2C35908304%2C35881490%2C35911265%2C35911244"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  }
+]

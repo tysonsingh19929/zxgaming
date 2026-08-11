@@ -1,0 +1,3756 @@
+[
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175501,
+    "eventName": "Kollam Titans v Blasters Cochin",
+    "competitionName": "KCC Kuwait Kerala Premier League T20",
+    "openDateStr": "09 Aug, 23:00",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175547",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35922516,
+    "eventName": "Brazil v Panama",
+    "competitionName": "International Twenty20 Matches",
+    "openDateStr": "09 Aug, 23:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260944792",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11174875,
+    "eventName": "Mi Cape Town SRL T20 v Joburg Super Kings SRL T20",
+    "competitionName": "SA20 SRL",
+    "openDateStr": "10 Aug, 01:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11174921",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11174876,
+    "eventName": "England SRL T20 v New Zealand SRL T20",
+    "competitionName": "T20 International SRL",
+    "openDateStr": "10 Aug, 02:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11174922",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11174877,
+    "eventName": "Multan Sultans SRL T20 v Islamabad United SRL T20",
+    "competitionName": "Pakistan Super League SRL",
+    "openDateStr": "10 Aug, 03:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11174923",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35916421,
+    "eventName": "Antigua & Barbuda Falcons v St. Lucia Kings",
+    "competitionName": "Caribbean Premier League",
+    "openDateStr": "10 Aug, 04:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260884775",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11174878,
+    "eventName": "Melbourne Stars SRL T20 v Melbourne Renegades SRL T20",
+    "competitionName": "Big Bash League SRL",
+    "openDateStr": "10 Aug, 04:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11174924",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175549,
+    "eventName": "Wellington SRL T20 v Canterbury SRL T20",
+    "competitionName": "Super Smash SRL",
+    "openDateStr": "10 Aug, 05:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175595",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175545,
+    "eventName": "West Indies SRL T20 v Pakistan SRL T20",
+    "competitionName": "T20 International SRL",
+    "openDateStr": "10 Aug, 06:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175591",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175553,
+    "eventName": "Sunrisers Eastern Cape SRL T20 v Paarl Royals SRL T20",
+    "competitionName": "SA20 SRL",
+    "openDateStr": "10 Aug, 07:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175599",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175556,
+    "eventName": "Peshawar Zalmi SRL T20 v Karachi Kings SRL T20",
+    "competitionName": "Pakistan Super League SRL",
+    "openDateStr": "10 Aug, 08:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175602",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175562,
+    "eventName": "Mumbai Indians SRL T20 v Kolkata Knight Riders SRL T20",
+    "competitionName": "Indian Premier League SRL",
+    "openDateStr": "10 Aug, 09:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175608",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35910550,
+    "eventName": "Ace Capital CC v Panadura SC",
+    "competitionName": "SLC Major Clubs Limited Over",
+    "openDateStr": "10 Aug, 09:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260946462",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35917771,
+    "eventName": "Baduraliya CC v Bloomfield CC",
+    "competitionName": "SLC Major Clubs Limited Over",
+    "openDateStr": "10 Aug, 09:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260946465",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35910624,
+    "eventName": "Colts CC v Sinhalese Sports Club",
+    "competitionName": "SLC Major Clubs Limited Over",
+    "openDateStr": "10 Aug, 09:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260946468",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35910392,
+    "eventName": "Kurunegala Youth CC v Tamil Union CC",
+    "competitionName": "SLC Major Clubs Limited Over",
+    "openDateStr": "10 Aug, 09:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260946471",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35917735,
+    "eventName": "Nondescripts CC v Burgher RC",
+    "competitionName": "SLC Major Clubs Limited Over",
+    "openDateStr": "10 Aug, 09:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260946474",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35910449,
+    "eventName": "Nugegoda SC v Moors SC",
+    "competitionName": "SLC Major Clubs Limited Over",
+    "openDateStr": "10 Aug, 09:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260946477",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175567,
+    "eventName": "Adelaide Strikers SRL T20 v Perth Scorchers SRL T20",
+    "competitionName": "Big Bash League SRL",
+    "openDateStr": "10 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175613",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175546,
+    "eventName": "Australia SRL T20 v India SRL T20",
+    "competitionName": "T20 International SRL",
+    "openDateStr": "10 Aug, 11:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175592",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175554,
+    "eventName": "Durban Super Giants SRL T20 v Joburg Super Kings SRL T20",
+    "competitionName": "SA20 SRL",
+    "openDateStr": "10 Aug, 12:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175600",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35917242,
+    "eventName": "Tallinn Hippos v Tallinn Strikers",
+    "competitionName": "European Cricket Series",
+    "openDateStr": "10 Aug, 13:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260891579",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175550,
+    "eventName": "Northern Districts SRL T20 v Otago SRL T20",
+    "competitionName": "Super Smash SRL",
+    "openDateStr": "10 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175596",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35912635,
+    "eventName": "West Delhi Lions v East Delhi Riders",
+    "competitionName": "Delhi Premier League",
+    "openDateStr": "10 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260862986",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175563,
+    "eventName": "Sunrisers Hyderabad SRL T20 v Lucknow Super Giants SRL T20",
+    "competitionName": "Indian Premier League SRL",
+    "openDateStr": "10 Aug, 14:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175609",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35917248,
+    "eventName": "Tallinn Stallions v Tallinn Hippos",
+    "competitionName": "European Cricket Series",
+    "openDateStr": "10 Aug, 15:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260891582",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35916658,
+    "eventName": "Tezpur Titans v Jorhat Stallions",
+    "competitionName": "Assam Premier League",
+    "openDateStr": "10 Aug, 15:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260889116",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35909646,
+    "eventName": "Dragons v Typhoons",
+    "competitionName": "Super 50 Cup Women",
+    "openDateStr": "10 Aug, 15:15",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260838305",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35913231,
+    "eventName": "Ireland v Afghanistan",
+    "competitionName": "One Day Internationals",
+    "openDateStr": "10 Aug, 15:15",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260876898",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175557,
+    "eventName": "Quetta Gladiators SRL T20 v Lahore Qalandars SRL T20",
+    "competitionName": "Pakistan Super League SRL",
+    "openDateStr": "10 Aug, 15:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175603",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175568,
+    "eventName": "Brisbane Heat SRL T20 v Sydney Thunder SRL T20",
+    "competitionName": "Big Bash League SRL",
+    "openDateStr": "10 Aug, 16:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175614",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35917251,
+    "eventName": "Tallinn Stallions v Tallinn Strikers",
+    "competitionName": "European Cricket Series",
+    "openDateStr": "10 Aug, 17:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260891585",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175547,
+    "eventName": "Afghanistan SRL T20 v Sri Lanka SRL T20",
+    "competitionName": "T20 International SRL",
+    "openDateStr": "10 Aug, 17:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175593",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175555,
+    "eventName": "Mi Cape Town SRL T20 v Paarl Royals SRL T20",
+    "competitionName": "SA20 SRL",
+    "openDateStr": "10 Aug, 18:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175601",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35916383,
+    "eventName": "Purani Delhi 6 v Outer Delhi Warriors",
+    "competitionName": "Delhi Premier League",
+    "openDateStr": "10 Aug, 19:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260884317",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175565,
+    "eventName": "Chennai Super Kings SRL T20 v Rajasthan Royals SRL T20",
+    "competitionName": "Indian Premier League SRL",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175611",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35916520,
+    "eventName": "Salem Spartans v Madurai Panthers",
+    "competitionName": "Tamil Nadu Premier League",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260885527",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35916620,
+    "eventName": "Trent Rockets W v Southern Brave W",
+    "competitionName": "The Hundred - Womens",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260887138",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35916742,
+    "eventName": "Dibrugarh Warriors v Guwahati Royals",
+    "competitionName": "Assam Premier League",
+    "openDateStr": "10 Aug, 20:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260889120",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175551,
+    "eventName": "Otago SRL T20 v Central Districts SRL T20",
+    "competitionName": "Super Smash SRL",
+    "openDateStr": "10 Aug, 20:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175597",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": -11175558,
+    "eventName": "Rawalpindiz SRL T20 v Hyderabad Kingsmen SRL T20",
+    "competitionName": "Pakistan Super League SRL",
+    "openDateStr": "10 Aug, 21:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "-11175604",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35916623,
+    "eventName": "Trent Rockets v Southern Brave",
+    "competitionName": "The Hundred",
+    "openDateStr": "10 Aug, 23:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260887064",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35910006,
+    "eventName": "Pakistan Greens v Pakistan Whites",
+    "competitionName": "Pakistan Champions One Day Cup",
+    "openDateStr": "11 Aug, 15:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260838188",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35901880,
+    "eventName": "Jamaica Kingsmen v Barbados Tridents",
+    "competitionName": "Caribbean Premier League",
+    "openDateStr": "12 Aug, 05:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260761273",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35858833,
+    "eventName": "Australia v Bangladesh",
+    "competitionName": "Test Matches",
+    "openDateStr": "13 Aug, 06:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260370046",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35901908,
+    "eventName": "Jamaica Kingsmen v Guyana Amazon Warriors",
+    "competitionName": "Caribbean Premier League",
+    "openDateStr": "14 Aug, 05:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260761344",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35913614,
+    "eventName": "Sri Lanka v India",
+    "competitionName": "Test Matches",
+    "openDateStr": "15 Aug, 10:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260870239",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Cricket",
+    "eventType": 4,
+    "eventId": 35913612,
+    "eventName": "England v Pakistan",
+    "competitionName": "Test Matches",
+    "openDateStr": "19 Aug, 15:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260870102",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35872876,
+    "eventName": "Bahia v Vasco da Gama",
+    "competitionName": "Brazilian Serie A",
+    "openDateStr": "10 Aug, 00:30",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Bahia",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 4,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 3,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Vasco Da Gama",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 2,
+        "numberOfRedCards": 0,
+        "numberOfCards": 2,
+        "numberOfCorners": 6,
+        "numberOfCornersFirstHalf": 2,
+        "numberOfCornersSecondHalf": 4,
+        "bookingPoints": 20
+      },
+      "numberOfYellowCards": 2,
+      "numberOfRedCards": 0,
+      "numberOfCards": 2,
+      "numberOfCorners": 10,
+      "numberOfCornersFirstHalf": 3,
+      "numberOfCornersSecondHalf": 7,
+      "bookingPoints": 20
+    },
+    "markets": [
+      {
+        "marketId": "1.260487624",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35910646,
+    "eventName": "Maringa v Amazonas FC",
+    "competitionName": "Brazilian Serie C",
+    "openDateStr": "10 Aug, 00:30",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Maringa",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 15,
+        "numberOfCornersFirstHalf": 7,
+        "numberOfCornersSecondHalf": 8,
+        "bookingPoints": 10
+      },
+      "away": {
+        "name": "Amazonas FC",
+        "score": "3",
+        "halfTimeScore": "2",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 4,
+        "numberOfRedCards": 0,
+        "numberOfCards": 4,
+        "numberOfCorners": 0,
+        "numberOfCornersFirstHalf": 0,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 40
+      },
+      "numberOfYellowCards": 5,
+      "numberOfRedCards": 0,
+      "numberOfCards": 5,
+      "numberOfCorners": 15,
+      "numberOfCornersFirstHalf": 7,
+      "numberOfCornersSecondHalf": 8,
+      "bookingPoints": 50
+    },
+    "markets": [
+      {
+        "marketId": "1.260848506",
+        "marketName": "Match Odds",
+        "status": 2,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35880229,
+    "eventName": "Novorizontino v Juventude",
+    "competitionName": "Brazilian Serie B",
+    "openDateStr": "10 Aug, 00:30",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Novorizontino",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 8,
+        "numberOfCornersFirstHalf": 5,
+        "numberOfCornersSecondHalf": 3,
+        "bookingPoints": 10
+      },
+      "away": {
+        "name": "Juventude",
+        "score": "1",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 5,
+        "numberOfRedCards": 0,
+        "numberOfCards": 5,
+        "numberOfCorners": 6,
+        "numberOfCornersFirstHalf": 5,
+        "numberOfCornersSecondHalf": 1,
+        "bookingPoints": 50
+      },
+      "numberOfYellowCards": 6,
+      "numberOfRedCards": 0,
+      "numberOfCards": 6,
+      "numberOfCorners": 14,
+      "numberOfCornersFirstHalf": 10,
+      "numberOfCornersSecondHalf": 4,
+      "bookingPoints": 60
+    },
+    "markets": [
+      {
+        "marketId": "1.260551712",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35872869,
+    "eventName": "SE Palmeiras v Internacional",
+    "competitionName": "Brazilian Serie A",
+    "openDateStr": "10 Aug, 00:30",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "SE Palmeiras",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 5,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 4,
+        "bookingPoints": 10
+      },
+      "away": {
+        "name": "Internacional",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 3,
+        "numberOfRedCards": 0,
+        "numberOfCards": 3,
+        "numberOfCorners": 2,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 1,
+        "bookingPoints": 30
+      },
+      "numberOfYellowCards": 4,
+      "numberOfRedCards": 0,
+      "numberOfCards": 4,
+      "numberOfCorners": 7,
+      "numberOfCornersFirstHalf": 2,
+      "numberOfCornersSecondHalf": 5,
+      "bookingPoints": 40
+    },
+    "markets": [
+      {
+        "marketId": "1.260487491",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35913247,
+    "eventName": "Zrinjski v Celik Zenica",
+    "competitionName": "Bosnian Premier League",
+    "openDateStr": "10 Aug, 00:45",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Zrinjski",
+        "score": "2",
+        "halfTimeScore": "1",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 8,
+        "numberOfCornersFirstHalf": 7,
+        "numberOfCornersSecondHalf": 1,
+        "bookingPoints": 10
+      },
+      "away": {
+        "name": "Celik Zenica",
+        "score": "1",
+        "halfTimeScore": "1",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 4,
+        "numberOfCornersFirstHalf": 3,
+        "numberOfCornersSecondHalf": 1,
+        "bookingPoints": 0
+      },
+      "numberOfYellowCards": 1,
+      "numberOfRedCards": 0,
+      "numberOfCards": 1,
+      "numberOfCorners": 12,
+      "numberOfCornersFirstHalf": 10,
+      "numberOfCornersSecondHalf": 2,
+      "bookingPoints": 10
+    },
+    "markets": [
+      {
+        "marketId": "1.260869234",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35859687,
+    "eventName": "Benfica v Academico de Viseu",
+    "competitionName": "Portuguese Primeira Liga",
+    "openDateStr": "10 Aug, 01:00",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Benfica",
+        "score": "2",
+        "halfTimeScore": "1",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 2,
+        "numberOfRedCards": 0,
+        "numberOfCards": 2,
+        "numberOfCorners": 6,
+        "numberOfCornersFirstHalf": 6,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 20
+      },
+      "away": {
+        "name": "Academico de Viseu",
+        "score": "1",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": true,
+        "numberOfYellowCards": 2,
+        "numberOfRedCards": 0,
+        "numberOfCards": 2,
+        "numberOfCorners": 2,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 1,
+        "bookingPoints": 20
+      },
+      "numberOfYellowCards": 4,
+      "numberOfRedCards": 0,
+      "numberOfCards": 4,
+      "numberOfCorners": 8,
+      "numberOfCornersFirstHalf": 7,
+      "numberOfCornersSecondHalf": 1,
+      "bookingPoints": 40
+    },
+    "markets": [
+      {
+        "marketId": "1.260383825",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35871839,
+    "eventName": "Gil Vicente v Rio Ave",
+    "competitionName": "Portuguese Primeira Liga",
+    "openDateStr": "10 Aug, 01:00",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Gil Vicente",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 2,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 1,
+        "bookingPoints": 10
+      },
+      "away": {
+        "name": "Rio Ave",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 1,
+        "numberOfCards": 2,
+        "numberOfCorners": 2,
+        "numberOfCornersFirstHalf": 2,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 35
+      },
+      "numberOfYellowCards": 2,
+      "numberOfRedCards": 1,
+      "numberOfCards": 3,
+      "numberOfCorners": 4,
+      "numberOfCornersFirstHalf": 3,
+      "numberOfCornersSecondHalf": 1,
+      "bookingPoints": 45
+    },
+    "markets": [
+      {
+        "marketId": "1.260476686",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35897361,
+    "eventName": "Godoy Cruz v Chaco For Ever",
+    "competitionName": "Argentinian Primera Nacional",
+    "openDateStr": "10 Aug, 01:00",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Godoy Cruz",
+        "score": "2",
+        "halfTimeScore": "2",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 3,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 2,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Chaco For Ever",
+        "score": "1",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": true,
+        "numberOfYellowCards": 2,
+        "numberOfRedCards": 0,
+        "numberOfCards": 2,
+        "numberOfCorners": 0,
+        "numberOfCornersFirstHalf": 0,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 20
+      },
+      "numberOfYellowCards": 2,
+      "numberOfRedCards": 0,
+      "numberOfCards": 2,
+      "numberOfCorners": 3,
+      "numberOfCornersFirstHalf": 1,
+      "numberOfCornersSecondHalf": 2,
+      "bookingPoints": 20
+    },
+    "markets": [
+      {
+        "marketId": "1.260717746",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35871845,
+    "eventName": "Moreirense v Braga",
+    "competitionName": "Portuguese Primeira Liga",
+    "openDateStr": "10 Aug, 01:00",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Moreirense",
+        "score": "1",
+        "halfTimeScore": "1",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 3,
+        "numberOfRedCards": 0,
+        "numberOfCards": 3,
+        "numberOfCorners": 2,
+        "numberOfCornersFirstHalf": 2,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 30
+      },
+      "away": {
+        "name": "Braga",
+        "score": "1",
+        "halfTimeScore": "1",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": true,
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 1,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 10
+      },
+      "numberOfYellowCards": 4,
+      "numberOfRedCards": 0,
+      "numberOfCards": 4,
+      "numberOfCorners": 3,
+      "numberOfCornersFirstHalf": 3,
+      "numberOfCornersSecondHalf": 0,
+      "bookingPoints": 40
+    },
+    "markets": [
+      {
+        "marketId": "1.260476818",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35912651,
+    "eventName": "Seattle Sounders v Queretaro",
+    "competitionName": "North American Leagues Cup",
+    "openDateStr": "10 Aug, 01:00",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Seattle Sounders",
+        "score": "2",
+        "halfTimeScore": "2",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 1,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Queretaro",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 2,
+        "numberOfCornersFirstHalf": 2,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "numberOfYellowCards": 0,
+      "numberOfRedCards": 0,
+      "numberOfCards": 0,
+      "numberOfCorners": 3,
+      "numberOfCornersFirstHalf": 3,
+      "numberOfCornersSecondHalf": 0,
+      "bookingPoints": 0
+    },
+    "markets": [
+      {
+        "marketId": "1.260863132",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35897346,
+    "eventName": "Quilmes v Almagro BA",
+    "competitionName": "Argentinian Primera Nacional",
+    "openDateStr": "10 Aug, 01:30",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Quilmes",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 5,
+        "numberOfCornersFirstHalf": 5,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 10
+      },
+      "away": {
+        "name": "Almagro BA",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": true,
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 0,
+        "numberOfCornersFirstHalf": 0,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 10
+      },
+      "numberOfYellowCards": 2,
+      "numberOfRedCards": 0,
+      "numberOfCards": 2,
+      "numberOfCorners": 5,
+      "numberOfCornersFirstHalf": 5,
+      "numberOfCornersSecondHalf": 0,
+      "bookingPoints": 20
+    },
+    "markets": [
+      {
+        "marketId": "1.260718626",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35917181,
+    "eventName": "Trujillanos v Deportivo Tachira",
+    "competitionName": "Venezuelan Primera Division",
+    "openDateStr": "10 Aug, 01:30",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Trujillanos",
+        "score": "1",
+        "halfTimeScore": "1",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 1,
+        "numberOfCornersFirstHalf": 1,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Deportivo Tachira",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 0,
+        "numberOfCornersFirstHalf": 0,
+        "bookingPoints": 0
+      },
+      "numberOfYellowCards": 0,
+      "numberOfRedCards": 0,
+      "numberOfCards": 0,
+      "numberOfCorners": 1,
+      "numberOfCornersFirstHalf": 1,
+      "bookingPoints": 0
+    },
+    "markets": [
+      {
+        "marketId": "1.260892895",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35917228,
+    "eventName": "Zamora FC v Puerto Cabello",
+    "competitionName": "Venezuelan Primera Division",
+    "openDateStr": "10 Aug, 01:30",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Zamora FC",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 1,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Puerto Cabello",
+        "score": "0",
+        "halfTimeScore": "0",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 1,
+        "numberOfRedCards": 0,
+        "numberOfCards": 1,
+        "numberOfCorners": 1,
+        "numberOfCornersFirstHalf": 1,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 10
+      },
+      "numberOfYellowCards": 1,
+      "numberOfRedCards": 0,
+      "numberOfCards": 1,
+      "numberOfCorners": 2,
+      "numberOfCornersFirstHalf": 2,
+      "numberOfCornersSecondHalf": 0,
+      "bookingPoints": 10
+    },
+    "markets": [
+      {
+        "marketId": "1.260892785",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35902674,
+    "eventName": "Breidablik v Valur",
+    "competitionName": "Icelandic Urvalsdeild",
+    "openDateStr": "10 Aug, 01:45",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Breidablik",
+        "score": "0",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 3,
+        "numberOfCornersFirstHalf": 3,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Valur",
+        "score": "1",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": true,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 4,
+        "numberOfCornersFirstHalf": 4,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "numberOfYellowCards": 0,
+      "numberOfRedCards": 0,
+      "numberOfCards": 0,
+      "numberOfCorners": 7,
+      "numberOfCornersFirstHalf": 7,
+      "numberOfCornersSecondHalf": 0,
+      "bookingPoints": 0
+    },
+    "markets": [
+      {
+        "marketId": "1.260767785",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35898884,
+    "eventName": "Melgar v FC Cajamarca",
+    "competitionName": "Peruvian Primera Division",
+    "openDateStr": "10 Aug, 02:00",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Melgar",
+        "score": "1",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 4,
+        "numberOfCornersFirstHalf": 4,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "FC Cajamarca",
+        "score": "1",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 1,
+        "numberOfCornersFirstHalf": 1,
+        "bookingPoints": 0
+      },
+      "numberOfYellowCards": 0,
+      "numberOfRedCards": 0,
+      "numberOfCards": 0,
+      "numberOfCorners": 5,
+      "numberOfCornersFirstHalf": 5,
+      "bookingPoints": 0
+    },
+    "markets": [
+      {
+        "marketId": "1.260738668",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35881456,
+    "eventName": "Defensa y Justicia v Newells",
+    "competitionName": "Argentinian Primera Division",
+    "openDateStr": "10 Aug, 02:15",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Defensa y Justicia",
+        "score": "0",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 0,
+        "numberOfCornersFirstHalf": 0,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Newells",
+        "score": "0",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": true,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 2,
+        "numberOfCornersFirstHalf": 2,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "numberOfYellowCards": 0,
+      "numberOfRedCards": 0,
+      "numberOfCards": 0,
+      "numberOfCorners": 2,
+      "numberOfCornersFirstHalf": 2,
+      "numberOfCornersSecondHalf": 0,
+      "bookingPoints": 0
+    },
+    "markets": [
+      {
+        "marketId": "1.260560592",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35885547,
+    "eventName": "Gimnasia La Plata v Barracas Central",
+    "competitionName": "Argentinian Primera Division",
+    "openDateStr": "10 Aug, 02:15",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Gimnasia La Plata",
+        "score": "0",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": false,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 0,
+        "numberOfCornersFirstHalf": 0,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "away": {
+        "name": "Barracas Central",
+        "score": "0",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "",
+        "sets": "",
+        "highlight": true,
+        "numberOfYellowCards": 0,
+        "numberOfRedCards": 0,
+        "numberOfCards": 0,
+        "numberOfCorners": 0,
+        "numberOfCornersFirstHalf": 0,
+        "numberOfCornersSecondHalf": 0,
+        "bookingPoints": 0
+      },
+      "numberOfYellowCards": 0,
+      "numberOfRedCards": 0,
+      "numberOfCards": 0,
+      "numberOfCorners": 0,
+      "numberOfCornersFirstHalf": 0,
+      "numberOfCornersSecondHalf": 0,
+      "bookingPoints": 0
+    },
+    "markets": [
+      {
+        "marketId": "1.260595800",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35910595,
+    "eventName": "CD Cacahuatique v Fuerte San Francisco",
+    "competitionName": "Salvadoran Primera Division",
+    "openDateStr": "10 Aug, 02:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260850127",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35880201,
+    "eventName": "Cuiaba v Fortaleza EC",
+    "competitionName": "Brazilian Serie B",
+    "openDateStr": "10 Aug, 02:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260555667",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35896886,
+    "eventName": "Delfin v Orense Sporting Club",
+    "competitionName": "Ecuadorian Serie A",
+    "openDateStr": "10 Aug, 02:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260707843",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35908826,
+    "eventName": "Deportivo San Pedro v Suchitepequez",
+    "competitionName": "Guatemalan Liga Nacional",
+    "openDateStr": "10 Aug, 02:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260831556",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35897208,
+    "eventName": "San Martin de Tucuman v San Martin de San Juan",
+    "competitionName": "Argentinian Primera Nacional",
+    "openDateStr": "10 Aug, 02:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260936956",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35910754,
+    "eventName": "Union Cocle v Veraguas FC",
+    "competitionName": "Panamanian Premier League",
+    "openDateStr": "10 Aug, 02:30",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260854156",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35904663,
+    "eventName": "Alianza FC Valledupar v Atletico Bucaramanga",
+    "competitionName": "Colombian Primera A",
+    "openDateStr": "10 Aug, 02:35",
+    "isInPlay": true,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260798692",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35916414,
+    "eventName": "Real Potosi v Blooming Santa Cruz",
+    "competitionName": "Bolivian Liga de Futbol Profesional",
+    "openDateStr": "10 Aug, 02:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260884435",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35910643,
+    "eventName": "Itabaiana v SER Caxias do Sul",
+    "competitionName": "Brazilian Serie C",
+    "openDateStr": "10 Aug, 03:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260848772",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35910645,
+    "eventName": "Maranhao v Brusque FC",
+    "competitionName": "Brazilian Serie C",
+    "openDateStr": "10 Aug, 03:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260848637",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35904681,
+    "eventName": "Nacional (Par) v Guarani (Par)",
+    "competitionName": "Paraguayan Primera Division",
+    "openDateStr": "10 Aug, 03:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260798745",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35902282,
+    "eventName": "Nacional (Uru) v Boston River",
+    "competitionName": "Uruguayan Primera Division",
+    "openDateStr": "10 Aug, 03:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260769248",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35872878,
+    "eventName": "Red Bull Bragantino v Corinthians",
+    "competitionName": "Brazilian Serie A",
+    "openDateStr": "10 Aug, 03:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260488281",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35872885,
+    "eventName": "Santos v Athletico-PR",
+    "competitionName": "Brazilian Serie A",
+    "openDateStr": "10 Aug, 03:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260488171",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35896944,
+    "eventName": "Union La Calera v Colo Colo",
+    "competitionName": "Chilean Primera Division",
+    "openDateStr": "10 Aug, 03:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260710435",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35872873,
+    "eventName": "Flamengo v EC Vitoria Salvador",
+    "competitionName": "Brazilian Serie A",
+    "openDateStr": "10 Aug, 04:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260487383",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35916806,
+    "eventName": "Metropolitanos v Universidad de Venezuela",
+    "competitionName": "Venezuelan Primera Division",
+    "openDateStr": "10 Aug, 04:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260893005",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35908824,
+    "eventName": "CSD Municipal v Coban Imperial",
+    "competitionName": "Guatemalan Liga Nacional",
+    "openDateStr": "10 Aug, 04:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260831776",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35897421,
+    "eventName": "Chicago Red Stars (W) v Bay FC (W)",
+    "competitionName": "US National Women Soccer League",
+    "openDateStr": "10 Aug, 04:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260927560",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35908304,
+    "eventName": "Jaguares de Cordoba v Once Caldas",
+    "competitionName": "Colombian Primera A",
+    "openDateStr": "10 Aug, 04:40",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260823069",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35881490,
+    "eventName": "Argentinos Juniors v Racing Club",
+    "competitionName": "Argentinian Primera Division",
+    "openDateStr": "10 Aug, 04:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260561079",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35911265,
+    "eventName": "CD Motagua v Estrella Roja",
+    "competitionName": "Honduras Liga Nacional",
+    "openDateStr": "10 Aug, 04:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260852190",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35911244,
+    "eventName": "Sporting San Miguelito v Alianza FC (Pan)",
+    "competitionName": "Panamanian Premier League",
+    "openDateStr": "10 Aug, 04:45",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260853894",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35910622,
+    "eventName": "CD Fas v Atletico Balboa",
+    "competitionName": "Salvadoran Primera Division",
+    "openDateStr": "10 Aug, 05:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260849878",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35916413,
+    "eventName": "Oriente Petrolero v Universitario de Vinto",
+    "competitionName": "Bolivian Liga de Futbol Profesional",
+    "openDateStr": "10 Aug, 05:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260884525",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Soccer",
+    "eventType": 1,
+    "eventId": 35916525,
+    "eventName": "Philadelphia v Necaxa",
+    "competitionName": "North American Leagues Cup",
+    "openDateStr": "10 Aug, 05:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260886295",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35915475,
+    "eventName": "Al Korneeva v C Gauff",
+    "competitionName": "WTA Toronto 2026",
+    "openDateStr": "10 Aug, 01:15",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "score": "15",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "1",
+        "sets": "0",
+        "gameSequence": [
+          "3"
+        ],
+        "isServing": true,
+        "highlight": true,
+        "serviceBreaks": 0
+      },
+      "away": {
+        "score": "0",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "5",
+        "sets": "1",
+        "gameSequence": [
+          "6"
+        ],
+        "isServing": false,
+        "highlight": false,
+        "serviceBreaks": 0
+      },
+      "currentSet": 2,
+      "fullTimeElapsed": {
+        "hour": 0,
+        "min": 0,
+        "sec": 0
+      }
+    },
+    "markets": [
+      {
+        "marketId": "1.260879701",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919238,
+    "eventName": "Jubb v Aj Rai",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 01:25",
+    "isInPlay": true,
+    "scores": {
+      "home": {
+        "name": "Paul Jubb",
+        "score": "40",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "2",
+        "sets": "1",
+        "gameSequence": [
+          "6"
+        ],
+        "isServing": true,
+        "highlight": true,
+        "serviceBreaks": 0
+      },
+      "away": {
+        "name": "Ajeet Rai",
+        "score": "A",
+        "halfTimeScore": "",
+        "fullTimeScore": "",
+        "penaltiesScore": "",
+        "penaltiesSequence": [],
+        "games": "3",
+        "sets": "0",
+        "gameSequence": [
+          "3"
+        ],
+        "isServing": false,
+        "highlight": false,
+        "serviceBreaks": 0
+      },
+      "currentSet": 2,
+      "fullTimeElapsed": {
+        "hour": 0,
+        "min": 0,
+        "sec": 0
+      }
+    },
+    "markets": [
+      {
+        "marketId": "1.260915386",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35915516,
+    "eventName": "Jo Fonseca v Be Shelton",
+    "competitionName": "ATP Montreal QC 2026",
+    "openDateStr": "10 Aug, 03:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260880102",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35915392,
+    "eventName": "L Fernandez v N Osaka",
+    "competitionName": "WTA Toronto 2026",
+    "openDateStr": "10 Aug, 04:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260879370",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35915483,
+    "eventName": "Bot Van de Zandschulp v Mensik",
+    "competitionName": "ATP Montreal QC 2026",
+    "openDateStr": "10 Aug, 04:40",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260879841",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35915667,
+    "eventName": "Al Eala v Bencic",
+    "competitionName": "WTA Toronto 2026",
+    "openDateStr": "10 Aug, 06:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260880657",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919965,
+    "eventName": "Agafonov v Deckers",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260927079",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35920009,
+    "eventName": "Isomura v Sasik Mukund",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260927141",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35920058,
+    "eventName": "Mi Leong v Arutiunian",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260927896",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35920277,
+    "eventName": "Ichikawa v Karan  Singh",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 12:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260930563",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35921186,
+    "eventName": "Rawat v Shu Mitsui",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 12:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260936684",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35921416,
+    "eventName": "Co Sinclair v Zhalgasbay",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 12:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260937081",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35921181,
+    "eventName": "Gi Ferrari v Nik Mashtakov",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260936635",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35920373,
+    "eventName": "Max Homberg v Carboni",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260932736",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35921132,
+    "eventName": "Vanshelboim v Mecarelli",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260935924",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35920967,
+    "eventName": "F Zeballos v Er Kirkin",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260935267",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35920962,
+    "eventName": "Hy Barton v Lechno-Wasiutynski",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260935294",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35920252,
+    "eventName": "J Kumstat v Tom Zeuch",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260930398",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917552,
+    "eventName": "Kok Matsuda v Ha Matsuoka",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897202",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917547,
+    "eventName": "Luc Ratti v Tai  Sach",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897249",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917557,
+    "eventName": "Sem Pankin v Palan",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897274",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922214,
+    "eventName": "C Caniato v G Crivellaro",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 14:40",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260944202",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922088,
+    "eventName": "G Kravchenko v D`Agostino",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 14:40",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260940493",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922611,
+    "eventName": "J Martin Manzano v Ale Weis",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 14:40",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260945263",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35921493,
+    "eventName": "Jan Opitz v Ol Krutykh",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 15:10",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260938249",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917542,
+    "eventName": "Khu Sultanov v Ale Binda",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "10 Aug, 15:10",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897200",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922093,
+    "eventName": "Ol Wallin v Guttau",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 15:10",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260940446",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922511,
+    "eventName": "Yevseyev v Purtseladze",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 15:10",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260944641",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918910,
+    "eventName": "Cez Cretu v M Moeller",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 18:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910091",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918940,
+    "eventName": "Chun  Tseng v Vi Sachko",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 18:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910193",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918900,
+    "eventName": "E Ribeiro v Alcalà Gurri",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 18:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910051",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918531,
+    "eventName": "Murkel Dellien v Galan",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 18:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906327",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918915,
+    "eventName": "Brancaccio v Jianu",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:10",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910054",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919186,
+    "eventName": "An Ilagan v Andres Martin",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914648",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919156,
+    "eventName": "Balshaw v Dani Milavsky",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914568",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919171,
+    "eventName": "Colton Smith v Fe Gill",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914653",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922083,
+    "eventName": "E King v And Fenty",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260940444",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922209,
+    "eventName": "E Winter v Ga Young",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260944201",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919191,
+    "eventName": "Joe Schwaerzler v Andr Andrade",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914732",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919166,
+    "eventName": "Jorda Sanchis v Pinnington Jones",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914574",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919161,
+    "eventName": "Mmoh v Butvilas",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914547",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35921191,
+    "eventName": "Onclin v Zink",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260936637",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922705,
+    "eventName": "S Dhakshineswar v Aidan Kim",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260946591",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919181,
+    "eventName": "Schoolkate v Fe Cina",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914815",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35922679,
+    "eventName": "Tr Boyer v Aid Mayo",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260945963",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919151,
+    "eventName": "Ug Blanchet v Re Sakamoto",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914546",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919146,
+    "eventName": "Wendelken v B Gojo",
+    "competitionName": "Brownsburg Challenger 2026",
+    "openDateStr": "10 Aug, 19:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260914548",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918556,
+    "eventName": "Cecchinato v N Hardt",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 20:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906507",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918905,
+    "eventName": "Mi Petkovic v Ni McDonald",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "10 Aug, 20:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910053",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918551,
+    "eventName": "Fi Romano v M Giunta",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "10 Aug, 22:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906429",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918536,
+    "eventName": "Mrva v P Basile",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "11 Aug, 00:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906326",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919383,
+    "eventName": "Jodar v Fils",
+    "competitionName": "ATP Montreal QC 2026",
+    "openDateStr": "11 Aug, 03:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260924829",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918728,
+    "eventName": "Di Shnaider v Iga Swiatek",
+    "competitionName": "WTA Toronto 2026",
+    "openDateStr": "11 Aug, 04:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260908967",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919099,
+    "eventName": "Darderi v Nakashima",
+    "competitionName": "ATP Montreal QC 2026",
+    "openDateStr": "11 Aug, 04:40",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260913720",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35919355,
+    "eventName": "Alexandrova v Svitolina",
+    "competitionName": "WTA Toronto 2026",
+    "openDateStr": "11 Aug, 06:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260924626",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917537,
+    "eventName": "A Omarkhanov v Zhukayev",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "11 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897197",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917582,
+    "eventName": "Az Ouakaa v Ji Cui",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "11 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897339",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917567,
+    "eventName": "Mas Imamura v An Ghibaudo",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "11 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897334",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917572,
+    "eventName": "S Fomin v Ma Zhukov",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "11 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897414",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917562,
+    "eventName": "Sun v Nurlanuly",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "11 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897254",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35917577,
+    "eventName": "Ursu v Ma Dhamne",
+    "competitionName": "Astana Challenger 2026",
+    "openDateStr": "11 Aug, 10:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260897488",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918526,
+    "eventName": "Ambrogi v Ajdukovic",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "11 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906328",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918546,
+    "eventName": "Dalla Valle v Ju Torres",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "11 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906358",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918566,
+    "eventName": "Mena v Th Faurel",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "11 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906584",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918561,
+    "eventName": "Roca Batalla v Bondioli",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "11 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906433",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918541,
+    "eventName": "Sanchez Izquierdo v Piraino",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "11 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906354",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918571,
+    "eventName": "Travaglia v Kicker",
+    "competitionName": "Todi Challenger 2026",
+    "openDateStr": "11 Aug, 13:30",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260906350",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918925,
+    "eventName": "Di Dedura-Palomero v Max Rehberg",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "11 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910108",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918935,
+    "eventName": "Gentzsch v An Nedic",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "11 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910176",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918930,
+    "eventName": "Houkes v Nagal",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "11 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910182",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918945,
+    "eventName": "Mat Pucinelli de Almeid v Fl Broska",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "11 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910274",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918920,
+    "eventName": "Molleker v Moller",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "11 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910095",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  },
+  {
+    "sport": "Tennis",
+    "eventType": 2,
+    "eventId": 35918950,
+    "eventName": "Piros v M Schoenhaus",
+    "competitionName": "Hamburg Challenger 2026",
+    "openDateStr": "11 Aug, 14:00",
+    "isInPlay": false,
+    "scores": null,
+    "markets": [
+      {
+        "marketId": "1.260910264",
+        "marketName": "Match Odds",
+        "status": 1,
+        "runners": []
+      }
+    ]
+  }
+]

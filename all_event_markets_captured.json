@@ -1,0 +1,303 @@
+[
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryInitInfo",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"isDemoBtnShow\":false,\"isFromApi\":false,\"webSiteDisplayName\":\"SKYEXCHANGE\",\"webSiteDescription\":\"\",\"webSiteType\":1,\"isFromWeb\":true,\"enableStreamingPlayListV2\":true,\"enableStreamingWangsu\":false,\"enableStreamingLimelight\":false,\"enableStreamingAkamai\":false,\"enableStreamingTencent\":false,\"enableStreamingAli\":false,\"valid\":\"29580827-5219-477c-bce4-80211a85bc13\",\"isSkyInplayGroup\":true,\"isFancyFairGroup\":false,\"getFancyBetMarketsTaskCycleTime\":5.0,\"tempCtrlQueryDataOneSeconds\":true,\"userID\":\"\",\"coinPreference\":\"1,2,3,5,7,8\",\"userCoin\":0,\"hasAccount\":false,\"playerCurrency\":14,\"playerCurrencyType\":\"PTE\",\"currencySymbol\":\"\",\"minBet\":1,\"bettingStakeLength\":7,\"bettingOddsLength\":8,\"fancybetKhaddaRunsMaxLength\":3,\"fancybetKhaddaMinRuns\":1,\"fancybetKhaddaMaxRuns\":999,\"isEnableLowLiquidity\":true,\"customizeStake\":\"\",\"country\":\"AE\",\"jblChannelId\":\"other_other\",\"isEnableFancyBet\":true,\"isHideUpcomingHorseRace\":true,\"isCheckBookMode\":true,\"isEnableElectionFancyBet\":false,\"isShowPromoBanner\":true,\"i"
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryEventLabel",
+    "method": "POST",
+    "postData": "isMobile=0",
+    "status": 200,
+    "body": "{\"eventLabel\":[{\"buttonText\":\"Home\",\"sortIndex\":0},{\"buttonText\":\"In-Play\",\"sortIndex\":1},{\"buttonText\":\"Multi Markets\",\"sortIndex\":2},{\"buttonText\":\"Cricket\",\"eventType\":4,\"sortIndex\":3,\"isExchangeTicket\":true},{\"buttonText\":\"Soccer\",\"eventType\":1,\"sortIndex\":4,\"isExchangeTicket\":true},{\"buttonText\":\"Tennis\",\"eventType\":2,\"sortIndex\":5,\"isExchangeTicket\":true},{\"buttonText\":\"Virtual Cricket\",\"sortIndex\":6},{\"buttonText\":\"E-Soccer\",\"eventType\":137,\"sortIndex\":7,\"isExchangeTicket\":true}],\"status\":\"0000\",\"status_msg\":\"Success\"}"
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveEvents\":[{\"eventType\":1,\"count\":25},{\"eventType\":2,\"count\":1},{\"eventType\":4,\"count\":1},{\"eventType\":137,\"count\":4}]}"
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryGameHall",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveBoard\":[{\"eventType\":4},{\"eventType\":1},{\"eventType\":2},{\"eventType\":137}],\"vendorGameList\":[{\"type\":3,\"url\":\"https://skybiz.short.gy/web\",\"iconName\":\"banner_skyexchangeBlog.png\",\"isEntranceHalf\":false,\"redirectOption\":2},{\"type\":1,\"vendorSite\":1,\"gameName\":\"Virtual Cricket\",\"title\":\"BetRadar\",\"platform\":\"SPORTRADAR\",\"gameType\":\"\",\"gameCode\":\"SPORTRADAR_VIRTUAL_001\",\"gameHall\":\"\",\"iconName\":\"banner_virtualsports.png\",\"isEntranceHalf\":false,\"redirectOption\":2,\"launchGame\":true,\"isManualDeposit\":false},{\"type\":1,\"vendorSite\":6,\"gameName\":\"EVO\",\"title\":\"EVO\",\"platform\":\"ROYAL\",\"gameType\":\"\",\"gameCode\":\"200215\",\"gameHall\":\"\",\"iconName\":\"banner_evo-half.png\",\"isEntranceHalf\":true,\"redirectOption\":2,\"launchGame\":true,\"isManualDeposit\":false},{\"type\":1,\"vendorSite\":1,\"gameName\":\"Smartsoft\",\"title\":\"Smartsoft\",\"platform\":\"SMARTSOFT\",\"gameType\":\"EGAME\",\"gameCode\":\"\",\"gameHall\":\"\",\"iconName\":\"banner_smartsoft-half.png\",\"isEntranceHalf\":true,\"redirectOption\":2,\"launchGame\":false,\"isManual"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{}"
+  },
+  {
+    "url": "https://bvincap.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{}"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/searchEvents",
+    "method": "POST",
+    "postData": "keyword=tsingh99",
+    "status": 200,
+    "body": "[]"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"4\\\",\\\"name\\\":\\\"Cricket\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"-1104\\\",\\\"name\\\":\\\"Pakistan Super League SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1566\\\",\\\"name\\\":\\\"Virtual Fast 5 International\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"1570888609\\\",\\\"name\\\":\\\" ICC Cricket World Cup Challenge League\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"-1466\\\",\\\"name\\\":\\\"Super Smash SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1565\\\",\\\"name\\\":\\\"Virtual IPL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidde"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":-11174876,\"isManualEvent\":true,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":4,\"competitionId\":-1101,\"competitionName\":\"T20 International SRL\",\"countryCode\":\"\",\"name\":\"England SRL T20 v New Zealand SRL T20\",\"status\":4,\"scores\":null,\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":999,\"openDate\":\"2026-08-10 02:30\",\"openDateStr\":\"10 Aug, 02:30\",\"openDateTime\":1786309200000,\"openDateDayOfWeek\":2,\"secondsToStart\":2929,\"elapsedTime\":0,\"inPlayStatus\":null,\"closeSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"competitionCloseSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"linkEventId\":null,\"updateDate\":1786234951221,\"isElectronic\":1,\"timezone\":\"GMT+00:00\",\"isInPlay\":1,\"hasFancyBetMarkets\":false,\"hasInPlayFancyBetMarkets\":false,\"hasBookMakerMarkets\":false,\"hasInPlayBookMakerMarkets\":false,\"hasSportsBookMarkets\":true,\"sportradarApiSiteEventId\":\"sr:match:73281224\",\"hasOwSportsBookMa"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786305495221&marketTs=1786305494292&selectionTs=1786312126297&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35912797,\"isManualEvent\":false,\"isManualEventClosed\":true,\"endPointType\":1,\"eventType\":4,\"competitionId\":12267948,\"competitionName\":\"The Hundred\",\"countryCode\":\"GB\",\"name\":\"London Spirit v Birmingham Phoenix\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"London Spirit\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":true,\\\"inning1\\\":{\\\"runs\\\":\\\"166\\\",\\\"wickets\\\":\\\"3\\\",\\\"overs\\\":\\\"16.2\\\"}},\\\"away\\\":{\\\"name\\\":\\\"Birmingham Phoenix\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":false,\\\"inning1\\\":{\\\"runs\\\":\\\"162\\\",\\\"wickets\\\":\\\"4\\\",\\\"overs\\\":\\\"20.0\\\"}},\\\"currentSet\\\":1,\\\"matchStatus\\\":\\\"Finished\\\",\\\"currentDay\\\":\\\"1\\\",\\\"matchType\\\":\\\"UNDEFINED\\\"}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":998,\"openDate\":\"2026-08-09 22:30\",\"openDateStr\":\"09 Aug, 22:30\",\"op"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveEvents\":[{\"eventType\":1,\"count\":25},{\"eventType\":2,\"count\":1},{\"eventType\":4,\"count\":1},{\"eventType\":137,\"count\":4}]}"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"4\\\",\\\"name\\\":\\\"Cricket\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"-1104\\\",\\\"name\\\":\\\"Pakistan Super League SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1566\\\",\\\"name\\\":\\\"Virtual Fast 5 International\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"1570888609\\\",\\\"name\\\":\\\" ICC Cricket World Cup Challenge League\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"-1466\\\",\\\"name\\\":\\\"Super Smash SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1565\\\",\\\"name\\\":\\\"Virtual IPL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidde"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveEvents\":[{\"eventType\":1,\"count\":25},{\"eventType\":2,\"count\":1},{\"eventType\":4,\"count\":1},{\"eventType\":137,\"count\":4}]}"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":-11174876,\"isManualEvent\":true,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":4,\"competitionId\":-1101,\"competitionName\":\"T20 International SRL\",\"countryCode\":\"\",\"name\":\"England SRL T20 v New Zealand SRL T20\",\"status\":4,\"scores\":null,\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":999,\"openDate\":\"2026-08-10 02:30\",\"openDateStr\":\"10 Aug, 02:30\",\"openDateTime\":1786309200000,\"openDateDayOfWeek\":2,\"secondsToStart\":2932,\"elapsedTime\":0,\"inPlayStatus\":null,\"closeSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"competitionCloseSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"linkEventId\":null,\"updateDate\":1786234951221,\"isElectronic\":1,\"timezone\":\"GMT+00:00\",\"isInPlay\":1,\"hasFancyBetMarkets\":false,\"hasInPlayFancyBetMarkets\":false,\"hasBookMakerMarkets\":false,\"hasInPlayBookMakerMarkets\":false,\"hasSportsBookMarkets\":true,\"sportradarApiSiteEventId\":\"sr:match:73281224\",\"hasOwSportsBookMa"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786305495221&marketTs=1786305494292&selectionTs=1786312130597&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35912797,\"isManualEvent\":false,\"isManualEventClosed\":true,\"endPointType\":1,\"eventType\":4,\"competitionId\":12267948,\"competitionName\":\"The Hundred\",\"countryCode\":\"GB\",\"name\":\"London Spirit v Birmingham Phoenix\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"London Spirit\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":true,\\\"inning1\\\":{\\\"runs\\\":\\\"166\\\",\\\"wickets\\\":\\\"3\\\",\\\"overs\\\":\\\"16.2\\\"}},\\\"away\\\":{\\\"name\\\":\\\"Birmingham Phoenix\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":false,\\\"inning1\\\":{\\\"runs\\\":\\\"162\\\",\\\"wickets\\\":\\\"4\\\",\\\"overs\\\":\\\"20.0\\\"}},\\\"currentSet\\\":1,\\\"matchStatus\\\":\\\"Finished\\\",\\\"currentDay\\\":\\\"1\\\",\\\"matchType\\\":\\\"UNDEFINED\\\"}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":998,\"openDate\":\"2026-08-09 22:30\",\"openDateStr\":\"09 Aug, 22:30\",\"op"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=1",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"1\\\",\\\"name\\\":\\\"Soccer\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"1573819962\\\",\\\"name\\\":\\\"Lettonia\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1575074861\\\",\\\"name\\\":\\\"Kuwaiti Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":false},{\\\"id\\\":\\\"1573847234\\\",\\\"name\\\":\\\"Uruguayan Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549424831\\\",\\\"name\\\":\\\"Swedish Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1575882546\\\",\\\"name\\\":\\\"Salvadoran Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1573125239\\\",\\\"name\\\":\\\"Costa Rican Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549657777\\\",\\\"name\\\":\\\"Dutch Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549406323\\\",\\\"name\\\":\\\"Spanish Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1556254912\\\",\\\"name\\\":\\\"Ukrainian Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":false},{\\\"id\\\":\\\"12242357\\\",\\\"name\\\":\\\"UEFA Champions League Qualifiers\\\",\\\"typ"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35897346,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":1,\"competitionId\":803237,\"competitionName\":\"Argentinian Primera Nacional\",\"countryCode\":\"AR\",\"name\":\"Quilmes v Almagro BA\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Quilmes\\\",\\\"score\\\":\\\"1\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":false,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":6,\\\"numberOfCornersFirstHalf\\\":5,\\\"numberOfCornersSecondHalf\\\":1,\\\"bookingPoints\\\":20},\\\"away\\\":{\\\"name\\\":\\\"Almagro BA\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":true,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":0,\\\"numberOfCornersFirstHalf\\\":0,\\\"numberOfCornersSecondHalf\\\":0,\\\"bookingPoints\\\":20},\\\"numberOfYe"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=1786312131275&marketTs=1786312130049&selectionTs=1786312134637&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35897346,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":1,\"competitionId\":803237,\"competitionName\":\"Argentinian Primera Nacional\",\"countryCode\":\"AR\",\"name\":\"Quilmes v Almagro BA\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Quilmes\\\",\\\"score\\\":\\\"1\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":false,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":6,\\\"numberOfCornersFirstHalf\\\":5,\\\"numberOfCornersSecondHalf\\\":1,\\\"bookingPoints\\\":20},\\\"away\\\":{\\\"name\\\":\\\"Almagro BA\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":true,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":0,\\\"numberOfCornersFirstHalf\\\":0,\\\"numberOfCornersSecondHalf\\\":0,\\\"bookingPoints\\\":20},\\\"numberOfYe"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"4\\\",\\\"name\\\":\\\"Cricket\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"-1104\\\",\\\"name\\\":\\\"Pakistan Super League SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1566\\\",\\\"name\\\":\\\"Virtual Fast 5 International\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"1570888609\\\",\\\"name\\\":\\\" ICC Cricket World Cup Challenge League\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"-1466\\\",\\\"name\\\":\\\"Super Smash SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1565\\\",\\\"name\\\":\\\"Virtual IPL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidde"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":-11174876,\"isManualEvent\":true,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":4,\"competitionId\":-1101,\"competitionName\":\"T20 International SRL\",\"countryCode\":\"\",\"name\":\"England SRL T20 v New Zealand SRL T20\",\"status\":4,\"scores\":null,\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":999,\"openDate\":\"2026-08-10 02:30\",\"openDateStr\":\"10 Aug, 02:30\",\"openDateTime\":1786309200000,\"openDateDayOfWeek\":2,\"secondsToStart\":2940,\"elapsedTime\":0,\"inPlayStatus\":null,\"closeSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"competitionCloseSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"linkEventId\":null,\"updateDate\":1786234951221,\"isElectronic\":1,\"timezone\":\"GMT+00:00\",\"isInPlay\":1,\"hasFancyBetMarkets\":false,\"hasInPlayFancyBetMarkets\":false,\"hasBookMakerMarkets\":false,\"hasInPlayBookMakerMarkets\":false,\"hasSportsBookMarkets\":true,\"sportradarApiSiteEventId\":\"sr:match:73281224\",\"hasOwSportsBookMa"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786305495221&marketTs=1786305494292&selectionTs=1786312139579&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35912797,\"isManualEvent\":false,\"isManualEventClosed\":true,\"endPointType\":1,\"eventType\":4,\"competitionId\":12267948,\"competitionName\":\"The Hundred\",\"countryCode\":\"GB\",\"name\":\"London Spirit v Birmingham Phoenix\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"London Spirit\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":true,\\\"inning1\\\":{\\\"runs\\\":\\\"166\\\",\\\"wickets\\\":\\\"3\\\",\\\"overs\\\":\\\"16.2\\\"}},\\\"away\\\":{\\\"name\\\":\\\"Birmingham Phoenix\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":false,\\\"inning1\\\":{\\\"runs\\\":\\\"162\\\",\\\"wickets\\\":\\\"4\\\",\\\"overs\\\":\\\"20.0\\\"}},\\\"currentSet\\\":1,\\\"matchStatus\\\":\\\"Finished\\\",\\\"currentDay\\\":\\\"1\\\",\\\"matchType\\\":\\\"UNDEFINED\\\"}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":998,\"openDate\":\"2026-08-09 22:30\",\"openDateStr\":\"09 Aug, 22:30\",\"op"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveEvents\":[{\"eventType\":1,\"count\":25},{\"eventType\":2,\"count\":1},{\"eventType\":4,\"count\":1},{\"eventType\":137,\"count\":4}]}"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=1",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"1\\\",\\\"name\\\":\\\"Soccer\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"1573819962\\\",\\\"name\\\":\\\"Lettonia\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1575074861\\\",\\\"name\\\":\\\"Kuwaiti Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":false},{\\\"id\\\":\\\"1573847234\\\",\\\"name\\\":\\\"Uruguayan Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549424831\\\",\\\"name\\\":\\\"Swedish Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1575882546\\\",\\\"name\\\":\\\"Salvadoran Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1573125239\\\",\\\"name\\\":\\\"Costa Rican Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549657777\\\",\\\"name\\\":\\\"Dutch Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549406323\\\",\\\"name\\\":\\\"Spanish Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1556254912\\\",\\\"name\\\":\\\"Ukrainian Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":false},{\\\"id\\\":\\\"12242357\\\",\\\"name\\\":\\\"UEFA Champions League Qualifiers\\\",\\\"typ"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35897346,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":1,\"competitionId\":803237,\"competitionName\":\"Argentinian Primera Nacional\",\"countryCode\":\"AR\",\"name\":\"Quilmes v Almagro BA\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Quilmes\\\",\\\"score\\\":\\\"1\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":false,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":6,\\\"numberOfCornersFirstHalf\\\":5,\\\"numberOfCornersSecondHalf\\\":1,\\\"bookingPoints\\\":20},\\\"away\\\":{\\\"name\\\":\\\"Almagro BA\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":true,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":0,\\\"numberOfCornersFirstHalf\\\":0,\\\"numberOfCornersSecondHalf\\\":0,\\\"bookingPoints\\\":20},\\\"numberOfYe"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=1786312131275&marketTs=1786312140058&selectionTs=1786312141807&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35897346,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":1,\"competitionId\":803237,\"competitionName\":\"Argentinian Primera Nacional\",\"countryCode\":\"AR\",\"name\":\"Quilmes v Almagro BA\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Quilmes\\\",\\\"score\\\":\\\"1\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":false,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":6,\\\"numberOfCornersFirstHalf\\\":5,\\\"numberOfCornersSecondHalf\\\":1,\\\"bookingPoints\\\":20},\\\"away\\\":{\\\"name\\\":\\\"Almagro BA\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":true,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":0,\\\"numberOfCornersFirstHalf\\\":0,\\\"numberOfCornersSecondHalf\\\":0,\\\"bookingPoints\\\":20},\\\"numberOfYe"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=2",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"2\\\",\\\"name\\\":\\\"Tennis\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"35218513\\\",\\\"name\\\":\\\"Women's Australian Open 2027\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"AU\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35888316\\\",\\\"name\\\":\\\"   WTA Toronto 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"CA\\\",\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35619194\\\",\\\"name\\\":\\\"Men's French Open 2027\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"FR\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"34717191\\\",\\\"name\\\":\\\"Women's US Open 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":false,\\\"countryCode\\\":\\\"US\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35888839\\\",\\\"name\\\":\\\"   ATP Montreal QC 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"CA\\\",\\\"isForbidden"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=2&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35919238,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":2,\"competitionId\":12822167,\"competitionName\":\"Brownsburg Challenger 2026\",\"countryCode\":\"US\",\"name\":\"Jubb v Aj Rai\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Paul Jubb\\\",\\\"score\\\":\\\"15\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"2\\\",\\\"sets\\\":\\\"1\\\",\\\"gameSequence\\\":[\\\"6\\\",\\\"3\\\"],\\\"isServing\\\":false,\\\"highlight\\\":false,\\\"serviceBreaks\\\":0},\\\"away\\\":{\\\"name\\\":\\\"Ajeet Rai\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"3\\\",\\\"sets\\\":\\\"1\\\",\\\"gameSequence\\\":[\\\"3\\\",\\\"6\\\"],\\\"isServing\\\":true,\\\"highlight\\\":true,\\\"serviceBreaks\\\":0},\\\"currentSet\\\":3,\\\"fullTimeElapsed\\\":{\\\"hour\\\":0,\\\"min\\\":0,\\\"sec\\\":0}}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"20341439\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":\"{\\\"surface\\\":\\\"\\\",\\\"numberOfSets\\\""
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=2&eventTs=1786305606188&marketTs=1786308640092&selectionTs=1786312141819&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35915626,\"isManualEvent\":false,\"isManualEventClosed\":true,\"endPointType\":1,\"eventType\":2,\"competitionId\":12820397,\"competitionName\":\"ATP Montreal QC 2026\",\"countryCode\":null,\"name\":\"Le Tien v Tirante\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"6\\\",\\\"sets\\\":\\\"2\\\",\\\"gameSequence\\\":[\\\"6\\\"],\\\"isServing\\\":true,\\\"highlight\\\":true,\\\"serviceBreaks\\\":0},\\\"away\\\":{\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"4\\\",\\\"sets\\\":\\\"0\\\",\\\"gameSequence\\\":[\\\"4\\\"],\\\"isServing\\\":false,\\\"highlight\\\":false,\\\"serviceBreaks\\\":0},\\\"matchStatus\\\":\\\"Finished\\\",\\\"fullTimeElapsed\\\":{\\\"hour\\\":0,\\\"min\\\":0,\\\"sec\\\":0}}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":\"{\\\"surface\\\":\\\"\\\",\\\"numberOfSets\\\":\\\"3\\\"}\",\"timeElapsed\":0,\"priority\":998,\"openDate\":\"2026-"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveEvents\":[{\"eventType\":1,\"count\":25},{\"eventType\":2,\"count\":1},{\"eventType\":4,\"count\":1},{\"eventType\":137,\"count\":4}]}"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveEvents\":[{\"eventType\":1,\"count\":25},{\"eventType\":2,\"count\":1},{\"eventType\":4,\"count\":1},{\"eventType\":137,\"count\":4}]}"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=2",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"2\\\",\\\"name\\\":\\\"Tennis\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"35218513\\\",\\\"name\\\":\\\"Women's Australian Open 2027\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"AU\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35888316\\\",\\\"name\\\":\\\"   WTA Toronto 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"CA\\\",\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35619194\\\",\\\"name\\\":\\\"Men's French Open 2027\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"FR\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"34717191\\\",\\\"name\\\":\\\"Women's US Open 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":false,\\\"countryCode\\\":\\\"US\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35888839\\\",\\\"name\\\":\\\"   ATP Montreal QC 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"CA\\\",\\\"isForbidden"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=2&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35919238,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":2,\"competitionId\":12822167,\"competitionName\":\"Brownsburg Challenger 2026\",\"countryCode\":\"US\",\"name\":\"Jubb v Aj Rai\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Paul Jubb\\\",\\\"score\\\":\\\"15\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"2\\\",\\\"sets\\\":\\\"1\\\",\\\"gameSequence\\\":[\\\"6\\\",\\\"3\\\"],\\\"isServing\\\":false,\\\"highlight\\\":false,\\\"serviceBreaks\\\":0},\\\"away\\\":{\\\"name\\\":\\\"Ajeet Rai\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"3\\\",\\\"sets\\\":\\\"1\\\",\\\"gameSequence\\\":[\\\"3\\\",\\\"6\\\"],\\\"isServing\\\":true,\\\"highlight\\\":true,\\\"serviceBreaks\\\":0},\\\"currentSet\\\":3,\\\"fullTimeElapsed\\\":{\\\"hour\\\":0,\\\"min\\\":0,\\\"sec\\\":0}}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"20341439\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":\"{\\\"surface\\\":\\\"\\\",\\\"numberOfSets\\\""
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=2&eventTs=1786305606188&marketTs=1786308640092&selectionTs=1786312155158&viewType=openDateTime&competitionId=-1&collectEventIds=35919238%2C35915516%2C35915392%2C35915483%2C35915667%2C35919965%2C35920009%2C35920058%2C35920277%2C35921186%2C35921416%2C35921181%2C35920373%2C35921132%2C35920967%2C35920962%2C35920252%2C35917552%2C35917547%2C35917557%2C35922214%2C35922088%2C35922611%2C35921493%2C35917542%2C35922093%2C35922511%2C35918910%2C35918940%2C35918900",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35915626,\"isManualEvent\":false,\"isManualEventClosed\":true,\"endPointType\":1,\"eventType\":2,\"competitionId\":12820397,\"competitionName\":\"ATP Montreal QC 2026\",\"countryCode\":null,\"name\":\"Le Tien v Tirante\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"6\\\",\\\"sets\\\":\\\"2\\\",\\\"gameSequence\\\":[\\\"6\\\"],\\\"isServing\\\":true,\\\"highlight\\\":true,\\\"serviceBreaks\\\":0},\\\"away\\\":{\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"4\\\",\\\"sets\\\":\\\"0\\\",\\\"gameSequence\\\":[\\\"4\\\"],\\\"isServing\\\":false,\\\"highlight\\\":false,\\\"serviceBreaks\\\":0},\\\"matchStatus\\\":\\\"Finished\\\",\\\"fullTimeElapsed\\\":{\\\"hour\\\":0,\\\"min\\\":0,\\\"sec\\\":0}}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":\"{\\\"surface\\\":\\\"\\\",\\\"numberOfSets\\\":\\\"3\\\"}\",\"timeElapsed\":0,\"priority\":998,\"openDate\":\"2026-"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"4\\\",\\\"name\\\":\\\"Cricket\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"-1104\\\",\\\"name\\\":\\\"Pakistan Super League SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1566\\\",\\\"name\\\":\\\"Virtual Fast 5 International\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"1570888609\\\",\\\"name\\\":\\\" ICC Cricket World Cup Challenge League\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"-1466\\\",\\\"name\\\":\\\"Super Smash SRL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":\\\"[\\\\\\\"73\\\\\\\", \\\\\\\"150\\\\\\\", \\\\\\\"160\\\\\\\", \\\\\\\"209\\\\\\\"]\\\",\\\"sort\\\":0},{\\\"id\\\":\\\"-1565\\\",\\\"name\\\":\\\"Virtual IPL\\\",\\\"type\\\":\\\"MANUALLY_COMPETITION\\\",\\\"isBookMenu\\\":true,\\\"isForbidde"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":-11174876,\"isManualEvent\":true,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":4,\"competitionId\":-1101,\"competitionName\":\"T20 International SRL\",\"countryCode\":\"\",\"name\":\"England SRL T20 v New Zealand SRL T20\",\"status\":4,\"scores\":null,\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":999,\"openDate\":\"2026-08-10 02:30\",\"openDateStr\":\"10 Aug, 02:30\",\"openDateTime\":1786309200000,\"openDateDayOfWeek\":2,\"secondsToStart\":2958,\"elapsedTime\":0,\"inPlayStatus\":null,\"closeSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"competitionCloseSite\":\"[\\\"73\\\", \\\"150\\\", \\\"160\\\", \\\"209\\\"]\",\"linkEventId\":null,\"updateDate\":1786234951221,\"isElectronic\":1,\"timezone\":\"GMT+00:00\",\"isInPlay\":1,\"hasFancyBetMarkets\":false,\"hasInPlayFancyBetMarkets\":false,\"hasBookMakerMarkets\":false,\"hasInPlayBookMakerMarkets\":false,\"hasSportsBookMarkets\":true,\"sportradarApiSiteEventId\":\"sr:match:73281224\",\"hasOwSportsBookMa"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786305495221&marketTs=1786305494292&selectionTs=1786312156946&viewType=openDateTime&competitionId=-1&collectEventIds=35919238%2C35915516%2C35915392%2C35915483%2C35915667%2C35919965%2C35920009%2C35920058%2C35920277%2C35921186%2C35921416%2C35921181%2C35920373%2C35921132%2C35920967%2C35920962%2C35920252%2C35917552%2C35917547%2C35917557%2C35922214%2C35922088%2C35922611%2C35921493%2C35917542%2C35922093%2C35922511%2C35918910%2C35918940%2C35918900",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35912797,\"isManualEvent\":false,\"isManualEventClosed\":true,\"endPointType\":1,\"eventType\":4,\"competitionId\":12267948,\"competitionName\":\"The Hundred\",\"countryCode\":\"GB\",\"name\":\"London Spirit v Birmingham Phoenix\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"London Spirit\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":true,\\\"inning1\\\":{\\\"runs\\\":\\\"166\\\",\\\"wickets\\\":\\\"3\\\",\\\"overs\\\":\\\"16.2\\\"}},\\\"away\\\":{\\\"name\\\":\\\"Birmingham Phoenix\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"highlight\\\":false,\\\"inning1\\\":{\\\"runs\\\":\\\"162\\\",\\\"wickets\\\":\\\"4\\\",\\\"overs\\\":\\\"20.0\\\"}},\\\"currentSet\\\":1,\\\"matchStatus\\\":\\\"Finished\\\",\\\"currentDay\\\":\\\"1\\\",\\\"matchType\\\":\\\"UNDEFINED\\\"}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":null,\"timeElapsed\":0,\"priority\":998,\"openDate\":\"2026-08-09 22:30\",\"openDateStr\":\"09 Aug, 22:30\",\"op"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=1",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"1\\\",\\\"name\\\":\\\"Soccer\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"1573819962\\\",\\\"name\\\":\\\"Lettonia\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1575074861\\\",\\\"name\\\":\\\"Kuwaiti Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":false},{\\\"id\\\":\\\"1573847234\\\",\\\"name\\\":\\\"Uruguayan Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549424831\\\",\\\"name\\\":\\\"Swedish Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1575882546\\\",\\\"name\\\":\\\"Salvadoran Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1573125239\\\",\\\"name\\\":\\\"Costa Rican Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549657777\\\",\\\"name\\\":\\\"Dutch Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1549406323\\\",\\\"name\\\":\\\"Spanish Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":true},{\\\"id\\\":\\\"1556254912\\\",\\\"name\\\":\\\"Ukrainian Soccer\\\",\\\"type\\\":\\\"GROUP\\\",\\\"isBookMenu\\\":false},{\\\"id\\\":\\\"12242357\\\",\\\"name\\\":\\\"UEFA Champions League Qualifiers\\\",\\\"typ"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35897346,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":1,\"competitionId\":803237,\"competitionName\":\"Argentinian Primera Nacional\",\"countryCode\":\"AR\",\"name\":\"Quilmes v Almagro BA\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Quilmes\\\",\\\"score\\\":\\\"1\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":false,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":6,\\\"numberOfCornersFirstHalf\\\":5,\\\"numberOfCornersSecondHalf\\\":1,\\\"bookingPoints\\\":20},\\\"away\\\":{\\\"name\\\":\\\"Almagro BA\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":true,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":0,\\\"numberOfCornersFirstHalf\\\":0,\\\"numberOfCornersSecondHalf\\\":0,\\\"bookingPoints\\\":20},\\\"numberOfYe"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=1&eventTs=1786312131275&marketTs=1786312155114&selectionTs=1786312163372&viewType=openDateTime&competitionId=-1&collectEventIds=35919238%2C35915516%2C35915392%2C35915483%2C35915667%2C35919965%2C35920009%2C35920058%2C35920277%2C35921186%2C35921416%2C35921181%2C35920373%2C35921132%2C35920967%2C35920962%2C35920252%2C35917552%2C35917547%2C35917557%2C35922214%2C35922088%2C35922611%2C35921493%2C35917542%2C35922093%2C35922511%2C35918910%2C35918940%2C35918900",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35897346,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":1,\"competitionId\":803237,\"competitionName\":\"Argentinian Primera Nacional\",\"countryCode\":\"AR\",\"name\":\"Quilmes v Almagro BA\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Quilmes\\\",\\\"score\\\":\\\"1\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":false,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":6,\\\"numberOfCornersFirstHalf\\\":5,\\\"numberOfCornersSecondHalf\\\":1,\\\"bookingPoints\\\":20},\\\"away\\\":{\\\"name\\\":\\\"Almagro BA\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"0\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"\\\",\\\"sets\\\":\\\"\\\",\\\"highlight\\\":true,\\\"numberOfYellowCards\\\":2,\\\"numberOfRedCards\\\":0,\\\"numberOfCards\\\":2,\\\"numberOfCorners\\\":0,\\\"numberOfCornersFirstHalf\\\":0,\\\"numberOfCornersSecondHalf\\\":0,\\\"bookingPoints\\\":20},\\\"numberOfYe"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null,
+    "status": 200,
+    "body": "{\"onLiveEvents\":[{\"eventType\":1,\"count\":25},{\"eventType\":2,\"count\":1},{\"eventType\":4,\"count\":1},{\"eventType\":137,\"count\":4}]}"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=2",
+    "status": 200,
+    "body": "{\"result\":\"{\\\"id\\\":\\\"2\\\",\\\"name\\\":\\\"Tennis\\\",\\\"type\\\":\\\"EVENT_TYPE\\\",\\\"isBookMenu\\\":false,\\\"children\\\":[{\\\"id\\\":\\\"35218513\\\",\\\"name\\\":\\\"Women's Australian Open 2027\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"AU\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35888316\\\",\\\"name\\\":\\\"   WTA Toronto 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"CA\\\",\\\"isForbidden\\\":false,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35619194\\\",\\\"name\\\":\\\"Men's French Open 2027\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"FR\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"34717191\\\",\\\"name\\\":\\\"Women's US Open 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":false,\\\"countryCode\\\":\\\"US\\\",\\\"isForbidden\\\":true,\\\"competitionCloseSite\\\":null,\\\"closeSite\\\":null},{\\\"id\\\":\\\"35888839\\\",\\\"name\\\":\\\"   ATP Montreal QC 2026\\\",\\\"type\\\":\\\"EVENT\\\",\\\"isBookMenu\\\":true,\\\"countryCode\\\":\\\"CA\\\",\\\"isForbidden"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=2&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35919238,\"isManualEvent\":false,\"isManualEventClosed\":false,\"endPointType\":1,\"eventType\":2,\"competitionId\":12822167,\"competitionName\":\"Brownsburg Challenger 2026\",\"countryCode\":\"US\",\"name\":\"Jubb v Aj Rai\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"name\\\":\\\"Paul Jubb\\\",\\\"score\\\":\\\"15\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"2\\\",\\\"sets\\\":\\\"1\\\",\\\"gameSequence\\\":[\\\"6\\\",\\\"3\\\"],\\\"isServing\\\":false,\\\"highlight\\\":false,\\\"serviceBreaks\\\":0},\\\"away\\\":{\\\"name\\\":\\\"Ajeet Rai\\\",\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"3\\\",\\\"sets\\\":\\\"1\\\",\\\"gameSequence\\\":[\\\"3\\\",\\\"6\\\"],\\\"isServing\\\":true,\\\"highlight\\\":true,\\\"serviceBreaks\\\":0},\\\"currentSet\\\":3,\\\"fullTimeElapsed\\\":{\\\"hour\\\":0,\\\"min\\\":0,\\\"sec\\\":0}}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"20341439\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":\"{\\\"surface\\\":\\\"\\\",\\\"numberOfSets\\\""
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=2&eventTs=1786305606188&marketTs=1786308640092&selectionTs=1786312168708&viewType=openDateTime&competitionId=-1&collectEventIds=35919238%2C35915516%2C35915392%2C35915483%2C35915667%2C35919965%2C35920009%2C35920058%2C35920277%2C35921186%2C35921416%2C35921181%2C35920373%2C35921132%2C35920967%2C35920962%2C35920252%2C35917552%2C35917547%2C35917557%2C35922214%2C35922088%2C35922611%2C35921493%2C35917542%2C35922093%2C35922511%2C35918910%2C35918940%2C35918900",
+    "status": 200,
+    "body": "{\"events\":[{\"id\":35915626,\"isManualEvent\":false,\"isManualEventClosed\":true,\"endPointType\":1,\"eventType\":2,\"competitionId\":12820397,\"competitionName\":\"ATP Montreal QC 2026\",\"countryCode\":null,\"name\":\"Le Tien v Tirante\",\"status\":4,\"scores\":\"{\\\"home\\\":{\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"6\\\",\\\"sets\\\":\\\"2\\\",\\\"gameSequence\\\":[\\\"6\\\"],\\\"isServing\\\":true,\\\"highlight\\\":true,\\\"serviceBreaks\\\":0},\\\"away\\\":{\\\"score\\\":\\\"0\\\",\\\"halfTimeScore\\\":\\\"\\\",\\\"fullTimeScore\\\":\\\"\\\",\\\"penaltiesScore\\\":\\\"\\\",\\\"penaltiesSequence\\\":[],\\\"games\\\":\\\"4\\\",\\\"sets\\\":\\\"0\\\",\\\"gameSequence\\\":[\\\"4\\\"],\\\"isServing\\\":false,\\\"highlight\\\":false,\\\"serviceBreaks\\\":0},\\\"matchStatus\\\":\\\"Finished\\\",\\\"fullTimeElapsed\\\":{\\\"hour\\\":0,\\\"min\\\":0,\\\"sec\\\":0}}\",\"streamingDomain\":\"\",\"isPopup\":false,\"streamingChannel\":\"0\",\"lmtMatchId\":null,\"scoresDetail\":null,\"matchInfo\":\"{\\\"surface\\\":\\\"\\\",\\\"numberOfSets\\\":\\\"3\\\"}\",\"timeElapsed\":0,\"priority\":998,\"openDate\":\"2026-"
+  }
+]

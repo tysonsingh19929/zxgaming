@@ -1,0 +1,2362 @@
+[
+  {
+    "url": "https://www.skyexch.vip/",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.C_A7nbjM.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-dayjs.DxEeaTGY.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-es-errors.paYsmWaY.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-vendor.BbqZ9Qwz.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-vue-i18n.DxivS0WR.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-decimal.CVPEZUC4.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-sentry.CweSmIr7.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-zod.jPTeiLP7.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-vendor.DzxWjvLM.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.BACAih99.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-desktop.Dq3wpVSB.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryInitInfo",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryEventLabel",
+    "method": "POST",
+    "postData": "isMobile=0"
+  },
+  {
+    "url": "https://www.skyexch.vip/source/setting.json",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/setting.json",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/image-manifest.json",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/image-manifest.json",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/themes/desktop/yl02.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/labels/skyexchange/desktop/setting.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://o4508607055462400.ingest.de.sentry.io/api/4508803688169552/envelope/?sentry_version=7&sentry_key=b7a7e52dcf635bd2d90c3dd9051b01b8&sentry_client=sentry.javascript.vue%2F10.61.0",
+    "method": "POST",
+    "postData": "{\"sent_at\":\"2026-08-09T22:50:53.105Z\",\"sdk\":{\"name\":\"sentry.javascript.vue\",\"version\":\"10.61.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"b800ed6f554e4724ae5103b45742096f\",\"init\":true,\"started\":\"2026-08-09T22:50:53.105Z\",\"timestamp\":\"2026-08-09T22:50:53.105Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"acf1d0af6c841211b050ebd9d417382ba38f87b9\",\"environment\":\"prod\",\"ip_address\":\"{{auto}}\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}}"
+  },
+  {
+    "url": "https://sc.detecas.com/di/activator.ashx",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://eu.fw-cdn.com/12710015/709222.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Container.aEzfz5b6.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PositionFixed.CNTcXVh8.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-toastConst.CRRtDePc.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useMessageStore.CccWWOLM.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-_plugin-vue_export-helper.BpADe8R7.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PositionFixed.BSjgoely.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.CPCKAiPO.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.jbYZby9h.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PageLoading.CTrS0sHC.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PageLoading.DJTnyR9Z.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://__bridge_loaded__/",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/plugins/jbl.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-googleAnasytics.vte-5X5y.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Default.CzUc2JpI.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Header.BflhJISa.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Search.BX360PDr.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Search.vue_vue_type_script_setup_true_lang.COd25o0Y.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.D8y6-YxR.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.CEsS4qY3.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useSearchEvents.BTE2Noqv.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Search.BUHQtlB9.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Navbar.DliqMJ16.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-CheckBox.BrTCMnEt.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-icon-check.BdewPmbl.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-CheckBox.S-SEVoYq.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-geniusParlay.HscQtiun.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-exchange.DN67Itf4.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-exchangeMarketStatusConst.C6hiNqfU.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-eventStatusConst.C8kYYv33.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Filter.QqRsvteF.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SingleColorSVG.17X6R2Lf.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SingleColorSVG.dWpq06Yh.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useNavbar.CVtwkFvC.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-common.CGwDzwzu.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-handleTypeGuardError.DJczWtFG.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFetchQueryVendorCurrencyInfo.BUzWVf-n.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFilter.Edm1l1xC.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-usePollingOnLiveEvents.3ZBO6F2Q.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-usePolling.B4jKXdnH.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Filter.BWJTA-Ab.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SettingWrap.B-8bq0ne.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Button.vue_vue_type_script_setup_true_lang.CTNkIoOC.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SettingQuickStake.hVJuSxdb.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useSettingQuickStake.DnSd69qA.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SettingQuickStake.BtFEzhpX.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useSetting.CzdtpqFi.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SettingWrap.BqGUjcg1.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useBetSlipsStore.Bj50C72X.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-betTypeConst.CjLtJhJ7.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Navbar.8U7yY8vD.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useHeader.Dchwxdgh.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useLogout.DhW7VXPf.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useTxnStore.Bn1epXPh.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-myTransactionStatusTypeConst.2cB8RIDv.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useGeniusSportsStore.B6k4NZX9.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-sportsbook.CLs_xTI-.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-gameProductStatusConst.ClwlldS6.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetWithSportsBookStore.DenoDLrc.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Header.sDuFyP1I.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Default.DqKykuzw.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-GameHall.fPM77_S5.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-DownloadApp.DqwjEeR6.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-DownloadApp.D37W054F.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PolicyList.Bm0PU9pl.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PolicyList.Bn5AjxFq.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BrowserSupport.DTpZUfUi.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BrowserSupport.DXXMmcWm.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PowerWrap.C78Ga06S.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Reference.BnIY1BIY.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Reference.g7MasAee.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PowerWrap.B4Nn3Br6.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SupportList.BydHkphK.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SupportList.DSq_jroT.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Banner.D0O84LBu.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-swiper.DBIb9lBT.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-swiper.CojWbOJ2.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-queryInitInfo.BFUwcx9P.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Banner.D6TXJA-m.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Marquee.BlK2Q8bv.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Marquee.DvPaFz1x.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Entrance.iLjn_ZeB.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Entrance.Dt08TM3e.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsEntrance.CT7Odl5S.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsEntrance.O9cmDFAX.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useMarquee.4zSZxsKl.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-getActiveAnnouncement.DWvp2N62.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useGameHall.ChH6jzWm.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-GameHall.BqkPB_zl.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.google-analytics.com/analytics.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://web.analysiscloud.info/ccu/m1uudG5uIU/get?project=2b10f29087e021522948c7c5f3c5e124&type=3r&group=dC_skyexch.vip",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://o4508607055462400.ingest.de.sentry.io/api/4508803688169552/envelope/?sentry_version=7&sentry_key=b7a7e52dcf635bd2d90c3dd9051b01b8&sentry_client=sentry.javascript.vue%2F10.61.0",
+    "method": "POST",
+    "postData": "{\"sent_at\":\"2026-08-09T22:50:53.240Z\",\"sdk\":{\"name\":\"sentry.javascript.vue\",\"version\":\"10.61.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"b800ed6f554e4724ae5103b45742096f\",\"init\":false,\"started\":\"2026-08-09T22:50:53.105Z\",\"timestamp\":\"2026-08-09T22:50:53.241Z\",\"status\":\"exited\",\"errors\":0,\"attrs\":{\"release\":\"acf1d0af6c841211b050ebd9d417382ba38f87b9\",\"environment\":\"prod\",\"ip_address\":\"{{auto}}\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}}"
+  },
+  {
+    "url": "https://o4508607055462400.ingest.de.sentry.io/api/4508803688169552/envelope/?sentry_version=7&sentry_key=b7a7e52dcf635bd2d90c3dd9051b01b8&sentry_client=sentry.javascript.vue%2F10.61.0",
+    "method": "POST",
+    "postData": "{\"sent_at\":\"2026-08-09T22:50:53.241Z\",\"sdk\":{\"name\":\"sentry.javascript.vue\",\"version\":\"10.61.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"e4441db4022e46f2b1df7e93583e2050\",\"init\":true,\"started\":\"2026-08-09T22:50:53.241Z\",\"timestamp\":\"2026-08-09T22:50:53.241Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"acf1d0af6c841211b050ebd9d417382ba38f87b9\",\"environment\":\"prod\",\"ip_address\":\"{{auto}}\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}}"
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HeaderUnLoginWrapper.CCiMUM1h.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Validate.CPV4S1KR.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFetchVerifyCode.CbQo8Gz-.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Validate.BxaWA8Ac.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-yup.Csa747xk.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-lodash.C-7mLp0X.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-vee-validate.IV84OiLr.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useForecastStore.D37S8UD1.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-fancybetMarketTypeConst.BotkurCF.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFullMarketStore.Dp7rTubB.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetStore.DMKNuuc9.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useMultiMarketsStore.DJUr4OOa.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetWebSocketEnabled.C1psyM_o.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useWebSocketV2.CYojVBIK.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-geniusSports.D0Xbd-xV.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFetchLogin.338G4f15.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HeaderUnLoginWrapper.CLxhlXJT.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SinglePaneLayout.DVtDsT4C.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/labels/skyexchange/desktop/images/logo.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-icomoon.CSvnG320.ttf?ki4gvd",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-btn-appdl-android.DX9R0ry2.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/labels/skyexchange/mobile/images/promo/01.jpg",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/labels/skyexchange/mobile/images/promo/02.jpg",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_sports.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryGameHall",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/verify/verifycode.gr",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-icomoon.CSvnG320.ttf?ki4gvd",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bvincap.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_skyexchangeBlog.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_virtualsports.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_evo-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_smartsoft-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_royalgaming.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_ezugi-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_casino-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_aviator_xtreme-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_mines-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_kitex-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_turbo_vortex-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_spribe.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_blackjack-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_7up7down-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_andarBaharVR-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_supernowa-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_7mojos-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_horsebook-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_minesweeper-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_teenPatti-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_superOverVR-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_TeenPatti2020-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_NumberKing-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_BigSmall-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_TeenPattiJoker-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_7up7down-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_DragonNTiger-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_autoRoulette-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_DusKaDumVR-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_CallbreakQuick-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_SicBo-Jili-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_Baccarat-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_BonusDice-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_Heist-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_5CardPoker-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_ColorGame-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_32card-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_rummy-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_dragonTiger-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/royalgaming_banner_worliMatkaVR-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_betgames-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_andarBahar-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_sicbo-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_sevenUpDown-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_CoinToss-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_teenPatti-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_cardMatka-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_numberMatka-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/source/share/mobile/images/gamehall/banner_bpoker-half.png",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "blob:https://www.skyexch.vip/3b7966a2-2c2f-4149-a724-c62d2d4c2995",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://sc.detecas.com/di/tkexp.ashx",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://sc.detecas.com/di/comm.ashx",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://sc.detecas.com/di/ec.ashx?v=Mi4xLjc%3D&deviceInfo=w5Z2woLCkMKxw4g4VW93VzR5WcKNwqDDocOQwovCq8KEfht8PhPCucOLTMKkAhUBYcKmI8KkwqPDpVHDl8KCw6luwpXCt8O8wqEpwoUmw7PDlcKCIMO3wpXCrU1NHMOIfyVLXCXDkh9Bw6fDt1TCqMKhOsKhBSPDnsKUw4d%2BwqESCGfCuxQUw7jDphNpKivDs2nDisKswqotw4UwwocCw4bDkhjDgsO5fERuOsKzWsKRb3Y4wr%2FCi1HCr2%2FCncKpdsKeacKYw6TDlH7DsMKMF8OWGgPCtsOKCmNsdsOgw49XwrDCtgTDk1%2FCgmvCjXPCr8KXKsKkwr3DnAbCkcK9w4VQO8KawpbDkgoqGwLDscO0wrTDnMKOHsOFw5lWw6%2FDiFnDqcK2w7fClyTCkMOCwq8WwqnDhU7Dt38Pw4E8w6rCgHzCgnrDvsOoPcOewrbCjwpXwqbCjH7CncObw7vCs8OIw4zDn8O9csOSXCdsworDsgnCshcQUjcnAhvDt8KrwqYnwpbDqyt4w6bCoUZBNMORfGfCkDvCo8KQOhNvQ8OMwoPCgcO1wo%2FDgsKNFsOwwrtewoYWJcOWSnvDi0PCusKKdMOKw43DpSs0wqnCo8KfIgdJw5UCw7Nnw4PDkjprw7DCp10HHVbDjkoZeQrCpAjCtMOjXlY%2FesKfRD3DkwPDiUhIworCrsK8w4LDo8O%2FT8O3wpFEw7kSw7LDq8KRwp3Dl8OCfMOJORcvWsKxw5DClMOhw7ooYsOFHR%2FCo0fCvB99V2ZZa2h0JCMJw7MUZ8OgwowFF8OsZVbCocKmwpoYw6MREBTCsMKHFMOxw6oIwoTDlmoLb8Opw5vDtSQCw4QyYETDrcK1wpwDwokJw7ZxcVU9fsKVwrLDosOfw5fCl245FcKGw6cDNAR6UQzDtDLClcKoJjY3w7o6wo8tJMK8w5FkwrTDvkvDqBE0S8Kxw7jCl8K5H8OLwoXDm8KJFVMTSW7Ci8OIwqspalAdwrtRLsK6wqA5wq16YycnO1XDl00UMcOyw4nCicKGwrZfw4bCvCUMfsK%2Fwq0Aw7XCnX7Dk8KRY8OswpzDv8KfwqglCkLCoVxdbxTDkcOcUHDDnsKWwqFmwrsSDijDuD3CrzvDrk3CthXClwTDvsKPPVIOQnJMw5s8NMKlw5XDgcOYw5vDjMOfAFjDqsKiMht%2FMMKCw5stwq4gw6nDhyArw5kzTWNVw5YFwrxrw5zCv8OVwqljNzLDtCfCrAvDtX7DusKXVMKCwoh2CMOiw71CwohSSsO%2FSHN1csOGw6YPw7FBHMOgw5nCpyHCpXNSwqo4w5dlw4xaD8K4Ci7Dl8OCB8OuR8OAA8O1CcOZwo7DsC7DvMKOwoBBwrPDgMOFZkk2w7RrwqHDjsKxOcKuwpBjw4fCtybCg0MPSStEw5%2FCiQTDogLCoC%2FCgsKVw5YLwogMwojDvW1MIBvDql4XSkDCsVA0wrJhfF%2FCtsO7bxXCpsKJacOuV2vDuBVJw6nCniTCtMKOEMKNY8OPw4p%2BOFHCo8KyfBTCl8OwwpZTJ3x5wpJLwoXDkWdKwodgwpPDmm9TBMK%2FTMOSw5lzSDDDs8Kpw43CuVDCp8Kww7bDk8OjFMKywqFTIcOTwpnCuSsfV8OLw6A4wr8Qw63DpkHCqMKAwrPCtsOxT8OQwpfCvyF5wrvDgMO7LnjCqApjw7oeXkXCrMKnw7Flwp46wrJ6HsOhMcO1Hx9NwrFEKsORPXw8csKRwqrCm8K0wq7DpMOVwo%2FCkl1Cw6YORcKTw4LDj2HCmsKnw5nDjzdwTV5BTGdUZhoUOD1qclDDoMKtwpBGwoARbmvDu8OMCi3DpBbDlsK1wo5CLA%2FDq8KaXMO1VcOnRsKQc8OEZsOHRMOkQzfCscKJH18%3D&ip=wqHDmsOmwpTDhMOTwpfChcKjw7%2FDmcKiH8KX&version=Mi4xLjc%3D",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://sc.detecas.com/di/dd.ashx?v=Mi4xLjc%3D&deviceCode=edf9387880758820e7457565b6e35014",
+    "method": "POST",
+    "postData": "deviceDetail=eyJicm93c2VyIjoiQ2hyb21lIDE1MS4wLjAuMCIsImRldmljZU5hbWUiOiJEZXNrdG9wIiwiZGV2aWNlVHlwZSI6MSwiZW5naW5lIjoiQmxpbmsgMTUxLjAuMC4wIiwiT1MiOiJXaW5kb3dzIDEwIiwicGx1Z2lucyI6Ilt7XCJkZXNjcmlwdGlvblwiOlwiUG9ydGFibGUgRG9jdW1lbnQgRm9ybWF0XCIsXCJmaWxlbmFtZVwiOlwiaW50ZXJuYWwtcGRmLXZpZXdlclwiLFwibGVuZ3RoXCI6MixcIm5hbWVcIjpcIkNocm9tZSBQREYgVmlld2VyXCJ9LHtcImRlc2NyaXB0aW9uXCI6XCJQb3J0YWJsZSBEb2N1bWVudCBGb3JtYXRcIixcImZpbGVuYW1lXCI6XCJpbnRlcm5hbC1wZGYtdmlld2VyXCIsXCJsZW5ndGhcIjoyLFwibmFtZVwiOlwiQ2hyb21pdW0gUERGIFZpZXdlclwifSx7XCJkZXNjcmlwdGlvblwiOlwiUG9ydGFibGUgRG9jdW1lbnQgRm9ybWF0XCIsXCJmaWxlbmFtZVwiOlwiaW50ZXJuYWwtcGRmLXZpZXdlclwiLFwibGVuZ3RoXCI6MixcIm5hbWVcIjpcIk1pY3Jvc29mdCBFZGdlIFBERiBWaWV3ZXJcIn0se1wiZGVzY3JpcHRpb25cIjpcIlBvcnRhYmxlIERvY3VtZW50IEZvcm1hdFwiLFwiZmlsZW5hbWVcIjpcImludGVybmFsLXBkZi12aWV3ZXJcIixcImxlbmd0aFwiOjIsXCJuYW1lXCI6XCJQREYgVmlld2VyXCJ9LHtcImRlc2NyaXB0aW9uXCI6XCJQb3J0YWJsZSBEb2N1bWVudCBGb3JtYXRcIixcImZpbGVuYW1lXCI6XCJpbnRlcm5hbC1wZGYtdmlld2VyXCIsXCJsZW5ndGhcIjoyLFwibmFtZVwiOlwiV2ViS2l0IGJ1aWx0LWluIFBERlwifV0iLCJtaW1ldHlwZXMiOiJ7XCIwXCI6e1wiZGVzY3JpcHRpb25cIjpcIlBvcnRhYmxlIERvY3VtZW50IEZvcm1hdFwiLFwiZW5hYmxlZFBsdWdpblwiOlwieyp9XCIsXCJzdWZmaXhlc1wiOlwicGRmXCIsXCJ0eXBlXCI6XCJhcHBsaWNhdGlvbi9wZGZcIn0sXCIxXCI6e1wiZGVzY3JpcHRpb25cIjpcIlBvcnRhYmxlIERvY3VtZW50IEZvcm1hdFwiLFwiZW5hYmxlZFBsdWdpblwiOlwieyp9XCIsXCJzdWZmaXhlc1wiOlwicGRmXCIsXCJ0eXBlXCI6XCJ0ZXh0L3BkZlwifSxcImxlbmd0aFwiOjJ9IiwidXNlcmFnZW50IjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzE1MS4wLjAuMCBTYWZhcmkvNTM3LjM2Iiwic2NyZWVuIjoie1wiY29sb3JEZXB0aFwiOjI0LFwiaGVpZ2h0XCI6ODAwLFwib3JpZW50YXRpb25cIjpcInsqfVwiLFwicGl4ZWxEZXB0aFwiOjI0LFwid2lkdGhcIjoxMjgwfSIsIm5hdmlnYXRvciI6IntcImFwcENvZGVOYW1lXCI6XCJNb3ppbGxhXCIsXCJhcHBOYW1lXCI6XCJOZXRzY2FwZVwiLFwiYmx1ZXRvb3RoXCI6e30sXCJjbGlwYm9hcmRcIjp7fSxcImNvbm5lY3Rpb25cIjp7XCJlZmZlY3RpdmVUeXBlXCI6XCI0Z1wifSxcImNyZWRlbnRpYWxzXCI6e30sXCJkZXZpY2VNZW1vcnlcIjoxNixcImRldmljZVBvc3R1cmVcIjp7XCJ0eXBlXCI6XCJjb250aW51b3VzXCJ9LFwiZ2VvbG9jYXRpb25cIjp7fSxcImdwdVwiOntcIndnc2xMYW5ndWFnZUZlYXR1cmVzXCI6e1wic2l6ZVwiOjEwfX0sXCJoYXJkd2FyZUNvbmN1cnJlbmN5XCI6MTIsXCJoaWRcIjp7fSxcImlua1wiOnt9LFwia2V5Ym9hcmRcIjp7fSxcImxhbmd1YWdlc1wiOltcImVuLVVTXCIsXCJlblwiXSxcImxvY2tzXCI6e30sXCJsb2dpblwiOnt9LFwibWFuYWdlZFwiOnt9LFwibWVkaWFDYXBhYmlsaXRpZXNcIjp7fSxcIm1lZGlhRGV2aWNlc1wiOnt9LFwibWVkaWFTZXNzaW9uXCI6e1wicGxheWJhY2tTdGF0ZVwiOlwibm9uZVwifSxcIm9uTGluZVwiOnRydWUsXCJwZGZWaWV3ZXJFbmFibGVkXCI6dHJ1ZSxcInBlcm1pc3Npb25zXCI6e30sXCJwbGF0Zm9ybVwiOlwiV2luMzJcIixcInByZXNlbnRhdGlvblwiOnt9LFwicHJvZHVjdFwiOlwiR2Vja29cIixcInByb2R1Y3RTdWJcIjpcIjIwMDMwMTA3XCIsXCJwcm90ZWN0ZWRBdWRpZW5jZVwiOnt9LFwic2NoZWR1bGluZ1wiOnt9LFwic2VyaWFsXCI6e30sXCJzZXJ2aWNlV29ya2VyXCI6e1wicmVhZHlcIjp7fX0sXCJzdG9yYWdlXCI6e30sXCJzdG9yYWdlQnVja2V0c1wiOnt9LFwidXNiXCI6e30sXCJ1c2VyQWdlbnREYXRhXCI6e1wiYnJhbmRzXCI6W1wieyp9XCIsXCJ7Kn1cIl0sXCJwbGF0Zm9ybVwiOlwiV2luZG93c1wifSxcInZlbmRvclwiOlwiR29vZ2xlIEluYy5cIixcInZpcnR1YWxLZXlib2FyZFwiOntcImJvdW5kaW5nUmVjdFwiOnt9fSxcIndha2VMb2NrXCI6e30sXCJ3ZWJkcml2ZXJcIjp0cnVlLFwid2Via2l0UGVyc2lzdGVudFN0b3JhZ2VcIjp7fSxcIndlYmtpdFRlbXBvcmFyeVN0b3JhZ2VcIjpcInsqfVwiLFwid2luZG93Q29udHJvbHNPdmVybGF5XCI6e30sXCJ4clwiOnt9fSIsImFjY2VwdCI6IiovKiIsImhlYWRlcnMiOiJHb29nbGUgSW5jLkBnemlwLCBkZWZsYXRlLCBiciwgenN0ZCIsImRldmljZUNvZGUiOiJlZGY5Mzg3ODgwNzU4ODIwZTc0NTc1NjViNmUzNTAxNCJ9"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/searchEvents",
+    "method": "POST",
+    "postData": "keyword=tsingh99"
+  },
+  {
+    "url": "https://o4508607055462400.ingest.de.sentry.io/api/4508803688169552/envelope/?sentry_version=7&sentry_key=b7a7e52dcf635bd2d90c3dd9051b01b8&sentry_client=sentry.javascript.vue%2F10.61.0",
+    "method": "POST",
+    "postData": "{\"sent_at\":\"2026-08-09T22:51:00.778Z\",\"sdk\":{\"name\":\"sentry.javascript.vue\",\"version\":\"10.61.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"e4441db4022e46f2b1df7e93583e2050\",\"init\":false,\"started\":\"2026-08-09T22:50:53.241Z\",\"timestamp\":\"2026-08-09T22:51:00.778Z\",\"status\":\"exited\",\"errors\":0,\"attrs\":{\"release\":\"acf1d0af6c841211b050ebd9d417382ba38f87b9\",\"environment\":\"prod\",\"ip_address\":\"{{auto}}\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}}"
+  },
+  {
+    "url": "https://o4508607055462400.ingest.de.sentry.io/api/4508803688169552/envelope/?sentry_version=7&sentry_key=b7a7e52dcf635bd2d90c3dd9051b01b8&sentry_client=sentry.javascript.vue%2F10.61.0",
+    "method": "POST",
+    "postData": "{\"sent_at\":\"2026-08-09T22:51:00.779Z\",\"sdk\":{\"name\":\"sentry.javascript.vue\",\"version\":\"10.61.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"292fab1047804287adcfd71ba4b8aa41\",\"init\":true,\"started\":\"2026-08-09T22:51:00.778Z\",\"timestamp\":\"2026-08-09T22:51:00.778Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"acf1d0af6c841211b050ebd9d417382ba38f87b9\",\"environment\":\"prod\",\"ip_address\":\"{{auto}}\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36\"}}"
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-fullMarket.DY6590SO.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-liveScore.DU6qKT1R.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.DLqnKWc-.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-LeaguesItemGroup.F0KaGVfZ.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-LeaguesItem.CSv2gpTS.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-LeaguesItem.BeJWxqTp.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-LeaguesItemGroup.DO3HHxFP.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useMenu.UD7Q_LNP.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-fullMarket.CJmwK9ea.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-countryCodeConst.CtKR5M_x.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-queryMarketsWithoutSelection.BCyRuhPA.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.qb7sU-Ie.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-FullMarket.BgKadkPS.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-index.vue_vue_type_script_setup_true_lang.BmPe9ki9.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-DisplayMode.vue_vue_type_script_setup_true_lang.CkEJWriY.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Container.GaQgTwPF.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Reminder.CoDAA6Ao.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Reminder.C3kxHxi-.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Container.Cm1z6GCo.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-EditMode.vue_vue_type_script_setup_true_lang.CDErEU0t.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useBet.BmT4OxNv.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFetchUnmatchedTickets.CZG7Torn.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-StatusBar.BmfXrrW6.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-info-inplay.ClPqUhTe.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PinButton.vue_vue_type_script_setup_true_lang.DJr3SyoI.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useLiveMediaStore.DZ1zsXME.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-StatusBar.DlbSPWGr.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ExchangeMarket.CuzmRUdu.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketStatus.Bm-WyNWf.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-gameProduct.O5Pa_ksJ.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketStatus.CqfMwg_H.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ExchangeSelectionInfo.vXNSdIUC.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useExchangeFilterSelection.B05C5KYz.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ExchangeSelectionInfo.DEK2nMpr.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ExchangeSelection.DTE1_y9r.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SelectionStatus.BYrNkEwk.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SelectionStatus.CbtQpPLq.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HorseAndGreyhoundRacingInfo.CdrJO48Z.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Forecast.vue_vue_type_script_setup_true_lang.1sDYNKu_.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HorseRacingHoveredInfo.DlIPvIEj.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HorseRacingHoveredInfo.JT_-iW90.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useHorseAndGreyhoundRacingInfo.DLf0K9km.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HorseAndGreyhoundRacingInfo.DR9KbDIg.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Forecast.DPVDuudf.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Forecast.Cp4u1EaV.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ExchangePriceGrid.vue_vue_type_script_setup_true_lang.D2GtdHp2.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetInfo.D7NNMePl.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetInfo.cBiprGng.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useExchangeSelection.CLWB2tYk.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFetchMarketDepth.CVLDLIqu.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ExchangeSelection.f9P-WHKA.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ExchangeMarket.Ci1wN_4s.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-RelatedMarkets.vue_vue_type_script_setup_true_lang.DJJb3i8S.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketTabs.CfIvv2zl.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketTabs.XMNMZDrh.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Markets.BxT2jvqD.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Market.Dz_xYuE8.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Market.3RSNGb9V.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Markets.DT5Bh9xY.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFullMarket.CPxt_F9R.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-exchange.B01ivDK2.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-teamName.C_apzh2Z.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useLiveChatControl.C9HWlVyt.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useMinMaxModalStore.DxO1rdBu.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-RightGroup.BIVlSHwP.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipContainer.jB3K-hUB.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BlockLoading.vue_vue_type_script_setup_true_lang.Bh4WVWVw.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlip.4r1xCCHx.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-PositionAnyWhere.vue_vue_type_script_setup_true_lang.d-_ieLdD.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Warning.vue_vue_type_script_setup_true_lang.CXPsQKia.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Container.Dj3HGPNI.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Container.Canhu6lu.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSuccess.Dzh2Lflf.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSuccess.Dq2vnwSQ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetError.JTg2l0N4.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetError.CVHo-Yb0.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MessageSuccess.vue_vue_type_script_setup_true_lang.D6cR9QWD.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipEdit.Tj-hobiV.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipItem.DsRGGzm3.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Table.DJob4bVo.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Table.D0OWKcyQ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipItemFieldQuickStake.vue_vue_type_script_setup_true_lang.DHyDdbVj.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useBetSlipsKeypad.C68sc1Pt.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-tools.D5iljYjo.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useBetSlipSetting.DvhvdZj8.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipItemField.vue_vue_type_script_setup_true_lang.DkcQwR2Z.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ErrorResponseGuard.Bzr4oa2z.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Number.B75Jg59D.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Number.C-uHsqQk.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-TableColumn.BEhlU_-V.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-TableColumn.U11dozQg.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipItem.nbhZ-iqR.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipEdit.Dovcj_WJ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipConfirm.GTU6iFh9.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListMatchedEdit.TNFmg9jJ.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-bets.C2GCTDpR.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListMatchedEdit.iy-OuuvP.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipConfirm.C2fFPw0V.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlip.B_B6a0K5.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlipContainer.DBn06bap.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-OpenBetsContainer.wCrBgW4_.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Select.BeNCjDde.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Select.DDeaLBMH.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListDetail.CicPvnTq.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListExchangeMatchedByTimeOrder.BOE2GOWi.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListItem.McGNZl_8.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListItem.Dmnj9VMa.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListItemHeader.BPqADyNO.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListItemHeader.BL-p9g2K.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListBetInfo.vue_vue_type_script_setup_true_lang.BCoqps7W.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListExchangeMatchedByTimeOrder.3ClLybJQ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListExchangeUnmatched.BlIx8M_b.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListUnmatchedEdit.C95-oDKv.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListUnmatchedPersistenceTab.C806Hj4_.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Radio.D-dG7Hx-.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Radio.CAG_TCuY.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListUnmatchedPersistenceTab.Bb5QCpqg.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetListUnmatchedEdit.JF1bk28H.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListExchangeUnmatched.Ph8zDTWz.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListExchangeMatched.C8qvPyXx.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListExchangeMatched.BnBKDYIr.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListSettings.DUb0EUV3.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListSettings.Dc5UiFjH.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListGeniusSportsUnmatched.8DD_UeQf.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListGeniusSportsUnmatched.CVYyfQgX.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsListDetail.XLdK4DYs.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BlockCountDownLoading.vue_vue_type_script_setup_true_lang.53TJYdNr.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-usePollingQueryRemovedMarkets.CHXVFlQ9.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-OpenBetsContainer.y7TgfBhF.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-RightGroup.CLAc8rIL.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ThreePaneLayout.CB6YN1YL.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ThreePaneLayout.CZolM_jd.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-TeamInfo.CZl3Ce90.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HorseRacingAndGreyHoundTeamInfo.BzymhIip.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-HorseRacingAndGreyHoundTeamInfo.CMOmZJLZ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-TeamInfo.W_LR8fS4.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-FancyBetWithSportsBookContainer.BXRa7pae.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-fancyBetWithSportsBookTabConst.DETtoPom.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Filter.CXZxqIVQ.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-FilterMore.BqcX1wl6.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-FilterMore.D5wEiLV4.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Filter.CWzdYZt7.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SelectedTab.Dd5xYt5M.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetRule.Da7ZByWG.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetRuleStore.DQ0RLt87.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SelectedTab.TtJOoiHd.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-unSelectedTab.vue_vue_type_script_setup_true_lang.BvRFEMiP.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-bg-market-tab-r.COXLwO7t.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useGeniusSports.Bckewk8D.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-LiveMatchTracker.Br0mbSmL.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useLiveMatchTracker.BuDZVkkk.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-LiveMatchTracker.B-i7PY0R.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryNavigationPathFully",
+    "method": "POST",
+    "postData": "pathId=35916421&eventType=4"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryFullMarkets",
+    "method": "POST",
+    "postData": "eventId=35916421&marketId=1.260884775&selectionTs=-1&isGetRunnerMetadata=false"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMarketsWithoutSelection",
+    "method": "POST",
+    "postData": "eventType=4&eventId=35916421"
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-LMTWidget.cVHT3V4L.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-live_match_tracker.Cr86OY31.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/e22c74882fa903bfcd67d3229944406c/widgetloader",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/entry.react-vendor.dc6dfcdd.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.47587.0b3e0b06.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.67361.e6e78315.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.11858.a2a22257.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.7628.6e46283e.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.16686.38908c48.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.96547.670d9526.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.97161.f0f9b7eb.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.41535.319e5a66.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.36678.c1c2fee6.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.64045.5456d47b.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.49182.c8a1a820.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.6702.0165e4c5.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.68060.7d446072.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.94736.d7f0ec91.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.32932.96c7db6e.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.20876.7f214611.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.97777.a1ca141d.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.65373.3fef4276.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.93536.2abca556.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.61409.6f1c53b3.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.63578.1953470e.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.23088.d855a10d.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.38763.91806603.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.25371.36ec1aa9.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/css/chunk.33860.14d51016.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.33860.ec1787b1.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/css/chunk.match.lmtPlus.1c1359b7.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.match.lmtPlus.946e89fa.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.reactloader.344f58a7.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/translations/en.json?v=1786102146826&h=0a85e093fc3d495c20cfc910a8752d45",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/e22c74882fa903bfcd67d3229944406c/licensing",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4&navigationIds%5B%5D=28327605&navigationIds%5B%5D=35916421"
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMaker.DC7l0VZU.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerMarket.CQ6Dz4Uv.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerMinMax.OZgOxWaQ.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerMinMax.oTizDmbz.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerSelection.BLiJ1CDy.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketMask.CFlQZYjT.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketMask.DOrnHGlJ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlip.lgnb_NLe.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Container.Cpb1chDo.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ProgressBar.D_7NQs1A.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-ProgressBar.CcO8ZLS-.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Container.CkAzAmKw.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetSlip.BGlqygHb.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerBestOdds.BedLAe0i.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerBestOdds.B_REBjS5.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useBookMakerSelection.WQCqrklc.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerSelection.DvDsGQFZ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerSideType.BTrmL9TH.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerSideType.BvcrYzKT.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMakerMarket.D0_2znaR.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useBookMaker.BfYqh-X4.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookMaker.CPje6q_5.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-FancyBet.BgSLn1A2.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsSelectionsHead.B5psrIIm.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsSelectionsHead.AjS85VFC.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsSelectionsSideType.Bfax8Bi1.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetsSelectionsSideType.DGlgFRg_.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBet.U_rmLuDJ.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-FancyBet.DB8SL39i.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryBookMakerMarkets",
+    "method": "POST",
+    "postData": "eventId=35916421&selectionTs=0&version=0"
+  },
+  {
+    "url": "https://lt-fn-cdn001.akamaized.net/techablesoftware/en/Etc:UTC/gismo/match_info/71173640?T=exp=1786401298~acl=/*~data=eyJvIjoiaHR0cHM6Ly93d3cuc2t5ZXhjaC52aXAiLCJhIjoiZTIyYzc0ODgyZmE5MDNiZmNkNjdkMzIyOTk0NDQwNmMiLCJhY3QiOiJvcmlnaW5jaGVjayIsIm9zcmMiOiJvcmlnaW4ifQ~hmac=c3afa240f440e236d4b91cc5e63de19d80b28d2c1abd03196764057a8d16aa66",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMarketsWithoutSelection",
+    "method": "POST",
+    "postData": "eventId=35916421"
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-NoData.DDyXWlJD.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryFancyBetMarkets",
+    "method": "POST",
+    "postData": "eventId=35916421&version=0&oddsSettingVersion=0&selectionTs=0"
+  },
+  {
+    "url": "https://lt-fn-cdn001.akamaized.net/techablesoftware/en/Etc:UTC/gismo/match_timelinedelta/71173640?T=exp=1786401298~acl=/*~data=eyJvIjoiaHR0cHM6Ly93d3cuc2t5ZXhjaC52aXAiLCJhIjoiZTIyYzc0ODgyZmE5MDNiZmNkNjdkMzIyOTk0NDQwNmMiLCJhY3QiOiJvcmlnaW5jaGVjayIsIm9zcmMiOiJvcmlnaW4ifQ~hmac=c3afa240f440e236d4b91cc5e63de19d80b28d2c1abd03196764057a8d16aa66",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://lt-fn-cdn001.akamaized.net/techablesoftware/en/Etc:UTC/gismo/stats_season_meta/136838?T=exp=1786401298~acl=/*~data=eyJvIjoiaHR0cHM6Ly93d3cuc2t5ZXhjaC52aXAiLCJhIjoiZTIyYzc0ODgyZmE5MDNiZmNkNjdkMzIyOTk0NDQwNmMiLCJhY3QiOiJvcmlnaW5jaGVjayIsIm9zcmMiOiJvcmlnaW4ifQ~hmac=c3afa240f440e236d4b91cc5e63de19d80b28d2c1abd03196764057a8d16aa66",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://lt-fn-cdn001.akamaized.net/techablesoftware/en/Etc:UTC/gismo/stats_team_averagesquad/1121039?T=exp=1786401298~acl=/*~data=eyJvIjoiaHR0cHM6Ly93d3cuc2t5ZXhjaC52aXAiLCJhIjoiZTIyYzc0ODgyZmE5MDNiZmNkNjdkMzIyOTk0NDQwNmMiLCJhY3QiOiJvcmlnaW5jaGVjayIsIm9zcmMiOiJvcmlnaW4ifQ~hmac=c3afa240f440e236d4b91cc5e63de19d80b28d2c1abd03196764057a8d16aa66",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://lt-fn-cdn001.akamaized.net/techablesoftware/en/Etc:UTC/gismo/stats_team_averagesquad/200835?T=exp=1786401298~acl=/*~data=eyJvIjoiaHR0cHM6Ly93d3cuc2t5ZXhjaC52aXAiLCJhIjoiZTIyYzc0ODgyZmE5MDNiZmNkNjdkMzIyOTk0NDQwNmMiLCJhY3QiOiJvcmlnaW5jaGVjayIsIm9zcmMiOiJvcmlnaW4ifQ~hmac=c3afa240f440e236d4b91cc5e63de19d80b28d2c1abd03196764057a8d16aa66",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SingleSelection.DgwUJ1WR.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-Remark.vue_vue_type_script_setup_true_lang.pCZFXnrG.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetInfo.DZ3WSKkb.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetInfo.C6ARaMuQ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketContainer.ajFgRy2n.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MinMax.BN_bmN8e.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MinMax.Cvg69ziC.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BookButton.vue_vue_type_script_setup_true_lang.DyFu_K6r.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetBook.CFWFBSse.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetBookStore.D8F4ackH.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketContainer.BdM9z-eF.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFancyBetSelections.DQWmJisE.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.77297.82d51e58.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.20062.a352c4b2.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/css/chunk.match.lmtPlus_momentum_21.de0f9f27.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://ws-cdn001.akamaized.net/assets/js/chunk.match.lmtPlus_momentum_21.419845a4.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://lt-fn-cdn001.akamaized.net/techablesoftware/en/Etc:UTC/gismo/match_timeline/71173640?T=exp=1786401298~acl=/*~data=eyJvIjoiaHR0cHM6Ly93d3cuc2t5ZXhjaC52aXAiLCJhIjoiZTIyYzc0ODgyZmE5MDNiZmNkNjdkMzIyOTk0NDQwNmMiLCJhY3QiOiJvcmlnaW5jaGVjayIsIm9zcmMiOiJvcmlnaW4ifQ~hmac=c3afa240f440e236d4b91cc5e63de19d80b28d2c1abd03196764057a8d16aa66",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsBookMinInfo.CC0tgxe1.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsBookMinInfo.C8TbJWfW.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryFullMarkets",
+    "method": "POST",
+    "postData": "eventId=35916421&marketId=1.260884775&selectionTs=1786315857460&isGetRunnerMetadata=false"
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsBookContainer.yMDnZk5N.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsBook.DxtVfWJb.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-CollapseTransition.BwoY685X.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-CollapseTransition.2aLDqsQZ.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-MarketCollapseIcon.vue_vue_type_script_setup_true_lang.EiMBwuVW.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsBookSelection.CvjolLXv.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetInfo.C_JY_tFE.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-BetInfo.Dzi2T105.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useFetchGetSportsBookMaxStake.BU6Lflop.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsBookSelection.W_yHkuSe.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-SportsBook.B9eRf8yr.css",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-useSportsBook.CRKC_AmO.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/querySportsBookEvent",
+    "method": "POST",
+    "postData": "eventId=35916421&apiSiteType=2&version=0&marketIds=%2C&selectionTsList=%2C&isDynamicUpdate=0"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryBookMakerMarkets",
+    "method": "POST",
+    "postData": "eventId=35916421&selectionTs=1786315857566&version=1786315857566"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/querySportsBookEvent",
+    "method": "POST",
+    "postData": "eventId=35916421&apiSiteType=2&version=1786315721640&marketIds=911441386%2C911441383%2C911440229%2C910903247%2C911440907%2C&selectionTsList=-1%2C-1%2C-1%2C-1%2C-1%2C&isDynamicUpdate=0"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMarketsWithoutSelection",
+    "method": "POST",
+    "postData": "eventType=4&eventId=35916421"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryFullMarkets",
+    "method": "POST",
+    "postData": "eventId=35916421&marketId=1.260884775&selectionTs=1786315857460&isGetRunnerMetadata=false"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/querySportsBookEvent",
+    "method": "POST",
+    "postData": "eventId=35916421&apiSiteType=2&version=1786315721640&marketIds=911441386%2C911441383%2C911440229%2C910903247%2C911440907%2C&selectionTsList=-1%2C-1%2C-1%2C-1%2C-1%2C&isDynamicUpdate=0"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryBookMakerMarkets",
+    "method": "POST",
+    "postData": "eventId=35916421&selectionTs=1786315857566&version=1786315857566"
+  }
+]

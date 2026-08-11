@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryInitInfo",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryEventLabel",
+    "method": "POST",
+    "postData": "isMobile=0"
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-sportsbook.CLs_xTI-.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://www.skyexch.vip/assets/4.42.0-fancybetMarketTypeConst.BotkurCF.js",
+    "method": "GET",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://saapipl.skyexch.vip/exchange/member/playerService/queryGameHall",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bvincap.skyexch.vip/exchange/member/playerService/testLine",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/searchEvents",
+    "method": "POST",
+    "postData": "keyword=tsingh99"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786305495221&marketTs=1786305494292&selectionTs=1786313338634&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryOnLiveEvents",
+    "method": "POST",
+    "postData": null
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=-1&marketTs=-1&selectionTs=-1&viewType=openDateTime&competitionId=-1&pageNumber=1"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryMenu",
+    "method": "POST",
+    "postData": "navigationIds%5B%5D=4"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786305495221&marketTs=1786305494292&selectionTs=1786313344138&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547"
+  },
+  {
+    "url": "https://bxawscf.skyexch.vip/exchange/member/playerService/queryEventsWithMarket",
+    "method": "POST",
+    "postData": "eventType=4&eventTs=1786312817311&marketTs=1786312698431&selectionTs=1786313344138&viewType=openDateTime&competitionId=-1&collectEventIds=-11174876%2C-11174877%2C35916421%2C-11174878%2C-11175549%2C-11175545%2C-11175553%2C-11175556%2C-11175562%2C35910550%2C35917771%2C35910624%2C35910392%2C35917735%2C35910449%2C-11175567%2C-11175546%2C-11175554%2C35917242%2C-11175550%2C35912635%2C-11175563%2C35917248%2C35916658%2C35909646%2C35913231%2C-11175557%2C-11175568%2C35917251%2C-11175547"
+  }
+]

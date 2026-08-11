@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyExchange Real-Time Sportsbook, Bookmaker & Fancy Bet Dashboard</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="brand">
+        <div class="logo-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+        <div class="brand-text">
+          <h1>SKYEXCHANGE <span>PRO</span></h1>
+          <span class="sub">MATCH ODDS • BOOKMAKER • FANCY • SPORTSBOOK PREMIUM</span>
+        </div>
+      </div>
+
+      <div class="live-stream-badge">
+        <span class="pulse-dot"></span>
+        <span id="sse-status">CONNECTING STREAM...</span>
+      </div>
+
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="global-search" placeholder="Search by Event ID, Match Name, or Market ID...">
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-layout">
+      <!-- Left Sidebar: Sports & Events Explorer -->
+      <aside class="sidebar">
+        <!-- Sports Filter Tabs -->
+        <div class="sports-tabs">
+          <button class="sport-tab active" data-sport="all">
+            <i class="fa-solid fa-trophy"></i> All
+          </button>
+          <button class="sport-tab" data-sport="Cricket">
+            <i class="fa-solid fa-cricket-bat-ball"></i> Cricket
+          </button>
+          <button class="sport-tab" data-sport="Soccer">
+            <i class="fa-solid fa-futbol"></i> Soccer
+          </button>
+          <button class="sport-tab" data-sport="Tennis">
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i> Tennis
+          </button>
+        </div>
+
+        <!-- Sidebar Controls -->
+        <div class="sidebar-controls">
+          <div class="input-group">
+            <input type="text" id="event-id-input" placeholder="Enter Event ID (e.g. 35916421)">
+            <button id="go-event-btn"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="filter-toggle">
+            <label class="switch">
+              <input type="checkbox" id="inplay-only-checkbox">
+              <span class="slider round"></span>
+            </label>
+            <span>In-Play Matches Only</span>
+          </div>
+        </div>
+
+        <div class="events-summary-bar">
+          <span id="events-count-label"><i class="fa-solid fa-list-check"></i> Loading active events...</span>
+        </div>
+
+        <!-- Events List Accordion -->
+        <div id="events-list-container" class="events-list">
+          <div class="loading-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Loading live matches...</div>
+        </div>
+      </aside>
+
+      <!-- Main Stage: Selected Event Markets & Live Odds View -->
+      <section class="stage">
+        <!-- Event Detail Header Card -->
+        <div id="event-header-card" class="event-header-card">
+          <div class="empty-state">
+            <i class="fa-solid fa-hand-pointer"></i>
+            <h2>Select an Event from the Left Sidebar</h2>
+            <p>Or enter an <strong>Event ID</strong> (e.g. <code>35916421</code>) above to view <strong>Match Odds</strong>, <strong>Bookmaker</strong>, <strong>Fancy Bets</strong>, and <strong>Sportsbook / Premium Fancy</strong> markets.</p>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills Bar (Match Odds | Bookmaker | Fancy | Premium Sportsbook) -->
+        <div id="category-filter-bar" class="category-filter-bar" style="display:none;">
+          <button class="cat-pill active" data-category="ALL"><i class="fa-solid fa-border-all"></i> All Markets</button>
+          <button class="cat-pill" data-category="MATCH_ODDS"><i class="fa-solid fa-chart-simple"></i> Match Odds / Exchange</button>
+          <button class="cat-pill" data-category="BOOKMAKER"><i class="fa-solid fa-book"></i> Bookmaker Markets</button>
+          <button class="cat-pill" data-category="FANCY"><i class="fa-solid fa-star"></i> Fancy Bet Markets</button>
+          <button class="cat-pill" data-category="PREMIUM_SPORTSBOOK"><i class="fa-solid fa-fire"></i> Sportsbook / Premium Fancy</button>
+        </div>
+
+        <!-- Real-Time Markets Display Grid -->
+        <div id="markets-container" class="markets-container"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
