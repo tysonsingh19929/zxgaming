@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>AllPanel777 Sportsbook Exchange & Real-Time Live Odds</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -12,17 +12,18 @@
     <!-- 1. Header Bar -->
     <header class="ap-header">
       <div class="ap-brand">
-        <i class="fa-solid fa-trophy" style="color:var(--ap-gold); font-size:1.2rem;"></i>
+        <button class="ap-mobile-toggle" id="mobile-toggle-btn">
+          <i class="fa-solid fa-list-ul"></i> Matches
+        </button>
         <div class="ap-logo">ALLPANEL<span>777</span></div>
       </div>
 
       <div class="ap-header-right">
         <div class="ap-stream-status" id="stream-status">
-          <span class="ap-dot"></span> REAL-TIME LIVE STREAM (0.2s)
+          <span class="ap-dot"></span> STREAM LIVE
         </div>
         <div class="ap-balance-badge">
           <span>Pts: <strong>0.00</strong></span>
-          <span>Exp: <strong>0.00</strong></span>
         </div>
       </div>
     </header>
@@ -37,10 +38,10 @@
 
     <!-- 3. Main Grid Layout -->
     <div class="ap-main-grid">
-      <!-- Left Sidebar -->
-      <aside class="ap-sidebar">
+      <!-- Left Sidebar (Mobile Drawer) -->
+      <aside class="ap-sidebar" id="sidebar-drawer">
         <div class="ap-sidebar-header">
-          <span><i class="fa-solid fa-list"></i> Live Matches</span>
+          <span><i class="fa-solid fa-list"></i> Select Match</span>
           <span id="events-count" style="color:#fff;">0 Active</span>
         </div>
         <div class="ap-events-list" id="events-list">
@@ -54,8 +55,8 @@
       <main class="ap-stage">
         <!-- Match Banner -->
         <div class="ap-event-banner" id="event-banner">
-          <div class="ap-banner-title">Select a Match from the Left</div>
-          <div class="ap-banner-info">Choose Cricket, Soccer, or Tennis from the left sidebar to view live odds.</div>
+          <div class="ap-banner-title">Select a Match from the List</div>
+          <div class="ap-banner-info">Tap "Matches" button or pick Cricket, Soccer, or Tennis from the top menu.</div>
         </div>
 
         <!-- Category Filters -->
