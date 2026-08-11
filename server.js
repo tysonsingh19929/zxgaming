@@ -116,9 +116,11 @@ async function safeFetchJsonNode(endpoint, bodyParams) {
   }
 }
 
-// Helper to rebuild and merge event markets with strict category buckets
+// Helper to rebuild and merge event markets with strict category buckets and instant purging
 function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
-  const existing = cache.eventsMap.get(eventIdStr) || { eventId: eventIdStr, marketsMap: {} };
+  const existing = cache.eventsMap.get(eventIdStr);
+  if (!existing) return;
+
   existing.marketsMap = existing.marketsMap || {};
   existing.marketsMap[categoryKey] = newMarkets || [];
 
@@ -145,6 +147,13 @@ app.post('/api/ingest/match_odds', (req, res) => {
 
   const eventIdStr = String(eventId);
   const existing = cache.eventsMap.get(eventIdStr) || {};
+
+  // Check if match ended/completed on SkyExchange
+  if (scores && (scores.matchStatus === 'Ended' || scores.matchStatus === 'Finished' || scores.matchStatus === 'Completed')) {
+    console.log(`🧹 INSTANT PURGE ENDED MATCH: ${eventIdStr} (${eventName})`);
+    cache.eventsMap.delete(eventIdStr);
+    return res.json({ ok: true, purged: true });
+  }
 
   existing.eventId = eventIdStr;
   existing.sportName = existing.sportName || (String(eventType) === '1' ? 'Soccer' : String(eventType) === '2' ? 'Tennis' : 'Cricket');
@@ -195,7 +204,7 @@ app.get('/api/active-focus', (req, res) => {
   });
 });
 
-// Background Discovery Loop (Captures Active Matches Across Sports)
+// Background Discovery Loop (Captures Active Matches Across Sports & INSTANTLY Purges Ended Matches)
 async function pollAllEventsBackground() {
   try {
     const activeEventIds = new Set();
@@ -213,8 +222,15 @@ async function pollAllEventsBackground() {
           hasSuccessfulScan = true;
           for (const ev of data.events) {
             const eventIdStr = String(ev.id);
-            activeEventIds.add(eventIdStr);
+            
+            // INSTANT PURGE IF SKYEXCHANGE MARKS AS ENDED / FINISHED / COMPLETED / STATUS 3/9
+            if (ev.status === 3 || ev.status === 9 || ev.isFinished === 1 || ev.isCompleted === 1 || (ev.name && ev.name.includes('(Ended)'))) {
+              console.log(`🧹 INSTANT PURGE ENDED EVENT FROM SCAN: ${eventIdStr}`);
+              cache.eventsMap.delete(eventIdStr);
+              continue;
+            }
 
+            activeEventIds.add(eventIdStr);
             const existing = cache.eventsMap.get(eventIdStr) || {};
 
             cache.eventsMap.set(eventIdStr, {
@@ -241,7 +257,7 @@ async function pollAllEventsBackground() {
       for (const cachedId of Array.from(cache.eventsMap.keys())) {
         if (!activeEventIds.has(cachedId)) {
           const missCount = (cache.missingScanCountMap.get(cachedId) || 0) + 1;
-          if (missCount >= 3) {
+          if (missCount >= 2) { // Accelerated purge (2 scans = 8 seconds max)
             cache.eventsMap.delete(cachedId);
             cache.missingScanCountMap.delete(cachedId);
           } else {

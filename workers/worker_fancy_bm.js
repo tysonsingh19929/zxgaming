@@ -52,7 +52,8 @@ async function fetchFancyBmWorker(eventId) {
       const allSelections = (bmData.bookMakerSelection && bmData.bookMakerSelection.selections) ? bmData.bookMakerSelection.selections : [];
 
       for (const m of bmData.bookMakerMarket.markets) {
-        if (m.status === 3 || m.status === 9) continue;
+        // STRICT PURGE: Skip ended/settled/removed markets (status 3 or 9)
+        if (m.status === 3 || m.status === 9 || m.isCompleted === 1) continue;
         const marketSelections = allSelections.filter(s => String(s.marketId) === String(m.marketId));
         if (marketSelections.length === 0) continue;
 
@@ -91,8 +92,15 @@ async function fetchFancyBmWorker(eventId) {
     if (fancyData) {
       const list = Array.isArray(fancyData) ? fancyData : (fancyData.fancyBetMarkets || []);
       for (const f of list) {
-        if (f.status === 3 || f.status === 9 || f.status === 5 || (f.resultRuns !== undefined && f.resultRuns !== -1)) continue;
-        if (f.status !== 2 && (f.runsNo === 0 && f.runsYes === 0) && (f.oddsNo === null || f.oddsNo === 0 || f.oddsNo === 100)) continue;
+        // STRICT PURGE: If market is settled, resulted, closed, or status!=2, DO NOT INCLUDE
+        if (f.status === 3 || f.status === 9 || f.status === 5 || (f.resultRuns !== undefined && f.resultRuns !== -1)) {
+          continue;
+        }
+
+        // Purge dead ball run sessions that have ended on skyexch
+        if (f.status !== 2 && (f.runsNo === 0 && f.runsYes === 0) && (f.oddsNo === null || f.oddsNo === 0 || f.oddsNo === 100)) {
+          continue;
+        }
 
         markets.push({
           marketId: String(f.marketId),
@@ -109,7 +117,7 @@ async function fetchFancyBmWorker(eventId) {
       }
     }
 
-    // Send payload to central API server
+    // Send payload (including empty list if all markets ended, which clears old markets!)
     await fetch(MAIN_SERVER_INGEST, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -121,8 +129,7 @@ async function fetchFancyBmWorker(eventId) {
   } catch (e) {}
 }
 
-// Continuous low-latency loop (~100ms)
-let currentFocusEventId = '35913231';
+let currentFocusEventId = '35920148';
 
 async function runFancyBmWorkerLoop() {
   while (true) {
@@ -142,5 +149,5 @@ async function runFancyBmWorkerLoop() {
   }
 }
 
-console.log('⚡ WORKER 2: Fancy Bet & Bookmaker Independent Micro-Scraper Active!');
+console.log('⚡ WORKER 2: Fancy Bet & Bookmaker Instant Purge Micro-Scraper Active!');
 runFancyBmWorkerLoop();
