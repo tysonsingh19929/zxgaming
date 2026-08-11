@@ -35,7 +35,6 @@ function connectSSE() {
     try {
       const data = JSON.parse(event.data);
       if (data.type === 'LIVE_UPDATE') {
-        // Smooth background refresh without full page rebuilds
         await refreshLiveStateSilently();
       }
     } catch (e) {}
@@ -59,7 +58,6 @@ async function fetchEvents(showLoading = true) {
     const data = await res.json();
     let events = data.events || [];
 
-    // Prioritize events with active markets
     events.sort((a, b) => {
       const weightA = (a.hasBookmaker ? 4 : 0) + (a.hasFancy ? 4 : 0) + (a.marketCount > 0 ? 2 : 0) + (a.isInPlay ? 1 : 0);
       const weightB = (b.hasBookmaker ? 4 : 0) + (b.hasFancy ? 4 : 0) + (b.marketCount > 0 ? 2 : 0) + (b.isInPlay ? 1 : 0);
@@ -177,14 +175,22 @@ function renderMarkets(markets) {
     return;
   }
 
-  dom.marketsContainer.innerHTML = markets.map(m => {
+  // STRICT ORDERING PRESERVATION: 1. MATCH_ODDS -> 2. BOOKMAKER -> 3. FANCY -> 4. PREMIUM_SPORTSBOOK
+  const categoryOrder = { 'MATCH_ODDS': 1, 'BOOKMAKER': 2, 'FANCY': 3, 'PREMIUM_SPORTSBOOK': 4 };
+  const sortedMarkets = markets.slice().sort((a, b) => {
+    const orderA = categoryOrder[a.category] || 99;
+    const orderB = categoryOrder[b.category] || 99;
+    return orderA - orderB;
+  });
+
+  dom.marketsContainer.innerHTML = sortedMarkets.map(m => {
     const category = m.category || 'MATCH_ODDS';
 
     // 1. MATCH ODDS / 1x2 EXCHANGE MARKETS
     if (category === 'MATCH_ODDS') {
       const selections = m.selections || [];
       return `
-        <div class="ap-market-section">
+        <div class="ap-market-section" id="market-sec-${m.marketId}">
           <div class="ap-market-head">
             <h3><i class="fa-solid fa-chart-simple" style="color:var(--ap-cyan);"></i> ${m.marketName}</h3>
             <span class="ap-market-tag">MATCH ODDS</span>
@@ -236,7 +242,7 @@ function renderMarkets(markets) {
     if (category === 'BOOKMAKER') {
       const selections = m.selections || [];
       return `
-        <div class="ap-market-section">
+        <div class="ap-market-section" id="market-sec-${m.marketId}">
           <div class="ap-market-head">
             <h3><i class="fa-solid fa-book" style="color:var(--ap-gold);"></i> ${m.marketName}</h3>
             <span class="ap-market-tag" style="background:rgba(255,199,0,0.2); color:var(--ap-gold);">BOOKMAKER</span>
@@ -295,7 +301,7 @@ function renderMarkets(markets) {
       }
 
       return `
-        <div class="ap-market-section">
+        <div class="ap-market-section" id="market-sec-${m.marketId}">
           <div class="ap-market-head">
             <h3><i class="fa-solid fa-star" style="color:var(--ap-gold);"></i> ${m.marketName}</h3>
             <span class="ap-market-tag" style="background:rgba(236,72,153,0.2); color:#ec4899;">FANCY BET</span>
@@ -338,7 +344,7 @@ function renderMarkets(markets) {
     // 4. PREMIUM SPORTSBOOK MARKETS
     const selections = m.selections || [];
     return `
-      <div class="ap-market-section">
+      <div class="ap-market-section" id="market-sec-${m.marketId}">
         <div class="ap-market-head">
           <h3><i class="fa-solid fa-fire" style="color:var(--ap-green);"></i> ${m.marketName}</h3>
           <span class="ap-market-tag" style="background:rgba(0,230,118,0.2); color:var(--ap-green);">SPORTSBOOK</span>

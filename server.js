@@ -78,7 +78,7 @@ function broadcastSSE(data) {
   });
 }
 
-// Throttle SSE broadcasts to smooth 250ms interval (Eliminates price flickering)
+// Throttle SSE broadcasts to smooth 250ms interval
 setInterval(() => {
   if (hasPendingBroadcast) {
     hasPendingBroadcast = false;
@@ -116,6 +116,24 @@ async function safeFetchJsonNode(endpoint, bodyParams) {
   }
 }
 
+// Helper to rebuild and merge event markets with strict category buckets
+function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
+  const existing = cache.eventsMap.get(eventIdStr) || { eventId: eventIdStr, marketsMap: {} };
+  existing.marketsMap = existing.marketsMap || {};
+  existing.marketsMap[categoryKey] = newMarkets || [];
+
+  // STABLE CATEGORY ORDERING: 1. MATCH_ODDS -> 2. BOOKMAKER -> 3. FANCY -> 4. PREMIUM_SPORTSBOOK
+  const mo = existing.marketsMap['MATCH_ODDS'] || [];
+  const bm = existing.marketsMap['BOOKMAKER'] || [];
+  const fancy = existing.marketsMap['FANCY'] || [];
+  const sb = existing.marketsMap['PREMIUM_SPORTSBOOK'] || [];
+
+  existing.markets = [...mo, ...bm, ...fancy, ...sb];
+  cache.eventsMap.set(eventIdStr, existing);
+  cache.lastUpdated = new Date().toISOString();
+  hasPendingBroadcast = true;
+}
+
 // ----------------------------------------------------
 // MICRO-SERVICE INGESTION API ENDPOINTS (FROM WORKERS)
 // ----------------------------------------------------
@@ -128,23 +146,17 @@ app.post('/api/ingest/match_odds', (req, res) => {
   const eventIdStr = String(eventId);
   const existing = cache.eventsMap.get(eventIdStr) || {};
 
-  const nonMoMarkets = (existing.markets || []).filter(m => m.category !== 'MATCH_ODDS');
-  const mergedMarkets = [...(markets || []), ...nonMoMarkets];
+  existing.eventId = eventIdStr;
+  existing.sportName = existing.sportName || (String(eventType) === '1' ? 'Soccer' : String(eventType) === '2' ? 'Tennis' : 'Cricket');
+  existing.eventType = eventType || existing.eventType || 4;
+  existing.eventName = eventName || existing.eventName;
+  existing.competitionName = competitionName || existing.competitionName || 'General';
+  existing.openDateStr = openDateStr || existing.openDateStr;
+  existing.isInPlay = isInPlay !== undefined ? isInPlay : existing.isInPlay;
+  existing.scores = scores !== undefined ? scores : existing.scores;
 
-  cache.eventsMap.set(eventIdStr, {
-    ...existing,
-    eventId: eventIdStr,
-    sportName: existing.sportName || (String(eventType) === '1' ? 'Soccer' : String(eventType) === '2' ? 'Tennis' : 'Cricket'),
-    eventType: eventType || existing.eventType || 4,
-    eventName: eventName || existing.eventName,
-    competitionName: competitionName || existing.competitionName || 'General',
-    openDateStr: openDateStr || existing.openDateStr,
-    isInPlay: isInPlay !== undefined ? isInPlay : existing.isInPlay,
-    scores: scores !== undefined ? scores : existing.scores,
-    markets: mergedMarkets
-  });
-  cache.lastUpdated = new Date().toISOString();
-  hasPendingBroadcast = true;
+  cache.eventsMap.set(eventIdStr, existing);
+  updateEventCategoryMarkets(eventIdStr, 'MATCH_ODDS', markets);
 
   res.json({ ok: true });
 });
@@ -155,17 +167,11 @@ app.post('/api/ingest/fancy_bm', (req, res) => {
   if (!eventId) return res.status(400).json({ error: 'Missing eventId' });
 
   const eventIdStr = String(eventId);
-  const existing = cache.eventsMap.get(eventIdStr) || {};
+  const bmMarkets = (markets || []).filter(m => m.category === 'BOOKMAKER');
+  const fancyMarkets = (markets || []).filter(m => m.category === 'FANCY');
 
-  const otherMarkets = (existing.markets || []).filter(m => m.category !== 'FANCY' && m.category !== 'BOOKMAKER');
-  const mergedMarkets = [...otherMarkets, ...(markets || [])];
-
-  cache.eventsMap.set(eventIdStr, {
-    ...existing,
-    markets: mergedMarkets
-  });
-  cache.lastUpdated = new Date().toISOString();
-  hasPendingBroadcast = true;
+  updateEventCategoryMarkets(eventIdStr, 'BOOKMAKER', bmMarkets);
+  updateEventCategoryMarkets(eventIdStr, 'FANCY', fancyMarkets);
 
   res.json({ ok: true });
 });
@@ -176,17 +182,7 @@ app.post('/api/ingest/sportsbook', (req, res) => {
   if (!eventId) return res.status(400).json({ error: 'Missing eventId' });
 
   const eventIdStr = String(eventId);
-  const existing = cache.eventsMap.get(eventIdStr) || {};
-
-  const otherMarkets = (existing.markets || []).filter(m => m.category !== 'PREMIUM_SPORTSBOOK');
-  const mergedMarkets = [...otherMarkets, ...(markets || [])];
-
-  cache.eventsMap.set(eventIdStr, {
-    ...existing,
-    markets: mergedMarkets
-  });
-  cache.lastUpdated = new Date().toISOString();
-  hasPendingBroadcast = true;
+  updateEventCategoryMarkets(eventIdStr, 'PREMIUM_SPORTSBOOK', markets);
 
   res.json({ ok: true });
 });
@@ -222,6 +218,7 @@ async function pollAllEventsBackground() {
             const existing = cache.eventsMap.get(eventIdStr) || {};
 
             cache.eventsMap.set(eventIdStr, {
+              ...existing,
               eventId: eventIdStr,
               sportName: sport.name,
               eventType: sport.id,
