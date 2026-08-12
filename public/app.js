@@ -198,7 +198,7 @@ function renderMarkets(markets) {
   dom.marketsContainer.innerHTML = sortedMarkets.map(m => {
     const category = m.category || 'MATCH_ODDS';
 
-    // 1. MATCH ODDS / 1x2 EXCHANGE MARKETS (CORRECT 3-DEPTH COLUMN ALIGNMENT)
+    // 1. MATCH ODDS / 1x2 EXCHANGE MARKETS (STABLE FIXED DEPTH ALIGNMENT)
     if (category === 'MATCH_ODDS') {
       const selections = m.selections || [];
       return `
@@ -218,24 +218,17 @@ function renderMarkets(markets) {
             </thead>
             <tbody>
               ${selections.map(s => {
-                const backArr = (s.availableToBack || []).slice().sort((a, b) => a.price - b.price);
-                let b1 = null, b2 = null, b3Best = null;
-                if (backArr.length === 1) {
-                  b3Best = backArr[0];
-                } else if (backArr.length === 2) {
-                  b2 = backArr[0];
-                  b3Best = backArr[1];
-                } else if (backArr.length >= 3) {
-                  b1 = backArr[backArr.length - 3];
-                  b2 = backArr[backArr.length - 2];
-                  b3Best = backArr[backArr.length - 1];
-                }
+                // Best Back (Highest price) MUST ALWAYS be in Column 3 right next to Lay
+                const rawBack = (s.availableToBack || []).slice().sort((a, b) => b.price - a.price);
+                const b3Best = rawBack[0] || null; // Column 3 (Best Back)
+                const b2     = rawBack[1] || null; // Column 2 (2nd Best Back)
+                const b1     = rawBack[2] || null; // Column 1 (3rd Best Back)
 
-                const layArr = (s.availableToLay || []).slice().sort((a, b) => a.price - b.price);
-                let l4Best = null, l5 = null, l6 = null;
-                if (layArr.length >= 1) l4Best = layArr[0];
-                if (layArr.length >= 2) l5 = layArr[1];
-                if (layArr.length >= 3) l6 = layArr[2];
+                // Best Lay (Lowest price) MUST ALWAYS be in Column 4 right next to Back
+                const rawLay = (s.availableToLay || []).slice().sort((a, b) => a.price - b.price);
+                const l4Best = rawLay[0] || null;  // Column 4 (Best Lay)
+                const l5     = rawLay[1] || null;  // Column 5 (2nd Best Lay)
+                const l6     = rawLay[2] || null;  // Column 6 (3rd Best Lay)
 
                 return `
                   <tr>
