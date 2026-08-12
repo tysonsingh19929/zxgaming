@@ -75,7 +75,6 @@ function broadcastSSE(data) {
   });
 }
 
-// Throttle SSE broadcasts to smooth 200ms interval
 setInterval(() => {
   if (hasPendingBroadcast) {
     hasPendingBroadcast = false;
@@ -85,7 +84,7 @@ setInterval(() => {
       timestamp: cache.lastUpdated
     });
   }
-}, 200);
+}, 150);
 
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
 const HTTP_HEADERS = {
@@ -113,7 +112,6 @@ async function safeFetchJsonNode(endpoint, bodyParams) {
   }
 }
 
-// Category bucket merging logic (Worker is sole authority for markets)
 function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
   const existing = cache.eventsMap.get(eventIdStr);
   if (!existing) return;
@@ -131,10 +129,6 @@ function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
   cache.lastUpdated = new Date().toISOString();
   hasPendingBroadcast = true;
 }
-
-// ----------------------------------------------------
-// MICRO-SERVICE INGESTION API ENDPOINTS (FROM WORKERS)
-// ----------------------------------------------------
 
 app.post('/api/ingest/match_odds', (req, res) => {
   const { eventId, eventType, eventName, competitionName, openDateStr, isInPlay, scores, markets } = req.body;
@@ -195,7 +189,19 @@ app.get('/api/active-focus', (req, res) => {
   });
 });
 
-// Background Discovery Loop (Captures Event Metadata WITHOUT touching MATCH_ODDS)
+app.get('/api/active-events', (req, res) => {
+  const activeEvents = Array.from(cache.eventsMap.values())
+    .filter(e => e.isInPlay || e.hasBookmaker || e.hasFancy)
+    .map(e => ({ eventId: e.eventId, eventType: String(e.eventType || '4') }));
+
+  if (activeEvents.length === 0 && cache.eventsMap.size > 0) {
+    const first = Array.from(cache.eventsMap.values())[0];
+    activeEvents.push({ eventId: first.eventId, eventType: String(first.eventType || '4') });
+  }
+
+  res.json({ events: activeEvents });
+});
+
 async function pollAllEventsBackground() {
   try {
     const activeEventIds = new Set();
@@ -222,7 +228,6 @@ async function pollAllEventsBackground() {
             activeEventIds.add(eventIdStr);
             const existing = cache.eventsMap.get(eventIdStr) || {};
 
-            // PRESERVE EXISTING MARKETS MAP - DO NOT OVERWRITE MATCH_ODDS FROM DISCOVERY SCAN
             cache.eventsMap.set(eventIdStr, {
               ...existing,
               eventId: eventIdStr,

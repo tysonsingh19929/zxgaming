@@ -5,8 +5,8 @@ const MAIN_SERVER_INGEST = 'http://localhost:3000/api/ingest/match_odds';
 
 const httpsAgent = new https.Agent({
   keepAlive: true,
-  maxSockets: 20,
-  maxFreeSockets: 10,
+  maxSockets: 30,
+  maxFreeSockets: 15,
   timeout: 5000
 });
 
@@ -58,13 +58,20 @@ async function fetchMatchOddsWorker(eventId, eventType = '4') {
     const m = targetEv.market || (targetEv.markets ? targetEv.markets[0] : null);
 
     if (m) {
-      const selections = (m.selections || m.runners || []).map(s => {
+      const selectionsRaw = (m.selections || m.runners || []).slice();
+
+      // ALWAYS SORT SELECTIONS DETERMINISTICALLY BY sortPriority / sortOrder / selectionId
+      selectionsRaw.sort((a, b) => {
+        const prioA = a.sortPriority !== undefined ? a.sortPriority : (a.sortOrder !== undefined ? a.sortOrder : (parseInt(a.id || a.selectionId) || 0));
+        const prioB = b.sortPriority !== undefined ? b.sortPriority : (b.sortOrder !== undefined ? b.sortOrder : (parseInt(b.id || b.selectionId) || 0));
+        return prioA - prioB;
+      });
+
+      const selections = selectionsRaw.map(s => {
         let backList = s.availableToBack || [];
         let layList = s.availableToLay || [];
 
-        // Clean & sort backList (highest price first)
         backList = backList.filter(b => b.price !== '' && b.price !== null && !isNaN(b.price));
-        // Clean & sort layList (lowest price first)
         layList = layList.filter(l => l.price !== '' && l.price !== null && !isNaN(l.price));
 
         return {
@@ -103,29 +110,22 @@ async function fetchMatchOddsWorker(eventId, eventType = '4') {
   } catch (e) {}
 }
 
-let currentFocusEventId = '35924127';
-let currentFocusEventType = '4';
-
 async function runMatchOddsWorkerLoop() {
   while (true) {
     try {
-      const statusRes = await fetch('http://localhost:3000/api/active-focus').catch(() => null);
-      if (statusRes && statusRes.ok) {
-        const focusData = await statusRes.json();
-        if (focusData.eventId) {
-          currentFocusEventId = focusData.eventId;
-          currentFocusEventType = focusData.eventType || '4';
-        }
-      }
-
-      if (currentFocusEventId) {
-        await fetchMatchOddsWorker(currentFocusEventId, currentFocusEventType);
+      const activeRes = await fetch('http://localhost:3000/api/active-events').catch(() => null);
+      if (activeRes && activeRes.ok) {
+        const activeData = await activeRes.json();
+        const liveList = activeData.events || [];
+        
+        // Process all active live events in parallel
+        await Promise.all(liveList.map(ev => fetchMatchOddsWorker(ev.eventId, ev.eventType)));
       }
     } catch (e) {}
 
-    await new Promise(resolve => setTimeout(resolve, 60));
+    await new Promise(resolve => setTimeout(resolve, 80));
   }
 }
 
-console.log('⚡ WORKER 1: Match Odds 50ms Priority Scraper Active!');
+console.log('⚡ WORKER 1: Multi-Match Parallel Match Odds Scraper Active!');
 runMatchOddsWorkerLoop();

@@ -5,8 +5,8 @@ const MAIN_SERVER_INGEST = 'http://localhost:3000/api/ingest/fancy_bm';
 
 const httpsAgent = new https.Agent({
   keepAlive: true,
-  maxSockets: 20,
-  maxFreeSockets: 10,
+  maxSockets: 30,
+  maxFreeSockets: 15,
   timeout: 5000
 });
 
@@ -47,7 +47,7 @@ async function fetchFancyBmWorker(eventId) {
 
     const markets = [];
 
-    // 1. Bookmaker Markets (Deterministic Runner Order)
+    // 1. Bookmaker Markets
     if (bmData && bmData.bookMakerMarket && bmData.bookMakerMarket.markets) {
       const allSelections = (bmData.bookMakerSelection && bmData.bookMakerSelection.selections) ? bmData.bookMakerSelection.selections : [];
 
@@ -56,7 +56,6 @@ async function fetchFancyBmWorker(eventId) {
         const marketSelections = allSelections.filter(s => String(s.marketId) === String(m.marketId));
         if (marketSelections.length === 0) continue;
 
-        // DETERMINISTIC RUNNER SORT: Sort by sortPriority or selectionId to guarantee zero runner shuffling
         marketSelections.sort((a, b) => {
           const prioA = a.sortPriority !== undefined ? a.sortPriority : (parseInt(a.selectionId) || 0);
           const prioB = b.sortPriority !== undefined ? b.sortPriority : (parseInt(b.selectionId) || 0);
@@ -66,19 +65,23 @@ async function fetchFancyBmWorker(eventId) {
         const selections = marketSelections.map(s => {
           let backOdds = [];
           let layOdds = [];
-          try { backOdds = JSON.parse(s.backOddsInfo || '[]').filter(p => p !== '' && p !== null && !isNaN(p)).map(Number); } catch (e) {}
-          try { layOdds = JSON.parse(s.layOddsInfo || '[]').filter(p => p !== '' && p !== null && !isNaN(p)).map(Number); } catch (e) {}
+          try {
+            const rawBack = JSON.parse(s.backOddsInfo || '[]');
+            backOdds = rawBack.filter(p => p !== '' && p !== null && !isNaN(p)).map(p => parseFloat(p).toFixed(0));
+          } catch (e) {}
 
-          const cleanBack = (backOdds.length > 0) ? backOdds[0].toString() : null;
-          const cleanLay = (layOdds.length > 0) ? layOdds[0].toString() : null;
+          try {
+            const rawLay = JSON.parse(s.layOddsInfo || '[]');
+            layOdds = rawLay.filter(p => p !== '' && p !== null && !isNaN(p)).map(p => parseFloat(p).toFixed(0));
+          } catch (e) {}
 
           return {
             selectionId: String(s.selectionId),
             runnerName: s.runnerName,
             sortPriority: s.sortPriority || 0,
-            backPrice: cleanBack,
-            layPrice: cleanLay,
             status: s.status,
+            backPrice: backOdds[0] || null,
+            layPrice: layOdds[0] || null,
             availableToBack: backOdds.map(p => ({ price: p, size: '' })),
             availableToLay: layOdds.map(p => ({ price: p, size: '' }))
           };
@@ -137,25 +140,22 @@ async function fetchFancyBmWorker(eventId) {
   } catch (e) {}
 }
 
-let currentFocusEventId = '35924127';
-
 async function runFancyBmWorkerLoop() {
   while (true) {
     try {
-      const statusRes = await fetch('http://localhost:3000/api/active-focus').catch(() => null);
-      if (statusRes && statusRes.ok) {
-        const focusData = await statusRes.json();
-        if (focusData.eventId) currentFocusEventId = focusData.eventId;
-      }
+      const activeRes = await fetch('http://localhost:3000/api/active-events').catch(() => null);
+      if (activeRes && activeRes.ok) {
+        const activeData = await activeRes.json();
+        const liveList = activeData.events || [];
 
-      if (currentFocusEventId) {
-        await fetchFancyBmWorker(currentFocusEventId);
+        // Scrape all live matches concurrently
+        await Promise.all(liveList.map(ev => fetchFancyBmWorker(ev.eventId)));
       }
     } catch (e) {}
 
-    await new Promise(resolve => setTimeout(resolve, 120));
+    await new Promise(resolve => setTimeout(resolve, 100));
   }
 }
 
-console.log('⚡ WORKER 2: Fancy Bet & Bookmaker Deterministic Runner Sorting Active!');
+console.log('⚡ WORKER 2: Multi-Match Parallel Fancy & Bookmaker Scraper Active!');
 runFancyBmWorkerLoop();
