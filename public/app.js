@@ -192,14 +192,13 @@ function renderMarkets(markets) {
     return orderA - orderB;
   });
 
-  // Extract reference runner order from Match Odds to align Bookmaker runners 100%
   const moMarket = sortedMarkets.find(m => m.category === 'MATCH_ODDS');
   const referenceRunnerOrder = moMarket ? (moMarket.selections || []).map(s => (s.runnerName || '').toLowerCase().trim()) : [];
 
   dom.marketsContainer.innerHTML = sortedMarkets.map(m => {
     const category = m.category || 'MATCH_ODDS';
 
-    // 1. MATCH ODDS / 1x2 EXCHANGE MARKETS
+    // 1. MATCH ODDS / 1x2 EXCHANGE MARKETS (CORRECT 3-DEPTH COLUMN ALIGNMENT)
     if (category === 'MATCH_ODDS') {
       const selections = m.selections || [];
       return `
@@ -213,17 +212,24 @@ function renderMarkets(markets) {
             <thead>
               <tr>
                 <th style="text-align:left;">Runner / Team</th>
-                <th class="back-col" colspan="3">Back</th>
-                <th class="lay-col" colspan="3">Lay</th>
+                <th class="back-col" colspan="3">Back (Bet For)</th>
+                <th class="lay-col" colspan="3">Lay (Bet Against)</th>
               </tr>
             </thead>
             <tbody>
               ${selections.map(s => {
                 const backArr = (s.availableToBack || []).slice().sort((a, b) => a.price - b.price);
                 let b1 = null, b2 = null, b3Best = null;
-                if (backArr.length === 1) b3Best = backArr[0];
-                else if (backArr.length === 2) { b2 = backArr[0]; b3Best = backArr[1]; }
-                else if (backArr.length >= 3) { b1 = backArr[backArr.length - 3]; b2 = backArr[backArr.length - 2]; b3Best = backArr[backArr.length - 1]; }
+                if (backArr.length === 1) {
+                  b3Best = backArr[0];
+                } else if (backArr.length === 2) {
+                  b2 = backArr[0];
+                  b3Best = backArr[1];
+                } else if (backArr.length >= 3) {
+                  b1 = backArr[backArr.length - 3];
+                  b2 = backArr[backArr.length - 2];
+                  b3Best = backArr[backArr.length - 1];
+                }
 
                 const layArr = (s.availableToLay || []).slice().sort((a, b) => a.price - b.price);
                 let l4Best = null, l5 = null, l6 = null;
@@ -240,7 +246,7 @@ function renderMarkets(markets) {
                     <td style="text-align:center;">${b3Best ? `<div class="ap-odds-btn back" style="font-weight:900;"><span class="ap-price">${b3Best.price}</span><span class="ap-size">$${b3Best.size}</span></div>` : '-'}</td>
 
                     <td style="text-align:center;">${l4Best ? `<div class="ap-odds-btn lay" style="font-weight:900;"><span class="ap-price">${l4Best.price}</span><span class="ap-size">$${l4Best.size}</span></div>` : '-'}</td>
-                    <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l5.price}</span><span class="ap-size">$${l5.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${l5 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l5.price}</span><span class="ap-size">$${l5.size}</span></div>` : '-'}</td>
                     <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l6.price}</span><span class="ap-size">$${l6.size}</span></div>` : '-'}</td>
                   </tr>
                 `;
@@ -251,11 +257,10 @@ function renderMarkets(markets) {
       `;
     }
 
-    // 2. BOOKMAKER MARKETS (ALIGNED TO MATCH ODDS RUNNER ORDER)
+    // 2. BOOKMAKER MARKETS (EXACT 1-BACK & 1-LAY BOX MATCHING SKYEXCH.VIP 100%)
     if (category === 'BOOKMAKER') {
       let selections = (m.selections || []).slice();
 
-      // Align Bookmaker runner order 100% to Match Odds runner order
       if (referenceRunnerOrder.length > 0) {
         selections.sort((a, b) => {
           const nameA = (a.runnerName || '').toLowerCase().trim();
@@ -279,36 +284,36 @@ function renderMarkets(markets) {
             <thead>
               <tr>
                 <th style="text-align:left;">Runner / Team</th>
-                <th class="back-col" colspan="3">BACK</th>
-                <th class="lay-col" colspan="3">LAY</th>
+                <th class="back-col" style="width:140px; text-align:center;">BACK</th>
+                <th class="lay-col" style="width:140px; text-align:center;">LAY</th>
               </tr>
             </thead>
             <tbody>
               ${selections.map(s => {
                 const backArr = s.availableToBack || [];
                 const layArr = s.availableToLay || [];
-                const hasBack = backArr.length > 0 && backArr[0].price !== null && backArr[0].price !== '';
-                const hasLay = layArr.length > 0 && layArr[0].price !== null && layArr[0].price !== '';
-                const isSuspended = s.status === 2 || (!hasBack && !hasLay);
-
-                let b1 = backArr[2], b2 = backArr[1], b3Best = backArr[0];
-                let l4Best = layArr[0], l5 = layArr[1], l6 = layArr[2];
+                const backVal = (backArr.length > 0 && backArr[0].price !== null && backArr[0].price !== '') ? parseFloat(backArr[0].price).toFixed(0) : (s.backPrice ? parseFloat(s.backPrice).toFixed(0) : null);
+                const layVal = (layArr.length > 0 && layArr[0].price !== null && layArr[0].price !== '') ? parseFloat(layArr[0].price).toFixed(0) : (s.layPrice ? parseFloat(s.layPrice).toFixed(0) : null);
+                
+                const isSuspended = s.status === 2 || (!backVal && !layVal);
 
                 return `
                   <tr>
                     <td class="ap-runner-name">${s.runnerName}</td>
-                    ${!isSuspended ? `
-                      <td style="text-align:center;">${b1 ? `<div class="ap-odds-btn back"><span class="ap-price">${parseFloat(b1.price).toFixed(0)}</span></div>` : '-'}</td>
-                      <td style="text-align:center;">${b2 ? `<div class="ap-odds-btn back"><span class="ap-price">${parseFloat(b2.price).toFixed(0)}</span></div>` : '-'}</td>
-                      <td style="text-align:center;">${b3Best ? `<div class="ap-odds-btn back" style="font-weight:900;"><span class="ap-price">${parseFloat(b3Best.price).toFixed(0)}</span></div>` : '-'}</td>
-
-                      <td style="text-align:center;">${l4Best ? `<div class="ap-odds-btn lay" style="font-weight:900;"><span class="ap-price">${parseFloat(l4Best.price).toFixed(0)}</span></div>` : '-'}</td>
-                      <td style="text-align:center;">${l5 ? `<div class="ap-odds-btn lay"><span class="ap-price">${parseFloat(l5.price).toFixed(0)}</span></div>` : '-'}</td>
-                      <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${parseFloat(l6.price).toFixed(0)}</span></div>` : '-'}</td>
-                    ` : `
-                      <td colspan="3" style="text-align:center;"><div class="ap-odds-btn suspended" style="width:100%;"><span class="ap-price" style="font-size:0.75rem;">SUSPENDED</span></div></td>
-                      <td colspan="3" style="text-align:center;"><div class="ap-odds-btn suspended" style="width:100%;"><span class="ap-price" style="font-size:0.75rem;">SUSPENDED</span></div></td>
-                    `}
+                    <td style="text-align:center;">
+                      ${!isSuspended && backVal ? `
+                        <div class="ap-odds-btn back">
+                          <span class="ap-price">${backVal}</span>
+                        </div>
+                      ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.75rem;">SUSPENDED</span></div>`}
+                    </td>
+                    <td style="text-align:center;">
+                      ${!isSuspended && layVal ? `
+                        <div class="ap-odds-btn lay">
+                          <span class="ap-price">${layVal}</span>
+                        </div>
+                      ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.75rem;">SUSPENDED</span></div>`}
+                    </td>
                   </tr>
                 `;
               }).join('')}
