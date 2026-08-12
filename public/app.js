@@ -1,6 +1,5 @@
 // AllPanel777 Zero-Flicker Real-Time Sportsbook Client & Mobile Responsive Manager
 
-// Dynamic API Base URL Config (Connects Vercel / External Frontends to Master API Server)
 const API_BASE_URL = window.API_BASE_URL || (window.location.hostname.includes('vercel.app') ? 'https://zxgaming-engine.onrender.com' : '');
 
 const state = {
@@ -114,7 +113,6 @@ function selectEvent(eventId) {
   state.selectedEventId = String(eventId);
   renderSidebar();
 
-  // Close mobile drawer on selection
   if (dom.sidebarDrawer) {
     dom.sidebarDrawer.classList.remove('open');
   }
@@ -233,13 +231,13 @@ function renderMarkets(markets) {
                   <tr>
                     <td class="ap-runner-name">${s.runnerName}</td>
                     
-                    <td style="text-align:center;">${b1 ? `<div class="ap-odds-btn back"><span class="ap-price">${b1.price}</span><span class="ap-size">${b1.size}</span></div>` : '-'}</td>
-                    <td style="text-align:center;">${b2 ? `<div class="ap-odds-btn back"><span class="ap-price">${b2.price}</span><span class="ap-size">${b2.size}</span></div>` : '-'}</td>
-                    <td style="text-align:center;">${b3Best ? `<div class="ap-odds-btn back" style="font-weight:900;"><span class="ap-price">${b3Best.price}</span><span class="ap-size">${b3Best.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${b1 ? `<div class="ap-odds-btn back"><span class="ap-price">${b1.price}</span><span class="ap-size">$${b1.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${b2 ? `<div class="ap-odds-btn back"><span class="ap-price">${b2.price}</span><span class="ap-size">$${b2.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${b3Best ? `<div class="ap-odds-btn back" style="font-weight:900;"><span class="ap-price">${b3Best.price}</span><span class="ap-size">$${b3Best.size}</span></div>` : '-'}</td>
 
-                    <td style="text-align:center;">${l4Best ? `<div class="ap-odds-btn lay" style="font-weight:900;"><span class="ap-price">${l4Best.price}</span><span class="ap-size">${l4Best.size}</span></div>` : '-'}</td>
-                    <td style="text-align:center;">${l5 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l5.price}</span><span class="ap-size">${l5.size}</span></div>` : '-'}</td>
-                    <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l6.price}</span><span class="ap-size">${l6.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${l4Best ? `<div class="ap-odds-btn lay" style="font-weight:900;"><span class="ap-price">${l4Best.price}</span><span class="ap-size">$${l4Best.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${l5 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l5.price}</span><span class="ap-size">$${l5.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l6.price}</span><span class="ap-size">$${l6.size}</span></div>` : '-'}</td>
                   </tr>
                 `;
               }).join('')}
@@ -249,7 +247,7 @@ function renderMarkets(markets) {
       `;
     }
 
-    // 2. BOOKMAKER MARKETS
+    // 2. BOOKMAKER MARKETS (WITH 3-DEPTH BACK & LAY ODDS)
     if (category === 'BOOKMAKER') {
       const selections = m.selections || [];
       return `
@@ -263,33 +261,36 @@ function renderMarkets(markets) {
             <thead>
               <tr>
                 <th style="text-align:left;">Runner / Team</th>
-                <th class="back-col" style="width:90px;">BACK</th>
-                <th class="lay-col" style="width:90px;">LAY</th>
+                <th class="back-col" colspan="3">BACK</th>
+                <th class="lay-col" colspan="3">LAY</th>
               </tr>
             </thead>
             <tbody>
               ${selections.map(s => {
-                const hasBack = s.backPrice && s.backPrice !== '';
-                const hasLay = s.layPrice && s.layPrice !== '';
+                const backArr = s.availableToBack || [];
+                const layArr = s.availableToLay || [];
+                const hasBack = backArr.length > 0 && backArr[0].price !== null && backArr[0].price !== '';
+                const hasLay = layArr.length > 0 && layArr[0].price !== null && layArr[0].price !== '';
                 const isSuspended = s.status === 2 || (!hasBack && !hasLay);
+
+                let b1 = backArr[2], b2 = backArr[1], b3Best = backArr[0];
+                let l4Best = layArr[0], l5 = layArr[1], l6 = layArr[2];
 
                 return `
                   <tr>
                     <td class="ap-runner-name">${s.runnerName}</td>
-                    <td style="text-align:center;">
-                      ${!isSuspended && hasBack ? `
-                        <div class="ap-odds-btn back">
-                          <span class="ap-price">${parseFloat(s.backPrice).toFixed(0)}</span>
-                        </div>
-                      ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.65rem;">SUSPENDED</span></div>`}
-                    </td>
-                    <td style="text-align:center;">
-                      ${!isSuspended && hasLay ? `
-                        <div class="ap-odds-btn lay">
-                          <span class="ap-price">${parseFloat(s.layPrice).toFixed(0)}</span>
-                        </div>
-                      ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.65rem;">SUSPENDED</span></div>`}
-                    </td>
+                    ${!isSuspended ? `
+                      <td style="text-align:center;">${b1 ? `<div class="ap-odds-btn back"><span class="ap-price">${parseFloat(b1.price).toFixed(0)}</span></div>` : '-'}</td>
+                      <td style="text-align:center;">${b2 ? `<div class="ap-odds-btn back"><span class="ap-price">${parseFloat(b2.price).toFixed(0)}</span></div>` : '-'}</td>
+                      <td style="text-align:center;">${b3Best ? `<div class="ap-odds-btn back" style="font-weight:900;"><span class="ap-price">${parseFloat(b3Best.price).toFixed(0)}</span></div>` : '-'}</td>
+
+                      <td style="text-align:center;">${l4Best ? `<div class="ap-odds-btn lay" style="font-weight:900;"><span class="ap-price">${parseFloat(l4Best.price).toFixed(0)}</span></div>` : '-'}</td>
+                      <td style="text-align:center;">${l5 ? `<div class="ap-odds-btn lay"><span class="ap-price">${parseFloat(l5.price).toFixed(0)}</span></div>` : '-'}</td>
+                      <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${parseFloat(l6.price).toFixed(0)}</span></div>` : '-'}</td>
+                    ` : `
+                      <td colspan="3" style="text-align:center;"><div class="ap-odds-btn suspended" style="width:100%;"><span class="ap-price" style="font-size:0.75rem;">SUSPENDED</span></div></td>
+                      <td colspan="3" style="text-align:center;"><div class="ap-odds-btn suspended" style="width:100%;"><span class="ap-price" style="font-size:0.75rem;">SUSPENDED</span></div></td>
+                    `}
                   </tr>
                 `;
               }).join('')}
@@ -299,9 +300,9 @@ function renderMarkets(markets) {
       `;
     }
 
-    // 3. FANCY BET SESSION MARKETS
+    // 3. FANCY BET SESSION MARKETS (STATUS 2, 10, 18 ACTIVE SESSION MAPPING)
     if (category === 'FANCY') {
-      const isBallRunning = (m.status !== 2) || (m.runsNo === 0 && m.runsYes === 0 && (m.oddsNo === 0 || m.oddsNo === null));
+      const isActiveSession = (m.status === 2 || m.status === 10 || m.status === 18) && (m.runsNo > 0 || m.runsYes > 0 || (m.oddsNo > 0 && m.oddsNo < 1000));
 
       const nameLower = (m.marketName || '').toLowerCase();
       let noLabel = `${m.runsNo}`;
@@ -322,28 +323,28 @@ function renderMarkets(markets) {
             <thead>
               <tr>
                 <th style="text-align:left;">Session / Special Bet</th>
-                <th class="lay-col" style="width:90px;">NOT (NO)</th>
-                <th class="back-col" style="width:90px;">YES (BACK)</th>
+                <th class="lay-col" style="width:120px;">NOT (NO)</th>
+                <th class="back-col" style="width:120px;">YES (BACK)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="ap-runner-name">${m.marketName}</td>
                 <td style="text-align:center;">
-                  ${isBallRunning ? `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.65rem;">Ball Run</span></div>` : `
+                  ${isActiveSession ? `
                     <div class="ap-odds-btn lay">
                       <span class="ap-price">${noLabel}</span>
                       <span class="ap-size">${m.oddsNo || 100}</span>
                     </div>
-                  `}
+                  ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.75rem;">Ball Run</span></div>`}
                 </td>
                 <td style="text-align:center;">
-                  ${isBallRunning ? `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.65rem;">Ball Run</span></div>` : `
+                  ${isActiveSession ? `
                     <div class="ap-odds-btn back">
                       <span class="ap-price">${yesLabel}</span>
                       <span class="ap-size">${m.oddsYes || 100}</span>
                     </div>
-                  `}
+                  ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.75rem;">Ball Run</span></div>`}
                 </td>
               </tr>
             </tbody>
@@ -365,7 +366,7 @@ function renderMarkets(markets) {
           <thead>
             <tr>
               <th style="text-align:left;">Selection</th>
-              <th style="width:90px; text-align:center; color:var(--ap-green);">DECIMAL</th>
+              <th style="width:120px; text-align:center; color:var(--ap-green);">DECIMAL</th>
             </tr>
           </thead>
           <tbody>
@@ -377,7 +378,7 @@ function renderMarkets(markets) {
                     <div class="ap-odds-btn green">
                       <span class="ap-price">${s.odds}</span>
                     </div>
-                  ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.65rem;">Ball Run</span></div>`}
+                  ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.75rem;">Ball Run</span></div>`}
                 </td>
               </tr>
             `).join('')}

@@ -47,12 +47,11 @@ async function fetchFancyBmWorker(eventId) {
 
     const markets = [];
 
-    // 1. Bookmaker Markets
+    // 1. Bookmaker Markets (with 3-Depth Back & Lay Odds)
     if (bmData && bmData.bookMakerMarket && bmData.bookMakerMarket.markets) {
       const allSelections = (bmData.bookMakerSelection && bmData.bookMakerSelection.selections) ? bmData.bookMakerSelection.selections : [];
 
       for (const m of bmData.bookMakerMarket.markets) {
-        // STRICT PURGE: Skip ended/settled/removed markets (status 3 or 9)
         if (m.status === 3 || m.status === 9 || m.isCompleted === 1) continue;
         const marketSelections = allSelections.filter(s => String(s.marketId) === String(m.marketId));
         if (marketSelections.length === 0) continue;
@@ -88,17 +87,24 @@ async function fetchFancyBmWorker(eventId) {
       }
     }
 
-    // 2. Fancy Bet Markets
+    // 2. Fancy Bet Markets (Filter out unopened placeholders like '<' or status 1 with 0 odds)
     if (fancyData) {
       const list = Array.isArray(fancyData) ? fancyData : (fancyData.fancyBetMarkets || []);
       for (const f of list) {
-        // STRICT PURGE: If market is settled, resulted, closed, or status!=2, DO NOT INCLUDE
+        // Skip ended / settled / resulted markets
         if (f.status === 3 || f.status === 9 || f.status === 5 || (f.resultRuns !== undefined && f.resultRuns !== -1)) {
           continue;
         }
 
-        // Purge dead ball run sessions that have ended on skyexch
-        if (f.status !== 2 && (f.runsNo === 0 && f.runsYes === 0) && (f.oddsNo === null || f.oddsNo === 0 || f.oddsNo === 100)) {
+        const name = (f.marketName || '').trim();
+
+        // Skip unopened placeholders or internal SkyExchange test lines (like '<S', '<E', 'h', '/\'/')
+        if (name.startsWith('<') || name === 'h' || name.includes('/\'/') || name.length <= 1) {
+          continue;
+        }
+
+        // Skip unopened lines with status 1 and null/zero odds
+        if (f.status === 1 && (f.runsNo === 0 && f.runsYes === 0) && (f.oddsNo === null || f.oddsNo === 0)) {
           continue;
         }
 
@@ -117,7 +123,6 @@ async function fetchFancyBmWorker(eventId) {
       }
     }
 
-    // Send payload (including empty list if all markets ended, which clears old markets!)
     await fetch(MAIN_SERVER_INGEST, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -129,7 +134,7 @@ async function fetchFancyBmWorker(eventId) {
   } catch (e) {}
 }
 
-let currentFocusEventId = '35920148';
+let currentFocusEventId = '35924127';
 
 async function runFancyBmWorkerLoop() {
   while (true) {
@@ -149,5 +154,5 @@ async function runFancyBmWorkerLoop() {
   }
 }
 
-console.log('⚡ WORKER 2: Fancy Bet & Bookmaker Instant Purge Micro-Scraper Active!');
+console.log('⚡ WORKER 2: Fancy Bet & Bookmaker SkyExchange Exact Match Active!');
 runFancyBmWorkerLoop();
