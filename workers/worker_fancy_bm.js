@@ -7,7 +7,7 @@ const httpsAgent = new https.Agent({
   keepAlive: true,
   maxSockets: 30,
   maxFreeSockets: 15,
-  timeout: 5000
+  timeout: 4000
 });
 
 const HTTP_HEADERS = {
@@ -28,7 +28,7 @@ async function safeFetchJson(endpoint, bodyParams) {
     });
     if (!res.ok) return null;
     const text = await res.text();
-    if (!text || text.includes('<!DOCTYPE')) return null;
+    if (!text || text.trim() === '' || text.includes('<!DOCTYPE')) return null;
     return JSON.parse(text);
   } catch (e) {
     return null;
@@ -45,9 +45,14 @@ async function fetchFancyBmWorker(eventId) {
       safeFetchJson('queryFancyBetMarkets', formFancy)
     ]);
 
+    // PRESERVE CACHE: If both calls returned null (rate-limit / network drop), skip ingestion to avoid wiping existing UI markets!
+    if (bmData === null && fancyData === null) {
+      return;
+    }
+
     const markets = [];
 
-    // 1. Bookmaker Markets
+    // 1. Bookmaker Markets (Percentage rates: 94, 98, 80, 83)
     if (bmData && bmData.bookMakerMarket && bmData.bookMakerMarket.markets) {
       const allSelections = (bmData.bookMakerSelection && bmData.bookMakerSelection.selections) ? bmData.bookMakerSelection.selections : [];
 
@@ -67,12 +72,12 @@ async function fetchFancyBmWorker(eventId) {
           let layOdds = [];
           try {
             const rawBack = JSON.parse(s.backOddsInfo || '[]');
-            backOdds = rawBack.filter(p => p !== '' && p !== null && !isNaN(p)).map(p => parseFloat(p).toFixed(0));
+            backOdds = rawBack.filter(p => p !== '' && p !== null && !isNaN(p)).map(p => Math.round(parseFloat(p)).toString());
           } catch (e) {}
 
           try {
             const rawLay = JSON.parse(s.layOddsInfo || '[]');
-            layOdds = rawLay.filter(p => p !== '' && p !== null && !isNaN(p)).map(p => parseFloat(p).toFixed(0));
+            layOdds = rawLay.filter(p => p !== '' && p !== null && !isNaN(p)).map(p => Math.round(parseFloat(p)).toString());
           } catch (e) {}
 
           return {
@@ -140,22 +145,39 @@ async function fetchFancyBmWorker(eventId) {
   } catch (e) {}
 }
 
+let focusEventId = '35920223';
+
 async function runFancyBmWorkerLoop() {
   while (true) {
     try {
+      // 1. Check focused event ID from server
+      const focusRes = await fetch('http://localhost:3000/api/active-focus').catch(() => null);
+      if (focusRes && focusRes.ok) {
+        const focusData = await focusRes.json();
+        if (focusData.eventId) focusEventId = focusData.eventId;
+      }
+
+      // HIGH PRIORITY: Scrape focused event on 80ms loop
+      if (focusEventId) {
+        await fetchFancyBmWorker(focusEventId);
+      }
+
+      // BACKGROUND: Scrape remaining active events in controlled 500ms batches to prevent rate limiting
       const activeRes = await fetch('http://localhost:3000/api/active-events').catch(() => null);
       if (activeRes && activeRes.ok) {
         const activeData = await activeRes.json();
-        const liveList = activeData.events || [];
+        const otherEvents = (activeData.events || []).filter(e => String(e.eventId) !== String(focusEventId));
 
-        // Scrape all live matches concurrently
-        await Promise.all(liveList.map(ev => fetchFancyBmWorker(ev.eventId)));
+        for (const ev of otherEvents.slice(0, 4)) {
+          await fetchFancyBmWorker(ev.eventId);
+          await new Promise(r => setTimeout(r, 60));
+        }
       }
     } catch (e) {}
 
-    await new Promise(resolve => setTimeout(resolve, 100));
+    await new Promise(resolve => setTimeout(resolve, 80));
   }
 }
 
-console.log('⚡ WORKER 2: Multi-Match Parallel Fancy & Bookmaker Scraper Active!');
+console.log('⚡ WORKER 2: Priority Focused Fancy & Bookmaker Scraper Active (Rate-Limit Protected)!');
 runFancyBmWorkerLoop();

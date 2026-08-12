@@ -64,7 +64,7 @@ const cache = {
 };
 
 let sseClients = [];
-let activeFocusedEventId = '35924127';
+let activeFocusedEventId = '35920223';
 let activeFocusedEventType = '4';
 let hasPendingBroadcast = false;
 
@@ -112,12 +112,19 @@ async function safeFetchJsonNode(endpoint, bodyParams) {
   }
 }
 
+// Category bucket merging logic (Protects against empty transient drops)
 function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
   const existing = cache.eventsMap.get(eventIdStr);
   if (!existing) return;
 
   existing.marketsMap = existing.marketsMap || {};
-  existing.marketsMap[categoryKey] = newMarkets || [];
+
+  // Preserve existing category markets if worker posted empty array during transient rate-limit drop
+  if (Array.isArray(newMarkets) && newMarkets.length > 0) {
+    existing.marketsMap[categoryKey] = newMarkets;
+  } else if (!existing.marketsMap[categoryKey]) {
+    existing.marketsMap[categoryKey] = [];
+  }
 
   const mo = existing.marketsMap['MATCH_ODDS'] || [];
   const bm = existing.marketsMap['BOOKMAKER'] || [];
