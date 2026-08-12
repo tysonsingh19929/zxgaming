@@ -47,7 +47,7 @@ async function fetchFancyBmWorker(eventId) {
 
     const markets = [];
 
-    // 1. Bookmaker Markets (with 3-Depth Back & Lay Odds)
+    // 1. Bookmaker Markets (Deterministic Runner Order)
     if (bmData && bmData.bookMakerMarket && bmData.bookMakerMarket.markets) {
       const allSelections = (bmData.bookMakerSelection && bmData.bookMakerSelection.selections) ? bmData.bookMakerSelection.selections : [];
 
@@ -55,6 +55,13 @@ async function fetchFancyBmWorker(eventId) {
         if (m.status === 3 || m.status === 9 || m.isCompleted === 1) continue;
         const marketSelections = allSelections.filter(s => String(s.marketId) === String(m.marketId));
         if (marketSelections.length === 0) continue;
+
+        // DETERMINISTIC RUNNER SORT: Sort by sortPriority or selectionId to guarantee zero runner shuffling
+        marketSelections.sort((a, b) => {
+          const prioA = a.sortPriority !== undefined ? a.sortPriority : (parseInt(a.selectionId) || 0);
+          const prioB = b.sortPriority !== undefined ? b.sortPriority : (parseInt(b.selectionId) || 0);
+          return prioA - prioB;
+        });
 
         const selections = marketSelections.map(s => {
           let backOdds = [];
@@ -87,23 +94,19 @@ async function fetchFancyBmWorker(eventId) {
       }
     }
 
-    // 2. Fancy Bet Markets (Filter out unopened placeholders like '<' or status 1 with 0 odds)
+    // 2. Fancy Bet Markets
     if (fancyData) {
       const list = Array.isArray(fancyData) ? fancyData : (fancyData.fancyBetMarkets || []);
       for (const f of list) {
-        // Skip ended / settled / resulted markets
         if (f.status === 3 || f.status === 9 || f.status === 5 || (f.resultRuns !== undefined && f.resultRuns !== -1)) {
           continue;
         }
 
         const name = (f.marketName || '').trim();
-
-        // Skip unopened placeholders or internal SkyExchange test lines (like '<S', '<E', 'h', '/\'/')
         if (name.startsWith('<') || name === 'h' || name.includes('/\'/') || name.length <= 1) {
           continue;
         }
 
-        // Skip unopened lines with status 1 and null/zero odds
         if (f.status === 1 && (f.runsNo === 0 && f.runsYes === 0) && (f.oddsNo === null || f.oddsNo === 0)) {
           continue;
         }
@@ -154,5 +157,5 @@ async function runFancyBmWorkerLoop() {
   }
 }
 
-console.log('⚡ WORKER 2: Fancy Bet & Bookmaker SkyExchange Exact Match Active!');
+console.log('⚡ WORKER 2: Fancy Bet & Bookmaker Deterministic Runner Sorting Active!');
 runFancyBmWorkerLoop();

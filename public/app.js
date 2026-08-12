@@ -192,6 +192,10 @@ function renderMarkets(markets) {
     return orderA - orderB;
   });
 
+  // Extract reference runner order from Match Odds to align Bookmaker runners 100%
+  const moMarket = sortedMarkets.find(m => m.category === 'MATCH_ODDS');
+  const referenceRunnerOrder = moMarket ? (moMarket.selections || []).map(s => (s.runnerName || '').toLowerCase().trim()) : [];
+
   dom.marketsContainer.innerHTML = sortedMarkets.map(m => {
     const category = m.category || 'MATCH_ODDS';
 
@@ -236,7 +240,7 @@ function renderMarkets(markets) {
                     <td style="text-align:center;">${b3Best ? `<div class="ap-odds-btn back" style="font-weight:900;"><span class="ap-price">${b3Best.price}</span><span class="ap-size">$${b3Best.size}</span></div>` : '-'}</td>
 
                     <td style="text-align:center;">${l4Best ? `<div class="ap-odds-btn lay" style="font-weight:900;"><span class="ap-price">${l4Best.price}</span><span class="ap-size">$${l4Best.size}</span></div>` : '-'}</td>
-                    <td style="text-align:center;">${l5 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l5.price}</span><span class="ap-size">$${l5.size}</span></div>` : '-'}</td>
+                    <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l5.price}</span><span class="ap-size">$${l5.size}</span></div>` : '-'}</td>
                     <td style="text-align:center;">${l6 ? `<div class="ap-odds-btn lay"><span class="ap-price">${l6.price}</span><span class="ap-size">$${l6.size}</span></div>` : '-'}</td>
                   </tr>
                 `;
@@ -247,9 +251,23 @@ function renderMarkets(markets) {
       `;
     }
 
-    // 2. BOOKMAKER MARKETS (WITH 3-DEPTH BACK & LAY ODDS)
+    // 2. BOOKMAKER MARKETS (ALIGNED TO MATCH ODDS RUNNER ORDER)
     if (category === 'BOOKMAKER') {
-      const selections = m.selections || [];
+      let selections = (m.selections || []).slice();
+
+      // Align Bookmaker runner order 100% to Match Odds runner order
+      if (referenceRunnerOrder.length > 0) {
+        selections.sort((a, b) => {
+          const nameA = (a.runnerName || '').toLowerCase().trim();
+          const nameB = (b.runnerName || '').toLowerCase().trim();
+          let indexA = referenceRunnerOrder.findIndex(r => r.includes(nameA) || nameA.includes(r));
+          let indexB = referenceRunnerOrder.findIndex(r => r.includes(nameB) || nameB.includes(r));
+          if (indexA === -1) indexA = 99;
+          if (indexB === -1) indexB = 99;
+          return indexA - indexB;
+        });
+      }
+
       return `
         <div class="ap-market-section" id="market-sec-${m.marketId}">
           <div class="ap-market-head">
@@ -300,7 +318,7 @@ function renderMarkets(markets) {
       `;
     }
 
-    // 3. FANCY BET SESSION MARKETS (STATUS 2, 10, 18 ACTIVE SESSION MAPPING)
+    // 3. FANCY BET SESSION MARKETS
     if (category === 'FANCY') {
       const isActiveSession = (m.status === 2 || m.status === 10 || m.status === 18) && (m.runsNo > 0 || m.runsYes > 0 || (m.oddsNo > 0 && m.oddsNo < 1000));
 
