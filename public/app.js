@@ -198,7 +198,7 @@ function renderMarkets(markets) {
   dom.marketsContainer.innerHTML = sortedMarkets.map(m => {
     const category = m.category || 'MATCH_ODDS';
 
-    // 1. MATCH ODDS / 1x2 EXCHANGE MARKETS (STABLE FIXED DEPTH ALIGNMENT)
+    // 1. MATCH ODDS / 1x2 EXCHANGE MARKETS
     if (category === 'MATCH_ODDS') {
       const selections = m.selections || [];
       return `
@@ -218,13 +218,11 @@ function renderMarkets(markets) {
             </thead>
             <tbody>
               ${selections.map(s => {
-                // Best Back (Highest price) MUST ALWAYS be in Column 3 right next to Lay
                 const rawBack = (s.availableToBack || []).slice().sort((a, b) => b.price - a.price);
                 const b3Best = rawBack[0] || null; // Column 3 (Best Back)
                 const b2     = rawBack[1] || null; // Column 2 (2nd Best Back)
                 const b1     = rawBack[2] || null; // Column 1 (3rd Best Back)
 
-                // Best Lay (Lowest price) MUST ALWAYS be in Column 4 right next to Back
                 const rawLay = (s.availableToLay || []).slice().sort((a, b) => a.price - b.price);
                 const l4Best = rawLay[0] || null;  // Column 4 (Best Lay)
                 const l5     = rawLay[1] || null;  // Column 5 (2nd Best Lay)
@@ -250,7 +248,7 @@ function renderMarkets(markets) {
       `;
     }
 
-    // 2. BOOKMAKER MARKETS (EXACT 1-BACK & 1-LAY BOX MATCHING SKYEXCH.VIP 100%)
+    // 2. BOOKMAKER MARKETS
     if (category === 'BOOKMAKER') {
       let selections = (m.selections || []).slice();
 
@@ -316,9 +314,9 @@ function renderMarkets(markets) {
       `;
     }
 
-    // 3. FANCY BET SESSION MARKETS
+    // 3. FANCY BET SESSION MARKETS (EXACT BALL RUNNING OVERLAY MATCHING SKYEXCH.VIP)
     if (category === 'FANCY') {
-      const isActiveSession = (m.status === 2 || m.status === 10 || m.status === 18) && (m.runsNo > 0 || m.runsYes > 0 || (m.oddsNo > 0 && m.oddsNo < 1000));
+      const isBallRunning = m.status === 18 || m.status === 6 || m.status === 1 || (m.runsNo === 0 && m.runsYes === 0);
 
       const nameLower = (m.marketName || '').toLowerCase();
       let noLabel = `${m.runsNo}`;
@@ -339,28 +337,26 @@ function renderMarkets(markets) {
             <thead>
               <tr>
                 <th style="text-align:left;">Session / Special Bet</th>
-                <th class="lay-col" style="width:120px;">NOT (NO)</th>
-                <th class="back-col" style="width:120px;">YES (BACK)</th>
+                <th class="lay-col" style="width:140px; text-align:center;">NOT (NO)</th>
+                <th class="back-col" style="width:140px; text-align:center;">YES (BACK)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="ap-runner-name">${m.marketName}</td>
-                <td style="text-align:center;">
-                  ${isActiveSession ? `
-                    <div class="ap-odds-btn lay">
-                      <span class="ap-price">${noLabel}</span>
-                      <span class="ap-size">${m.oddsNo || 100}</span>
-                    </div>
-                  ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.75rem;">Ball Run</span></div>`}
+                <td style="text-align:center; position:relative;">
+                  <div class="ap-odds-btn lay ${isBallRunning ? 'ball-running-active' : ''}">
+                    <span class="ap-price">${noLabel}</span>
+                    <span class="ap-size">${m.oddsNo || 100}</span>
+                    ${isBallRunning ? `<div class="ap-ball-running-overlay">Ball Running</div>` : ''}
+                  </div>
                 </td>
-                <td style="text-align:center;">
-                  ${isActiveSession ? `
-                    <div class="ap-odds-btn back">
-                      <span class="ap-price">${yesLabel}</span>
-                      <span class="ap-size">${m.oddsYes || 100}</span>
-                    </div>
-                  ` : `<div class="ap-odds-btn suspended"><span class="ap-price" style="font-size:0.75rem;">Ball Run</span></div>`}
+                <td style="text-align:center; position:relative;">
+                  <div class="ap-odds-btn back ${isBallRunning ? 'ball-running-active' : ''}">
+                    <span class="ap-price">${yesLabel}</span>
+                    <span class="ap-size">${m.oddsYes || 100}</span>
+                    ${isBallRunning ? `<div class="ap-ball-running-overlay">Ball Running</div>` : ''}
+                  </div>
                 </td>
               </tr>
             </tbody>

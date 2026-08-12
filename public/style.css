@@ -418,12 +418,34 @@ body {
   min-width: 54px;
   height: 38px;
   user-select: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .ap-odds-btn.back { background: var(--ap-back-bg); color: var(--ap-back-text); }
 .ap-odds-btn.lay { background: var(--ap-lay-bg); color: var(--ap-lay-text); }
 .ap-odds-btn.green { background: var(--ap-green-bg); color: var(--ap-green-text); }
 .ap-odds-btn.suspended { background: rgba(255, 59, 48, 0.15); border: 1px solid rgba(255, 59, 48, 0.4); color: var(--ap-red); cursor: not-allowed; }
+
+.ap-ball-running-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 27, 42, 0.88);
+  color: #ffc700;
+  font-size: 0.65rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 5;
+  border: 1px solid rgba(255, 199, 0, 0.4);
+  border-radius: 4px;
+}
 
 .ap-price {
   font-size: 0.85rem;

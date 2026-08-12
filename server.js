@@ -6,7 +6,6 @@ const { fork, execSync } = require('child_process');
 
 const PORT = process.env.PORT || 3000;
 
-// AUTOMATICALLY FREE PORT 3000 BEFORE STARTING SERVER
 function freePortOnWindows(port) {
   try {
     if (process.platform === 'win32') {
@@ -39,7 +38,6 @@ app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Disable all HTTP caching
 app.use((req, res, next) => {
   res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
   res.setHeader('Pragma', 'no-cache');
@@ -54,7 +52,6 @@ const httpsAgent = new https.Agent({
   timeout: 5000
 });
 
-// In-Memory Cache & Micro-Service State
 const cache = {
   lastUpdated: null,
   sports: [
@@ -67,7 +64,7 @@ const cache = {
 };
 
 let sseClients = [];
-let activeFocusedEventId = '35920148';
+let activeFocusedEventId = '35924127';
 let activeFocusedEventType = '4';
 let hasPendingBroadcast = false;
 
@@ -78,7 +75,7 @@ function broadcastSSE(data) {
   });
 }
 
-// Throttle SSE broadcasts to smooth 250ms interval
+// Throttle SSE broadcasts to smooth 200ms interval
 setInterval(() => {
   if (hasPendingBroadcast) {
     hasPendingBroadcast = false;
@@ -88,7 +85,7 @@ setInterval(() => {
       timestamp: cache.lastUpdated
     });
   }
-}, 250);
+}, 200);
 
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
 const HTTP_HEADERS = {
@@ -116,7 +113,7 @@ async function safeFetchJsonNode(endpoint, bodyParams) {
   }
 }
 
-// Helper to rebuild and merge event markets with strict category buckets and instant purging
+// Category bucket merging logic (Worker is sole authority for markets)
 function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
   const existing = cache.eventsMap.get(eventIdStr);
   if (!existing) return;
@@ -124,7 +121,6 @@ function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
   existing.marketsMap = existing.marketsMap || {};
   existing.marketsMap[categoryKey] = newMarkets || [];
 
-  // STABLE CATEGORY ORDERING: 1. MATCH_ODDS -> 2. BOOKMAKER -> 3. FANCY -> 4. PREMIUM_SPORTSBOOK
   const mo = existing.marketsMap['MATCH_ODDS'] || [];
   const bm = existing.marketsMap['BOOKMAKER'] || [];
   const fancy = existing.marketsMap['FANCY'] || [];
@@ -140,7 +136,6 @@ function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
 // MICRO-SERVICE INGESTION API ENDPOINTS (FROM WORKERS)
 // ----------------------------------------------------
 
-// Ingest Worker 1: Match Odds
 app.post('/api/ingest/match_odds', (req, res) => {
   const { eventId, eventType, eventName, competitionName, openDateStr, isInPlay, scores, markets } = req.body;
   if (!eventId) return res.status(400).json({ error: 'Missing eventId' });
@@ -148,7 +143,6 @@ app.post('/api/ingest/match_odds', (req, res) => {
   const eventIdStr = String(eventId);
   const existing = cache.eventsMap.get(eventIdStr) || {};
 
-  // Check if match ended/completed on SkyExchange
   if (scores && (scores.matchStatus === 'Ended' || scores.matchStatus === 'Finished' || scores.matchStatus === 'Completed')) {
     console.log(`🧹 INSTANT PURGE ENDED MATCH: ${eventIdStr} (${eventName})`);
     cache.eventsMap.delete(eventIdStr);
@@ -170,7 +164,6 @@ app.post('/api/ingest/match_odds', (req, res) => {
   res.json({ ok: true });
 });
 
-// Ingest Worker 2: Fancy Bet & Bookmaker
 app.post('/api/ingest/fancy_bm', (req, res) => {
   const { eventId, markets } = req.body;
   if (!eventId) return res.status(400).json({ error: 'Missing eventId' });
@@ -185,7 +178,6 @@ app.post('/api/ingest/fancy_bm', (req, res) => {
   res.json({ ok: true });
 });
 
-// Ingest Worker 3: Premium Sportsbook
 app.post('/api/ingest/sportsbook', (req, res) => {
   const { eventId, markets } = req.body;
   if (!eventId) return res.status(400).json({ error: 'Missing eventId' });
@@ -196,7 +188,6 @@ app.post('/api/ingest/sportsbook', (req, res) => {
   res.json({ ok: true });
 });
 
-// Active Focus Endpoint for Workers
 app.get('/api/active-focus', (req, res) => {
   res.json({
     eventId: activeFocusedEventId,
@@ -204,7 +195,7 @@ app.get('/api/active-focus', (req, res) => {
   });
 });
 
-// Background Discovery Loop (Captures Active Matches Across Sports & INSTANTLY Purges Ended Matches)
+// Background Discovery Loop (Captures Event Metadata WITHOUT touching MATCH_ODDS)
 async function pollAllEventsBackground() {
   try {
     const activeEventIds = new Set();
@@ -223,9 +214,7 @@ async function pollAllEventsBackground() {
           for (const ev of data.events) {
             const eventIdStr = String(ev.id);
             
-            // INSTANT PURGE IF SKYEXCHANGE MARKS AS ENDED / FINISHED / COMPLETED / STATUS 3/9
             if (ev.status === 3 || ev.status === 9 || ev.isFinished === 1 || ev.isCompleted === 1 || (ev.name && ev.name.includes('(Ended)'))) {
-              console.log(`🧹 INSTANT PURGE ENDED EVENT FROM SCAN: ${eventIdStr}`);
               cache.eventsMap.delete(eventIdStr);
               continue;
             }
@@ -233,6 +222,7 @@ async function pollAllEventsBackground() {
             activeEventIds.add(eventIdStr);
             const existing = cache.eventsMap.get(eventIdStr) || {};
 
+            // PRESERVE EXISTING MARKETS MAP - DO NOT OVERWRITE MATCH_ODDS FROM DISCOVERY SCAN
             cache.eventsMap.set(eventIdStr, {
               ...existing,
               eventId: eventIdStr,
@@ -246,6 +236,7 @@ async function pollAllEventsBackground() {
               hasBookmaker: Boolean(ev.hasBookMakerMarkets),
               hasFancy: Boolean(ev.hasFancyBetMarkets),
               hasPremiumSportsbook: true,
+              marketsMap: existing.marketsMap || {},
               markets: existing.markets || []
             });
           }
@@ -257,7 +248,7 @@ async function pollAllEventsBackground() {
       for (const cachedId of Array.from(cache.eventsMap.keys())) {
         if (!activeEventIds.has(cachedId)) {
           const missCount = (cache.missingScanCountMap.get(cachedId) || 0) + 1;
-          if (missCount >= 2) { // Accelerated purge (2 scans = 8 seconds max)
+          if (missCount >= 2) {
             cache.eventsMap.delete(cachedId);
             cache.missingScanCountMap.delete(cachedId);
           } else {
@@ -281,11 +272,9 @@ async function pollAllEventsBackground() {
   }
 }
 
-// Kickstart Background Discovery
 setInterval(pollAllEventsBackground, 4000);
 pollAllEventsBackground();
 
-// REST APIs FOR FRONTEND
 app.get('/api/events', (req, res) => {
   const sportFilter = req.query.sport;
   const search = (req.query.search || '').toLowerCase().trim();
@@ -372,25 +361,21 @@ app.get('/api/stream', (req, res) => {
   });
 });
 
-// START SERVER AND LAUNCH DECOUPLED INDEPENDENT WORKER MICRO-SERVICES
 app.listen(PORT, () => {
   console.log(`\n======================================================`);
   console.log(`⚡ AllPanel777 Master Server Engine running at http://localhost:${PORT}`);
   console.log(`======================================================\n`);
 
-  // Launch Worker 1: Match Odds
   try {
     const w1 = fork(path.join(__dirname, 'workers', 'worker_match_odds.js'));
     console.log(`🚀 Spawned Worker 1 (Match Odds) - PID ${w1.pid}`);
   } catch (e) { console.error('Failed to spawn Worker 1:', e.message); }
 
-  // Launch Worker 2: Fancy Bet & Bookmaker
   try {
     const w2 = fork(path.join(__dirname, 'workers', 'worker_fancy_bm.js'));
     console.log(`🚀 Spawned Worker 2 (Fancy Bet + Bookmaker) - PID ${w2.pid}`);
   } catch (e) { console.error('Failed to spawn Worker 2:', e.message); }
 
-  // Launch Worker 3: Premium Sportsbook
   try {
     const w3 = fork(path.join(__dirname, 'workers', 'worker_sportsbook.js'));
     console.log(`🚀 Spawned Worker 3 (Premium Sportsbook) - PID ${w3.pid}`);
