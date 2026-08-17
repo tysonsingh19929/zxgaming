@@ -175,7 +175,7 @@ function setCategory(cat) {
 
 function renderEventHeader(ev) {
   dom.eventBanner.innerHTML = `
-    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.6rem;">
       <div>
         <div style="display:flex; gap:0.4rem; margin-bottom:0.3rem; align-items:center; flex-wrap:wrap;">
           ${ev.isInPlay ? `<span class="ap-badge-inplay">IN-PLAY LIVE</span>` : `<span class="ap-badge-market">UPCOMING</span>`}
@@ -189,6 +189,15 @@ function renderEventHeader(ev) {
           <span>Active Markets: <strong>${ev.markets.length}</strong></span>
         </div>
       </div>
+    </div>
+
+    <!-- Category Tabs Bar (Inline Inside Event Banner Header) -->
+    <div class="ap-category-filters" style="display:flex !important; gap:0.4rem; padding-top:0.6rem; border-top:1px solid rgba(255,255,255,0.1); overflow-x:auto;">
+      <button class="ap-cat-btn ${state.activeCategory === 'ALL' ? 'active' : ''}" onclick="setCategory('ALL')">All Markets</button>
+      <button class="ap-cat-btn ${state.activeCategory === 'MATCH_ODDS' ? 'active' : ''}" onclick="setCategory('MATCH_ODDS')">Match Odds</button>
+      <button class="ap-cat-btn ${state.activeCategory === 'BOOKMAKER' ? 'active' : ''}" onclick="setCategory('BOOKMAKER')">Bookmaker</button>
+      <button class="ap-cat-btn ${state.activeCategory === 'FANCY' ? 'active' : ''}" onclick="setCategory('FANCY')">Fancy Bet</button>
+      <button class="ap-cat-btn ${state.activeCategory === 'PREMIUM_SPORTSBOOK' ? 'active' : ''}" onclick="setCategory('PREMIUM_SPORTSBOOK')">Sportsbook</button>
     </div>
   `;
 }
