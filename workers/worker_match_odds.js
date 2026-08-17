@@ -12,9 +12,17 @@ const httpsAgent = new https.Agent({
 
 const HTTP_HEADERS = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
   'Origin': 'https://www.skyexch.vip',
   'Referer': 'https://www.skyexch.vip/',
+  'Accept': '*/*',
+  'Accept-Language': 'en-US,en;q=0.9',
+  'Sec-Ch-Ua': '"Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+  'Sec-Ch-Ua-Mobile': '?0',
+  'Sec-Ch-Ua-Platform': '"Windows"',
+  'Sec-Fetch-Dest': 'empty',
+  'Sec-Fetch-Mode': 'cors',
+  'Sec-Fetch-Site': 'same-site',
   'Connection': 'keep-alive'
 };
 
@@ -60,7 +68,6 @@ async function fetchMatchOddsWorker(eventId, eventType = '4') {
     if (m) {
       const selectionsRaw = (m.selections || m.runners || []).slice();
 
-      // ALWAYS SORT SELECTIONS DETERMINISTICALLY BY sortPriority / sortOrder / selectionId
       selectionsRaw.sort((a, b) => {
         const prioA = a.sortPriority !== undefined ? a.sortPriority : (a.sortOrder !== undefined ? a.sortOrder : (parseInt(a.id || a.selectionId) || 0));
         const prioB = b.sortPriority !== undefined ? b.sortPriority : (b.sortOrder !== undefined ? b.sortOrder : (parseInt(b.id || b.selectionId) || 0));
@@ -118,7 +125,6 @@ async function runMatchOddsWorkerLoop() {
         const activeData = await activeRes.json();
         const liveList = activeData.events || [];
         
-        // Process all active live events in parallel
         await Promise.all(liveList.map(ev => fetchMatchOddsWorker(ev.eventId, ev.eventType)));
       }
     } catch (e) {}

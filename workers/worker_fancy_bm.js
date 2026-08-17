@@ -7,14 +7,22 @@ const httpsAgent = new https.Agent({
   keepAlive: true,
   maxSockets: 30,
   maxFreeSockets: 15,
-  timeout: 4000
+  timeout: 5000
 });
 
 const HTTP_HEADERS = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
   'Origin': 'https://www.skyexch.vip',
   'Referer': 'https://www.skyexch.vip/',
+  'Accept': '*/*',
+  'Accept-Language': 'en-US,en;q=0.9',
+  'Sec-Ch-Ua': '"Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"',
+  'Sec-Ch-Ua-Mobile': '?0',
+  'Sec-Ch-Ua-Platform': '"Windows"',
+  'Sec-Fetch-Dest': 'empty',
+  'Sec-Fetch-Mode': 'cors',
+  'Sec-Fetch-Site': 'same-site',
   'Connection': 'keep-alive'
 };
 
@@ -28,7 +36,7 @@ async function safeFetchJson(endpoint, bodyParams) {
     });
     if (!res.ok) return null;
     const text = await res.text();
-    if (!text || text.trim() === '' || text.includes('<!DOCTYPE')) return null;
+    if (!text || text.includes('<!DOCTYPE')) return null;
     return JSON.parse(text);
   } catch (e) {
     return null;
@@ -45,14 +53,13 @@ async function fetchFancyBmWorker(eventId) {
       safeFetchJson('queryFancyBetMarkets', formFancy)
     ]);
 
-    // PRESERVE CACHE: If both calls returned null (rate-limit / network drop), skip ingestion to avoid wiping existing UI markets!
     if (bmData === null && fancyData === null) {
       return;
     }
 
     const markets = [];
 
-    // 1. Bookmaker Markets (Percentage rates: 94, 98, 80, 83)
+    // 1. Bookmaker Markets
     if (bmData && bmData.bookMakerMarket && bmData.bookMakerMarket.markets) {
       const allSelections = (bmData.bookMakerSelection && bmData.bookMakerSelection.selections) ? bmData.bookMakerSelection.selections : [];
 
@@ -145,24 +152,21 @@ async function fetchFancyBmWorker(eventId) {
   } catch (e) {}
 }
 
-let focusEventId = '35920223';
+let focusEventId = '35938017';
 
 async function runFancyBmWorkerLoop() {
   while (true) {
     try {
-      // 1. Check focused event ID from server
       const focusRes = await fetch('http://localhost:3000/api/active-focus').catch(() => null);
       if (focusRes && focusRes.ok) {
         const focusData = await focusRes.json();
         if (focusData.eventId) focusEventId = focusData.eventId;
       }
 
-      // HIGH PRIORITY: Scrape focused event on 80ms loop
       if (focusEventId) {
         await fetchFancyBmWorker(focusEventId);
       }
 
-      // BACKGROUND: Scrape remaining active events in controlled 500ms batches to prevent rate limiting
       const activeRes = await fetch('http://localhost:3000/api/active-events').catch(() => null);
       if (activeRes && activeRes.ok) {
         const activeData = await activeRes.json();
@@ -179,5 +183,5 @@ async function runFancyBmWorkerLoop() {
   }
 }
 
-console.log('⚡ WORKER 2: Priority Focused Fancy & Bookmaker Scraper Active (Rate-Limit Protected)!');
+console.log('⚡ WORKER 2: Priority Focused Fancy & Bookmaker Scraper Active!');
 runFancyBmWorkerLoop();
