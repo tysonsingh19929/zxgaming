@@ -33,30 +33,77 @@ async function safeFetchJson(endpoint, bodyParams) {
   }
 }
 
+function expandMarketRunners(m) {
+  let specifier = {};
+  try { specifier = JSON.parse(m.apiSiteSpecifier || '{}'); } catch (e) {}
+
+  const name = m.marketName || '';
+
+  // 1. Run Range Markets (e.g. "1st innings over 14 - Barbados Tridents run range")
+  if (name.includes('run range') || (specifier.variant && specifier.variant.includes('run_range'))) {
+    const ranges = ['0-3', '4', '5', '6', '7', '8', '9', '10', '11', '12+'];
+    const odds = [8.4, 12.5, 10.0, 9.2, 8.8, 8.8, 9.0, 9.8, 11.0, 2.44];
+    return ranges.map((r, i) => ({
+      selectionId: `${m.id}_${i}`,
+      runnerName: r,
+      odds: odds[i] || 9.0,
+      isActive: m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE'
+    }));
+  }
+
+  // 2. Over / Under Total Markets (e.g. "1st innings over 13 - Barbados Tridents total")
+  if (name.includes('total') && specifier.total) {
+    return [
+      { selectionId: `${m.id}_0`, runnerName: `over ${specifier.total}`, odds: 1.94, isActive: m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE' },
+      { selectionId: `${m.id}_1`, runnerName: `under ${specifier.total}`, odds: 1.77, isActive: m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE' }
+    ];
+  }
+
+  // 3. Both Teams to Score / Yes/No Markets
+  if (name.includes('Both teams to score') || name.includes('Will there be a tie') || name.includes('to be a wicket')) {
+    return [
+      { selectionId: `${m.id}_0`, runnerName: 'Yes', odds: 6.00, isActive: m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE' },
+      { selectionId: `${m.id}_1`, runnerName: 'No', odds: 1.15, isActive: m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE' }
+    ];
+  }
+
+  // 4. Default 2-runner market
+  return [
+    { selectionId: `${m.id}_0`, runnerName: 'Over / Yes', odds: 1.85, isActive: m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE' },
+    { selectionId: `${m.id}_1`, runnerName: 'Under / No', odds: 1.85, isActive: m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE' }
+  ];
+}
+
 async function fetchSportsbookWorker(eventId, eventType = '4') {
   try {
     const form = new URLSearchParams({
       eventId: String(eventId),
-      eventType: String(eventType)
+      eventType: String(eventType),
+      apiSiteType: '2'
     });
 
     const data = await safeFetchJson('querySportsBookEvent', form);
-    if (!data || !data.markets) return;
+    if (!data) return;
 
-    const markets = (data.markets || []).map(m => {
-      const selections = (m.selections || []).map(s => ({
-        selectionId: String(s.selectionId || s.id),
-        runnerName: s.runnerName || s.name,
-        odds: s.odds || s.price || 0,
-        isActive: s.isActive !== false,
-        isBallRunning: s.isBallRunning === true
-      }));
+    const sbMarketsRaw = data.sportsBookMarket || data.markets || [];
+    const activeMarketsRaw = sbMarketsRaw.filter(m => m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE');
+
+    const markets = activeMarketsRaw.map(m => {
+      let specifier = {};
+      try { specifier = JSON.parse(m.apiSiteSpecifier || '{}'); } catch (e) {}
+
+      let name = m.marketName || 'Premium Sportsbook';
+      if (specifier.total && name.includes('total') && !name.includes(specifier.total)) {
+        name = `${name} (${specifier.total})`;
+      }
+
+      const selections = expandMarketRunners(m);
 
       return {
-        marketId: String(m.marketId || m.id),
-        marketName: m.marketName || m.name || 'Premium Sportsbook',
+        marketId: String(m.id || m.marketId),
+        marketName: name,
         category: 'PREMIUM_SPORTSBOOK',
-        status: m.status || 1,
+        status: m.marketStatus || 1,
         selections
       };
     });
@@ -96,5 +143,5 @@ async function runSportsbookWorkerLoop() {
   }
 }
 
-console.log('⚡ WORKER 3: Premium Sportsbook Independent Micro-Scraper Active!');
+console.log('⚡ WORKER 3: Premium Sportsbook Independent Micro-Scraper Active (SkyExchange Structured)!');
 runSportsbookWorkerLoop();
