@@ -1,5 +1,6 @@
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
-const MAIN_SERVER_INGEST = 'http://localhost:3000/api/ingest/match_odds';
+const PORT = process.env.PORT || 3000;
+const MAIN_SERVER_INGEST = `http://127.0.0.1:${PORT}/api/ingest/match_odds`;
 
 const HTTP_HEADERS = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -109,7 +110,7 @@ async function fetchMatchOddsWorker(eventId, eventType = '4') {
 async function runMatchOddsWorkerLoop() {
   while (true) {
     try {
-      const activeRes = await fetch('http://localhost:3000/api/active-events').catch(() => null);
+      const activeRes = await fetch(`http://127.0.0.1:${PORT}/api/active-events`).catch(() => null);
       if (activeRes && activeRes.ok) {
         const activeData = await activeRes.json();
         const liveList = activeData.events || [];

@@ -367,18 +367,20 @@ app.listen(PORT, () => {
   console.log(`⚡ AllPanel777 Master Server Engine running at http://localhost:${PORT}`);
   console.log(`======================================================\n`);
 
+  const workerEnv = { ...process.env, PORT: String(PORT) };
+
   try {
-    const w1 = fork(path.join(__dirname, 'workers', 'worker_match_odds.js'));
+    const w1 = fork(path.join(__dirname, 'workers', 'worker_match_odds.js'), [], { env: workerEnv });
     console.log(`🚀 Spawned Worker 1 (Match Odds) - PID ${w1.pid}`);
   } catch (e) { console.error('Failed to spawn Worker 1:', e.message); }
 
   try {
-    const w2 = fork(path.join(__dirname, 'workers', 'worker_fancy_bm.js'));
+    const w2 = fork(path.join(__dirname, 'workers', 'worker_fancy_bm.js'), [], { env: workerEnv });
     console.log(`🚀 Spawned Worker 2 (Fancy Bet + Bookmaker) - PID ${w2.pid}`);
   } catch (e) { console.error('Failed to spawn Worker 2:', e.message); }
 
   try {
-    const w3 = fork(path.join(__dirname, 'workers', 'worker_sportsbook.js'));
+    const w3 = fork(path.join(__dirname, 'workers', 'worker_sportsbook.js'), [], { env: workerEnv });
     console.log(`🚀 Spawned Worker 3 (Premium Sportsbook) - PID ${w3.pid}`);
   } catch (e) { console.error('Failed to spawn Worker 3:', e.message); }
 });

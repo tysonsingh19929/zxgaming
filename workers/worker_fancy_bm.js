@@ -1,5 +1,6 @@
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
-const MAIN_SERVER_INGEST = 'http://localhost:3000/api/ingest/fancy_bm';
+const PORT = process.env.PORT || 3000;
+const MAIN_SERVER_INGEST = `http://127.0.0.1:${PORT}/api/ingest/fancy_bm`;
 
 const HTTP_HEADERS = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -146,7 +147,7 @@ let focusEventId = '35938017';
 async function runFancyBmWorkerLoop() {
   while (true) {
     try {
-      const focusRes = await fetch('http://localhost:3000/api/active-focus').catch(() => null);
+      const focusRes = await fetch(`http://127.0.0.1:${PORT}/api/active-focus`).catch(() => null);
       if (focusRes && focusRes.ok) {
         const focusData = await focusRes.json();
         if (focusData.eventId) focusEventId = focusData.eventId;
@@ -156,7 +157,7 @@ async function runFancyBmWorkerLoop() {
         await fetchFancyBmWorker(focusEventId);
       }
 
-      const activeRes = await fetch('http://localhost:3000/api/active-events').catch(() => null);
+      const activeRes = await fetch(`http://127.0.0.1:${PORT}/api/active-events`).catch(() => null);
       if (activeRes && activeRes.ok) {
         const activeData = await activeRes.json();
         const otherEvents = (activeData.events || []).filter(e => String(e.eventId) !== String(focusEventId));

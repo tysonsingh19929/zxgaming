@@ -1,5 +1,6 @@
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
-const MAIN_SERVER_INGEST = 'http://localhost:3000/api/ingest/sportsbook';
+const PORT = process.env.PORT || 3000;
+const MAIN_SERVER_INGEST = `http://127.0.0.1:${PORT}/api/ingest/sportsbook`;
 
 const HTTP_HEADERS = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -77,7 +78,7 @@ let focusEventType = '4';
 async function runSportsbookWorkerLoop() {
   while (true) {
     try {
-      const focusRes = await fetch('http://localhost:3000/api/active-focus').catch(() => null);
+      const focusRes = await fetch(`http://127.0.0.1:${PORT}/api/active-focus`).catch(() => null);
       if (focusRes && focusRes.ok) {
         const focusData = await focusRes.json();
         if (focusData.eventId) {
