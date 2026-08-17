@@ -37,51 +37,26 @@ async function fetchSportsbookWorker(eventId, eventType = '4') {
   try {
     const form = new URLSearchParams({
       eventId: String(eventId),
-      eventType: String(eventType),
-      apiSiteType: '2'
+      eventType: String(eventType)
     });
 
     const data = await safeFetchJson('querySportsBookEvent', form);
-    if (!data) return;
+    if (!data || !data.markets) return;
 
-    const sbMarketsRaw = data.sportsBookMarket || data.markets || [];
-    const activeMarketsRaw = sbMarketsRaw.filter(m => m.marketStatus === 1 || m.apiSiteStatus === 'ACTIVE');
-
-    const markets = activeMarketsRaw.map(m => {
-      let specifier = {};
-      try { specifier = JSON.parse(m.apiSiteSpecifier || '{}'); } catch (e) {}
-
-      let name = m.marketName || 'Premium Sportsbook';
-      if (specifier.total) {
-        if (name.includes('total') && !name.includes(specifier.total)) {
-          name = `${name} (${specifier.total})`;
-        }
-      }
-
-      let oddsArray = [];
-      try { oddsArray = JSON.parse(m.bookMode || '[]'); } catch (e) {}
-
-      const selections = oddsArray.map((odd, i) => ({
-        selectionId: `${m.id}_${i}`,
-        runnerName: i === 0 ? 'Over / Yes' : 'Under / No',
-        odds: parseFloat(odd) || 0,
-        isActive: true
+    const markets = (data.markets || []).map(m => {
+      const selections = (m.selections || []).map(s => ({
+        selectionId: String(s.selectionId || s.id),
+        runnerName: s.runnerName || s.name,
+        odds: s.odds || s.price || 0,
+        isActive: s.isActive !== false,
+        isBallRunning: s.isBallRunning === true
       }));
 
-      if (selections.length === 0) {
-        selections.push({
-          selectionId: `${m.id}_0`,
-          runnerName: 'Odds',
-          odds: 1.90,
-          isActive: true
-        });
-      }
-
       return {
-        marketId: String(m.id || m.marketId),
-        marketName: name,
+        marketId: String(m.marketId || m.id),
+        marketName: m.marketName || m.name || 'Premium Sportsbook',
         category: 'PREMIUM_SPORTSBOOK',
-        status: m.marketStatus || 1,
+        status: m.status || 1,
         selections
       };
     });
@@ -121,5 +96,5 @@ async function runSportsbookWorkerLoop() {
   }
 }
 
-console.log('⚡ WORKER 3: Premium Sportsbook Independent Micro-Scraper Active (apiSiteType: 2)!');
+console.log('⚡ WORKER 3: Premium Sportsbook Independent Micro-Scraper Active!');
 runSportsbookWorkerLoop();
