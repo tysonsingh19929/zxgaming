@@ -186,7 +186,7 @@ function renderEventHeader(ev) {
         <div class="ap-banner-info">
           <span>League: <strong>${ev.competitionName}</strong></span>
           <span>Open: <strong>${ev.openDateStr}</strong></span>
-          <span>Active Markets: <strong>${ev.markets.length}</strong></span>
+          <span>Active Markets: <strong>${ev.totalMarketCount || ev.markets.length}</strong></span>
         </div>
       </div>
     </div>

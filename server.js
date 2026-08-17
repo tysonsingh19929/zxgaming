@@ -330,6 +330,8 @@ app.get('/api/event/:eventId', (req, res) => {
     return res.status(404).json({ error: `Event ID '${eventId}' not found.` });
   }
 
+  const totalMarketCount = event.markets ? event.markets.length : 0;
+
   let filteredMarkets = event.markets || [];
   if (categoryFilter && categoryFilter !== 'ALL') {
     if (categoryFilter === 'PREMIUM_SPORTSBOOK' || categoryFilter === 'PREMIUM_FANCY') {
@@ -343,6 +345,7 @@ app.get('/api/event/:eventId', (req, res) => {
     timestamp: cache.lastUpdated,
     event: {
       ...event,
+      totalMarketCount,
       markets: filteredMarkets
     }
   });
