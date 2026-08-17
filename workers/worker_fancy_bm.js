@@ -1,14 +1,5 @@
-const https = require('https');
-
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
 const MAIN_SERVER_INGEST = 'http://localhost:3000/api/ingest/fancy_bm';
-
-const httpsAgent = new https.Agent({
-  keepAlive: true,
-  maxSockets: 30,
-  maxFreeSockets: 15,
-  timeout: 5000
-});
 
 const HTTP_HEADERS = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
@@ -22,8 +13,7 @@ const HTTP_HEADERS = {
   'Sec-Ch-Ua-Platform': '"Windows"',
   'Sec-Fetch-Dest': 'empty',
   'Sec-Fetch-Mode': 'cors',
-  'Sec-Fetch-Site': 'same-site',
-  'Connection': 'keep-alive'
+  'Sec-Fetch-Site': 'same-site'
 };
 
 async function safeFetchJson(endpoint, bodyParams) {
@@ -31,8 +21,7 @@ async function safeFetchJson(endpoint, bodyParams) {
     const res = await fetch(API_BASE + endpoint, {
       method: 'POST',
       headers: HTTP_HEADERS,
-      body: bodyParams.toString(),
-      agent: httpsAgent
+      body: bodyParams.toString()
     });
     if (!res.ok) return null;
     const text = await res.text();
