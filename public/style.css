@@ -312,8 +312,8 @@ body {
 }
 
 .ap-category-filters {
-  display: flex;
-  gap: 0.3rem;
+  display: flex !important;
+  gap: 0.4rem;
   margin-bottom: 0.75rem;
   overflow-x: auto;
   scrollbar-width: none;

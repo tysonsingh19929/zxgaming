@@ -144,12 +144,32 @@ async function fetchEventDetail(eventId, showLoading = true) {
 
     const data = await res.json();
     state.currentEvent = data.event;
-    dom.categoryFilters.style.display = 'flex';
+    renderCategoryTabs();
     renderEventHeader(data.event);
     renderMarkets(data.event.markets || []);
   } catch (err) {
   } finally {
     state.isFetchingDetail = false;
+  }
+}
+
+function renderCategoryTabs() {
+  if (!dom.categoryFilters) return;
+  dom.categoryFilters.style.display = 'flex';
+  dom.categoryFilters.innerHTML = `
+    <button class="ap-cat-btn ${state.activeCategory === 'ALL' ? 'active' : ''}" onclick="setCategory('ALL')">All Markets</button>
+    <button class="ap-cat-btn ${state.activeCategory === 'MATCH_ODDS' ? 'active' : ''}" onclick="setCategory('MATCH_ODDS')">Match Odds</button>
+    <button class="ap-cat-btn ${state.activeCategory === 'BOOKMAKER' ? 'active' : ''}" onclick="setCategory('BOOKMAKER')">Bookmaker</button>
+    <button class="ap-cat-btn ${state.activeCategory === 'FANCY' ? 'active' : ''}" onclick="setCategory('FANCY')">Fancy Bet</button>
+    <button class="ap-cat-btn ${state.activeCategory === 'PREMIUM_SPORTSBOOK' ? 'active' : ''}" onclick="setCategory('PREMIUM_SPORTSBOOK')">Sportsbook</button>
+  `;
+}
+
+function setCategory(cat) {
+  state.activeCategory = cat;
+  renderCategoryTabs();
+  if (state.selectedEventId) {
+    fetchEventDetail(state.selectedEventId, true);
   }
 }
 
