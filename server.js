@@ -49,7 +49,7 @@ const httpsAgent = new https.Agent({
   keepAlive: true,
   maxSockets: 30,
   maxFreeSockets: 15,
-  timeout: 5000
+  timeout: 6000
 });
 
 const cache = {
@@ -64,7 +64,7 @@ const cache = {
 };
 
 let sseClients = [];
-let activeFocusedEventId = '35920223';
+let activeFocusedEventId = null;
 let activeFocusedEventType = '4';
 let hasPendingBroadcast = false;
 
@@ -89,9 +89,12 @@ setInterval(() => {
 const API_BASE = 'https://saapipl.skyexch.vip/exchange/member/playerService/';
 const HTTP_HEADERS = {
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
   'Origin': 'https://www.skyexch.vip',
   'Referer': 'https://www.skyexch.vip/',
+  'Accept': 'application/json, text/plain, */*',
+  'Accept-Language': 'en-US,en;q=0.9',
+  'Cache-Control': 'no-cache',
   'Connection': 'keep-alive'
 };
 
@@ -112,14 +115,12 @@ async function safeFetchJsonNode(endpoint, bodyParams) {
   }
 }
 
-// Category bucket merging logic (Protects against empty transient drops)
 function updateEventCategoryMarkets(eventIdStr, categoryKey, newMarkets) {
   const existing = cache.eventsMap.get(eventIdStr);
   if (!existing) return;
 
   existing.marketsMap = existing.marketsMap || {};
 
-  // Preserve existing category markets if worker posted empty array during transient rate-limit drop
   if (Array.isArray(newMarkets) && newMarkets.length > 0) {
     existing.marketsMap[categoryKey] = newMarkets;
   } else if (!existing.marketsMap[categoryKey]) {
@@ -145,7 +146,6 @@ app.post('/api/ingest/match_odds', (req, res) => {
   const existing = cache.eventsMap.get(eventIdStr) || {};
 
   if (scores && (scores.matchStatus === 'Ended' || scores.matchStatus === 'Finished' || scores.matchStatus === 'Completed')) {
-    console.log(`🧹 INSTANT PURGE ENDED MATCH: ${eventIdStr} (${eventName})`);
     cache.eventsMap.delete(eventIdStr);
     return res.json({ ok: true, purged: true });
   }
@@ -198,13 +198,7 @@ app.get('/api/active-focus', (req, res) => {
 
 app.get('/api/active-events', (req, res) => {
   const activeEvents = Array.from(cache.eventsMap.values())
-    .filter(e => e.isInPlay || e.hasBookmaker || e.hasFancy)
     .map(e => ({ eventId: e.eventId, eventType: String(e.eventType || '4') }));
-
-  if (activeEvents.length === 0 && cache.eventsMap.size > 0) {
-    const first = Array.from(cache.eventsMap.values())[0];
-    activeEvents.push({ eventId: first.eventId, eventType: String(first.eventType || '4') });
-  }
 
   res.json({ events: activeEvents });
 });
@@ -260,7 +254,7 @@ async function pollAllEventsBackground() {
       for (const cachedId of Array.from(cache.eventsMap.keys())) {
         if (!activeEventIds.has(cachedId)) {
           const missCount = (cache.missingScanCountMap.get(cachedId) || 0) + 1;
-          if (missCount >= 2) {
+          if (missCount >= 3) {
             cache.eventsMap.delete(cachedId);
             cache.missingScanCountMap.delete(cachedId);
           } else {
