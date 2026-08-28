@@ -47,6 +47,9 @@ async function runInteractiveParityAudit() {
     console.log("📌 [STEP 1/5] Opening SkyExchange (https://www.skyexch.vip/)...");
     await pageSky.goto('https://www.skyexch.vip/', { waitUntil: 'networkidle2', timeout: 45000 }).catch(() => {});
 
+    console.log(`📌 [STEP 2/5] Opening ZXGAMING Live Site (${OUR_SITE_URL})...`);
+    await pageOur.goto(OUR_SITE_URL, { waitUntil: 'networkidle2', timeout: 45000 }).catch(() => {});
+
     try {
       const userInput = await pageSky.$('input[placeholder*="User"], input[name*="user"], #username, input[type="text"]');
       const passInput = await pageSky.$('input[placeholder*="Password"], input[name*="pass"], #password, input[type="password"]');
@@ -54,22 +57,20 @@ async function runInteractiveParityAudit() {
       if (userInput && passInput) {
         await userInput.type(SKYEXCH_USER);
         await passInput.type(SKYEXCH_PASS);
-        console.log("   🔑 Automatically filled credentials: tsn019 / Abcd1234");
+        console.log("   🔑 Automatically filled credentials on SkyExchange: tsn019 / Abcd1234");
       }
     } catch (e) {}
 
+    await pageSky.bringToFront();
+
     console.log("\n==========================================================================");
-    console.log("👉 SKYEXCHANGE IS OPEN IN YOUR BROWSER WINDOW!");
-    console.log("   Please complete login (or captcha/popup if shown) in the Chrome window.");
+    console.log("👉 BOTH TABS (SKYEXCHANGE & ZXGAMING) ARE NOW OPEN IN YOUR BROWSER!");
+    console.log("   Please complete login (or popup/captcha) on the SkyExchange tab.");
     console.log("==========================================================================");
     
-    await askQuestion("\nPress [ENTER] in this command prompt once you are logged in to start the audit... ");
+    await askQuestion("\nPress [ENTER] in this command prompt once you are ready to start auditing... ");
 
-    console.log("\n✅ Login confirmed! Starting live match inspection...");
-
-    console.log(`\n📌 [STEP 2/5] Opening ZXGAMING Live Site (${OUR_SITE_URL})...`);
-    await pageOur.goto(OUR_SITE_URL, { waitUntil: 'networkidle2', timeout: 45000 });
-    await pageOur.waitForTimeout(3000);
+    console.log("\n✅ Starting dual-tab live match inspection...");
 
     console.log("\n📌 [STEP 3/5] Scanning Active In-Play Matches on ZXGAMING...");
 
