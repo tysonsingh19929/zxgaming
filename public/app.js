@@ -1,6 +1,4 @@
-// AllPanel777 Zero-Flicker Real-Time Sportsbook Client & Mobile Responsive Manager
-
-const API_BASE_URL = window.API_BASE_URL || (window.location.hostname.includes('vercel.app') ? 'https://zxgaming.onrender.com' : '');
+const API_BASE_URL = window.API_BASE_URL || localStorage.getItem('SERVER_API_URL') || (window.location.hostname.includes('vercel.app') ? 'http://103.66.0.48:3000' : '');
 
 const state = {
   activeSport: 'all',
