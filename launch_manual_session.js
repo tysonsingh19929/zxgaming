@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
-const { saveMemberSession } = require('./config');
+const { MANUAL_LOGIN_URL, saveMemberSession } = require('./config');
 
 function askQuestion(query) {
   const rl = readline.createInterface({
@@ -18,6 +18,7 @@ function askQuestion(query) {
 async function launchManualLoginHelper() {
   console.log("==========================================================================");
   console.log("🔐 SKYEXCHANGE MANUAL LOGIN SESSION CAPTURE TOOL");
+  console.log(`Target Manual Login Domain: ${MANUAL_LOGIN_URL}`);
   console.log("Opening Chrome window for manual captcha login...");
   console.log("==========================================================================\n");
 
@@ -30,8 +31,8 @@ async function launchManualLoginHelper() {
   const page = (await browser.pages())[0] || await browser.newPage();
 
   try {
-    console.log("1. Navigating to https://skyinplay.club...");
-    await page.goto('https://skyinplay.club/', { waitUntil: 'networkidle2', timeout: 60000 }).catch(() => {});
+    console.log(`1. Navigating to ${MANUAL_LOGIN_URL}...`);
+    await page.goto(MANUAL_LOGIN_URL, { waitUntil: 'networkidle2', timeout: 60000 }).catch(() => {});
 
     console.log("\n==========================================================================");
     console.log("👉 CHROME IS OPEN!");
