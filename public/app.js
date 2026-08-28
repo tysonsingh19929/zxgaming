@@ -1,4 +1,4 @@
-const API_BASE_URL = window.API_BASE_URL || localStorage.getItem('SERVER_API_URL') || (window.location.hostname.includes('vercel.app') ? 'http://103.66.0.48:3000' : '');
+const API_BASE_URL = window.API_BASE_URL || localStorage.getItem('SERVER_API_URL') || (window.location.hostname.includes('vercel.app') ? 'http://185.131.54.31:3000' : '');
 
 const state = {
   activeSport: 'all',
