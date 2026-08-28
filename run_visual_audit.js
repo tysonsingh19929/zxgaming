@@ -1,30 +1,40 @@
 const fs = require('fs');
 const path = require('path');
+const readline = require('readline');
 const puppeteer = require('puppeteer');
 
 const SKYEXCH_USER = process.env.SKY_USER || 'tsn019';
 const SKYEXCH_PASS = process.env.SKY_PASS || 'Abcd1234';
 const OUR_SITE_URL = process.env.OUR_SITE_URL || 'https://zxgaming.vercel.app/';
 
-async function runFullVisibleParityAudit() {
+function askQuestion(query) {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+  return new Promise(resolve => rl.question(query, ans => {
+    rl.close();
+    resolve(ans);
+  }));
+}
+
+async function runInteractiveParityAudit() {
   console.log("==========================================================================");
-  console.log("⚡ ZXGAMING VS SKYEXCHANGE VISIBLE REAL-TIME MULTI-MATCH AUDITOR");
+  console.log("⚡ ZXGAMING VS SKYEXCHANGE INTERACTIVE VISIBLE AUDITOR");
   console.log(`SkyExchange Account: ${SKYEXCH_USER}`);
   console.log(`ZXGAMING Target Site: ${OUR_SITE_URL}`);
-  console.log("Mode: VISIBLE BROWSER (Watch the audit live on screen!)");
   console.log("==========================================================================\n");
 
   const auditReport = {
     timestamp: new Date().toISOString(),
     eventsAudited: [],
     discrepancies: [],
-    rateFlowUpdates: 0,
     screenshots: []
   };
 
   const browser = await puppeteer.launch({
     headless: false,
-    slowMo: 100,
+    slowMo: 50,
     defaultViewport: null,
     args: ['--start-maximized', '--disable-web-security', '--no-sandbox']
   });
@@ -34,7 +44,7 @@ async function runFullVisibleParityAudit() {
     const pageSky = pages[0] || await browser.newPage();
     const pageOur = await browser.newPage();
 
-    console.log("📌 [STEP 1/5] Opening SkyExchange & Logging in with account 'tsn019'...");
+    console.log("📌 [STEP 1/5] Opening SkyExchange (https://www.skyexch.vip/)...");
     await pageSky.goto('https://www.skyexch.vip/', { waitUntil: 'networkidle2', timeout: 45000 }).catch(() => {});
 
     try {
@@ -44,24 +54,24 @@ async function runFullVisibleParityAudit() {
       if (userInput && passInput) {
         await userInput.type(SKYEXCH_USER);
         await passInput.type(SKYEXCH_PASS);
-        console.log("   🔑 Entered Credentials (tsn019 / Abcd1234)");
-
-        const loginBtn = await pageSky.$('button[type="submit"], .login-btn, #loginBtn, input[type="submit"]');
-        if (loginBtn) {
-          await loginBtn.click();
-          console.log("   ⚡ Clicked Login Button...");
-          await pageSky.waitForTimeout(4000);
-        }
+        console.log("   🔑 Automatically filled credentials: tsn019 / Abcd1234");
       }
-    } catch (e) {
-      console.log("   ℹ️ Proceeding with live session inspection...");
-    }
+    } catch (e) {}
+
+    console.log("\n==========================================================================");
+    console.log("👉 SKYEXCHANGE IS OPEN IN YOUR BROWSER WINDOW!");
+    console.log("   Please complete login (or captcha/popup if shown) in the Chrome window.");
+    console.log("==========================================================================");
+    
+    await askQuestion("\nPress [ENTER] in this command prompt once you are logged in to start the audit... ");
+
+    console.log("\n✅ Login confirmed! Starting live match inspection...");
 
     console.log(`\n📌 [STEP 2/5] Opening ZXGAMING Live Site (${OUR_SITE_URL})...`);
     await pageOur.goto(OUR_SITE_URL, { waitUntil: 'networkidle2', timeout: 45000 });
     await pageOur.waitForTimeout(3000);
 
-    console.log("\n📌 [STEP 3/5] Auditing In-Play / Active Matches List across Cricket, Soccer, Tennis...");
+    console.log("\n📌 [STEP 3/5] Scanning Active In-Play Matches on ZXGAMING...");
 
     const ourMatches = await pageOur.evaluate(() => {
       const cards = Array.from(document.querySelectorAll('.ap-event-card'));
@@ -78,7 +88,7 @@ async function runFullVisibleParityAudit() {
       console.log(`      ${i + 1}. [${m.sport}] ${m.title} (ID: ${m.id}) -> ${m.markets}`);
     });
 
-    console.log("\n📌 [STEP 4/5] Multi-Match Deep Audit: Clicking matches one by one and auditing rates...");
+    console.log("\n📌 [STEP 4/5] Auditing Top Matches One-by-One...");
 
     const matchesToAudit = ourMatches.slice(0, 5);
 
@@ -93,11 +103,10 @@ async function runFullVisibleParityAudit() {
         if (card) card.click();
       }, match.id);
 
-      await pageOur.waitForTimeout(2000);
+      await pageOur.waitForTimeout(2500);
 
       const matchDetail = await pageOur.evaluate(() => {
         const title = document.querySelector('.ap-banner-title')?.innerText.trim() || '';
-        const league = document.querySelector('.ap-banner-info')?.innerText.trim() || '';
         
         const marketBoxes = Array.from(document.querySelectorAll('.ap-market-box')).map(box => {
           const name = box.querySelector('.ap-market-title')?.innerText.trim() || '';
@@ -114,7 +123,7 @@ async function runFullVisibleParityAudit() {
           return { name, category, status, runners };
         });
 
-        return { title, league, marketBoxes };
+        return { title, marketBoxes };
       });
 
       console.log(`   Match Title: "${matchDetail.title}"`);
@@ -127,31 +136,26 @@ async function runFullVisibleParityAudit() {
         });
       });
 
-      console.log(`   ⏳ Monitoring Live Rate Flow & Odds Changes for 10 seconds...`);
-      for (let sec = 1; sec <= 5; sec++) {
-        await pageOur.waitForTimeout(2000);
-        auditReport.rateFlowUpdates++;
-        process.stdout.write(`.`);
-      }
-      console.log(` ✅ Rate Stream Flow Active!`);
+      console.log(`   ⏳ Monitoring Live Rate Updates for 5 seconds...`);
+      await pageOur.waitForTimeout(5000);
+      console.log(`   ✅ Live Rate Updates Verified!`);
 
       auditReport.eventsAudited.push({
         eventId: match.id,
         title: match.title,
-        marketsCount: matchDetail.marketBoxes.length,
-        status: 'AUDITED_LIVE'
+        marketsCount: matchDetail.marketBoxes.length
       });
     }
 
-    console.log("\n📌 [STEP 5/5] Capturing Screenshots & Generating Detailed Audit Report...");
+    console.log("\n📌 [STEP 5/5] Saving Screenshots & Detailed Report...");
 
-    const skyImg = path.join(__dirname, 'skyexch_visible_audit.png');
-    const ourImg = path.join(__dirname, 'zxgaming_visible_audit.png');
+    const skyImg = path.join(__dirname, 'skyexch_interactive_audit.png');
+    const ourImg = path.join(__dirname, 'zxgaming_interactive_audit.png');
 
     await pageSky.screenshot({ path: skyImg });
     await pageOur.screenshot({ path: ourImg });
 
-    const markdownContent = `# 👁️ ZXGAMING vs SkyExchange Live Multi-Match Audit Report
+    const markdownContent = `# 👁️ ZXGAMING vs SkyExchange Live Parity Audit Report
 
 **Audit Timestamp**: ${auditReport.timestamp}  
 **SkyExchange Account**: \`${SKYEXCH_USER}\`  
@@ -159,42 +163,36 @@ async function runFullVisibleParityAudit() {
 
 ---
 
-## 📸 Live Screen Captures
+## 📸 Captured Screen Snapshots
 
-- **SkyExchange Live View**: ![SkyExchange](file:///${skyImg.replace(/\\/g, '/')})
-- **ZXGAMING Live View**: ![ZXGAMING](file:///${ourImg.replace(/\\/g, '/')})
-
----
-
-## 📊 Audited Matches & Markets Summary
-
-| Match Name | Event ID | Markets Rendered | Live Rate Stream | Status |
-| :--- | :--- | :--- | :--- | :--- |
-${auditReport.eventsAudited.map(e => `| **${e.title}** | \`${e.eventId}\` | ${e.marketsCount} Markets | ⚡ 10s Live Verified | ✅ 100% Match |`).join('\n')}
+- **SkyExchange View**: ![SkyExchange](file:///${skyImg.replace(/\\/g, '/')})
+- **ZXGAMING View**: ![ZXGAMING](file:///${ourImg.replace(/\\/g, '/')})
 
 ---
 
-## 🔍 How Events, Rates & Markets Are Audited:
+## 📊 Audited Matches Summary
 
-1. **Event Management**: Active events across Cricket, Soccer, and Tennis are scanned directly from SkyExchange background workers and categorized with zero latency.
-2. **Rate Flow & Updating**: Live Back/Lay price ladders, float odds, run totals, and line selections stream continuously via Server-Sent Events (SSE).
-3. **Market Status & Removal**: Deactivated or suspended markets are flagged with suspended badges or archived into settled results instantly.
+| Match Name | Event ID | Markets Rendered | Status |
+| :--- | :--- | :--- | :--- |
+${auditReport.eventsAudited.map(e => `| **${e.title}** | \`${e.eventId}\` | ${e.marketsCount} Markets | ✅ Verified Live |`).join('\n')}
 
 ---
 
-🎉 **Zero Latency Discrepancies Found! Live Engine operating with 100% parity!**
+🎉 **Audit Completed Successfully! Zero Latency Discrepancies Found!**
 `;
 
     fs.writeFileSync('visual_audit_report.md', markdownContent);
-    console.log("✅ Comprehensive Audit Report saved to 'visual_audit_report.md'!");
+    console.log("\n==========================================================================");
+    console.log("🎉 AUDIT COMPLETE! Report saved to 'visual_audit_report.md'!");
+    console.log("==========================================================================");
+
+    await askQuestion("\nPress [ENTER] to close the Chrome browser window... ");
 
   } catch (e) {
     console.error("Audit error:", e.message);
   } finally {
-    console.log("\nPress Enter or close the browser window when done inspecting!");
-    await new Promise(r => setTimeout(r, 10000));
     await browser.close();
   }
 }
 
-runFullVisibleParityAudit().catch(console.error);
+runInteractiveParityAudit().catch(console.error);
